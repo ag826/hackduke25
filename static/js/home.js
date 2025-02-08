@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
             sessionStorage.setItem("simulationResults", JSON.stringify(simulationResults));
             console.log(sessionStorage.getItem("simulationResults"));
             // Redirect to the interview page
-            // window.location.href = "/interview";
+            window.location.href = "/interview";
         } catch (error) {
             // Hide the loading spinner if there's an error
             loadingDiv.style.display = "none";

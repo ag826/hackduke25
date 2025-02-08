@@ -18,10 +18,11 @@ def get_summary(
     position,
     company_name,
     job_description,
-    resume_pdf_path,
+    resume_pdf,
     model=genai.GenerativeModel("gemini-1.5-flash"),
 ):
-    resume = genai.upload_file(resume_pdf_path)
+    resume = genai.upload_file(resume_pdf, mime_type="application/pdf")  # Corrected here
+
     response = model.generate_content(
         [
             "Based on the input shared below, generate interview questions for this candidate tailored to the role they are planning to interview for,"
@@ -39,9 +40,9 @@ def get_summary(
     questions = response.text
     question_list = questions.split("|")
     final_questions = []
-    for str in questions:
-        final_questions.append(str)
-
+    for str in question_list:
+        if str != "":
+            final_questions.append(str)
     return final_questions
 
 

@@ -1,17 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
     const simulationResults = JSON.parse(sessionStorage.getItem("simulationResults"));
+    const questionElement = document.getElementById("question");
     if (!simulationResults) {
         questionElement.textContent = "Error: No interview data found.";
         return;
     }
 
-    questionElement.textContent = simulationResults.first_question;
-
-    // TO DO
-
     const recordButton = document.getElementById("recordButton");
     const submitButton = document.getElementById("submitButton");
-    const questionElement = document.getElementById("question");
     const loadingDiv = document.getElementById("loading");
     const resultsDiv = document.getElementById("results");
     let answers = [];
@@ -47,19 +43,23 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
 
-    // Fetch and display the question
-    const fetchQuestion = async () => {
-        try {
-            const response = await fetch('/get_question');
-            if (!response.ok) {
-                throw new Error("Failed to fetch question.");
-            }
-            const question = await response.json();
-            questionElement.textContent = question.text;
-        } catch (error) {
-            questionElement.textContent = `Error: ${error.message}`;
+    // Display the question from simulationResults
+    let currentQuestionIndex = 0;
+
+    const displayQuestion = () => {
+        if (currentQuestionIndex < simulationResults.length) {
+            questionElement.textContent = simulationResults[currentQuestionIndex].text;
+            recordButton.style.display = "block";
+            submitButton.style.display = "none";
+        } else {
+            questionElement.textContent = "Interview completed.";
+            recordButton.style.display = "none";
+            submitButton.style.display = "block";
         }
     };
+
+    // Initial display of the first question
+    displayQuestion();
 
     // Event listener for the record button
     recordButton.addEventListener("click", async () => {
@@ -73,9 +73,10 @@ document.addEventListener("DOMContentLoaded", () => {
             audioElement.controls = true;
             audioElement.src = audioUrl;
             resultsDiv.appendChild(audioElement);
-            recordButton.style.display = "none";
-            submitButton.style.display = "block";
-            answers.push({ audioBlob });
+            answers.push({ question: simulationResults[currentQuestionIndex].text, audioBlob });
+            currentQuestionIndex++;
+            displayQuestion();
+            recordButton.textContent = "Record Answer";
         }
     });
 
@@ -84,10 +85,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const formData = new FormData();
         answers.forEach((answer, index) => {
             formData.append(`audio-${index}`, answer.audioBlob, `answer-${index}.mp3`);
+            formData.append(`question-${index}`, answer.question);
         });
 
         try {
-            const response = await fetch('/process_response', {
+            const response = await fetch('/results', {
                 method: 'POST',
                 body: formData,
             });
@@ -97,12 +99,10 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             const result = await response.json();
+            sessionStorage.setItem("interviewResults", JSON.stringify(result));
             window.location.href = 'results.html';
         } catch (error) {
             alert(`Error: ${error.message}`);
         }
     });
-
-    // Initial fetch of the question
-    fetchQuestion();
 });

@@ -39,18 +39,17 @@ def simulate_interview():
     app.logger.info("Simulating interview...")
     try:
         position = request.form.get("position")
-        print(position)
         company = request.form.get("company")
         job_description = request.form.get("jobDescription")
         resume = request.files["resume"]  # This is a FileStorage object
-        print(position, company, job_description, resume)
+        app.logger.info(position, company, job_description, resume)
         # Convert the resume file to a format compatible with genai
         resume_bytes = BytesIO(resume.read())
-        print(resume_bytes)
+        app.logger.info(f"Received resume: {resume_bytes}, {type(resume_bytes)}")
         
         if not position or not company or not job_description or not resume:
             return jsonify({"error": "Missing required fields"}), 400
-
+        
         # Get the interview questions`
         processed_data = get_summary(
             position,
@@ -58,10 +57,11 @@ def simulate_interview():
             job_description,
             resume_bytes,
             )
-
+        app.logger.info(processed_data)
         app.logger.info("Interview simulation successful.")
-        print(processed_data)
-        #return jsonify(processed_data.split("|"))
+
+        app.logger.info(jsonify(processed_data))
+        return jsonify(processed_data)
     except Exception as e:
         app.logger.error(f"Error simulating interview: {e}")
         return jsonify({"error": str(e)}), 500
