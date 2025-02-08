@@ -1,6 +1,5 @@
 import speech_recognition as sr
 import pyttsx3
-import speech_recognition as sr
 from pydub import AudioSegment
 
 # Initialize the recognizer and text-to-speech engine
@@ -13,7 +12,7 @@ def mp3_to_text(mp3_file):
     recognizer = sr.Recognizer()
 
     # Convert MP3 to WAV (since SpeechRecognition needs WAV)
-    wav_file = "temp_audio.wav"
+    wav_file = "tempfiles/temp_audio.wav"
     audio = AudioSegment.from_mp3(mp3_file)
     audio.export(wav_file, format="wav")
 

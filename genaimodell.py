@@ -4,10 +4,7 @@ from dotenv import load_dotenv
 from google.generativeai import GenerativeModel
 
 load_dotenv()
-# Directly set your API key
 api_key = os.environ["API_KEY"]
-# Replace with your actual API key
-# Configure the API key
 genai.configure(api_key=api_key)
 
 gemini_client = genai.GenerativeModel(
@@ -39,11 +36,55 @@ def get_summary(
             resume,
         ]
     )
-    return response.text
+    questions = response.text
+    question_list = questions.split("|")
+    final_questions = []
+    for str in questions:
+        final_questions.append(str)
+
+    return final_questions
+
+
+def review_answers(
+    question,
+    answer,
+    position,
+    company_name,
+    job_description,
+    resume_pdf_path,
+    model=genai.GenerativeModel("gemini-1.5-flash"),
+):
+    resume = genai.upload_file(resume_pdf_path)
+    response = model.generate_content(
+        [
+            "For the candidate who is preparing for the interview, review his answer to the questions. Remember the following information about the candidate:",
+            f"The position the candidate is applying for is: {position}"
+            f"The company name the candidate is applying to is: {company_name}"
+            f"The job description of the position the candidate is applying for is: {job_description}"
+            "The resume of the candidate applying for this position is attached as a pdf below."
+            f"This was the question that was asked to the candidate as part of this interview: {question}"
+            f"This was the response that the candidate gave: {answer}"
+            f"Review this answer from the perspective of someone who already is a {position} at {company_name} and give constructive feedback by answering the following questions:"
+            "What went well in the candidates answer"
+            "What could have been improved in the candidates answer"
+            "Sample of how the answer can be changed to best answer this question (Do not allucinate, use only information availale from the resume)"
+            "Score on a scale of 1-10 (in increments of 0.5) based on the most important parameters you would use to answer this question."
+            " Elaborate briefly on the parameters you used to evaluate this"
+            "All your responses to the questions above should be in the second person only, output your answers in a pipe '|' delimited format. Do not include any additional information before or after this. Give only your answer and none of these grading parameters",
+            resume,
+        ]
+    )
+
+    review = response.text
+    feedback_list = review.split("|")
+    final_list = []
+    for str in feedback_list[1::2]:
+        final_list.append(str)
+
+    return final_list
 
 
 if __name__ == "__main__":
-    # Default to the test resume for standalone testing
 
     resume_path = "C:\\Users\\asus\\Desktop\\DUKE\\INTERNSHIPS\\PROJ UPD\\Resume - Adil Keku Gazder.pdf"
     questions = get_summary(
@@ -52,4 +93,15 @@ if __name__ == "__main__":
         "data science internship covering data engineering, SQL, python",
         resume_path,
     )
+
+    review = review_answers(
+        "Your resume highlights your work on a portfolio optimization algorithm. Can you describe the algorithm you used, the challenges you faced, and how you evaluated its performance?",
+        "Yes I did a really cool project",
+        "Data Science Intern",
+        "Amazon Web Services",
+        "data science internship covering data engineering, SQL, python",
+        resume_path,
+    )
     print(f"LIKELY QUESTIONS ARE:{questions}")
+    print("")
+    print(f"FEEDBACK:{review}")
