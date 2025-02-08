@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1>Welcome to the Interview Simulator!</h1>
+    <p>This application helps you prepare for your interviews by simulating real interview scenarios.</p>
+
+    <!-- Interview Simulation Form -->
+    <h2>Simulate an Interview</h2>
+    <p>Enter the details of the position you are applying for, and upload your resume to get started!</p>
+
+    <form id="interview-form" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="position" class="form-label">Position:</label>
+            <input type="text" id="position" class="form-control" placeholder="Enter the position you are applying for" required>
+        </div>
+        <div class="mb-3">
+            <label for="company" class="form-label">Company Name:</label>
+            <input type="text" id="company" class="form-control" placeholder="Enter the company name" required>
+        </div>
+        <div class="mb-3">
+            <label for="job-description" class="form-label">Job Description:</label>
+            <textarea id="job-description" class="form-control" rows="3" placeholder="Enter the job description" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="resume" class="form-label">Upload Resume (PDF):</label>
+            <input type="file" id="resume" class="form-control" accept="application/pdf" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Simulate Interview</button>
+    </form>
+
+    <div id="loading" style="display: none;">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Results container -->
+    <div id="results" class="mt-4">
+        <!-- Interview simulation results will appear here -->
+    </div>
+
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+{% endblock %}

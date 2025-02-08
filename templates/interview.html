@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1>Interview Application</h1>
+<p>Answer the following questions:</p>
+
+<!-- Profile image canvas -->
+<div class="mb-3">
+    <label for="profileCanvas" class="form-label">Profile:</label>
+    <canvas id="profileCanvas" width="200" height="200" style="border:1px solid #000000;"></canvas>
+</div>
+
+<!-- Question display -->
+<div class="mb-3">
+    <label for="question" class="form-label">Question:</label>
+    <p id="question">Question will appear here</p>
+</div>
+
+<!-- Answer recording button -->
+<button id="recordButton" class="btn btn-primary">Record Answer</button>
+
+<!-- Submit recording button -->
+<button id="submitButton" class="btn btn-success" style="display: none;">Submit Recording</button>
+
+<!-- Loading spinner (hidden by default) -->
+<div id="loading" style="display: none;">
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+
+<!-- Results container -->
+<div id="results" class="mt-4">
+    <!-- Answers will appear here -->
+</div>
+
+<!-- Reference to the JavaScript file -->
+<script src="{{ url_for('static', filename='js/interview.js') }}"></script>
+{% endblock %}
