@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
+    console.log("interview.js loaded"); // Debugging log
     const simulationResults = JSON.parse(sessionStorage.getItem("simulationResults"));
+    console.log("Retrieved from sessionStorage:", simulationResults); // Debugging log
+
     const questionElement = document.getElementById("question");
+    console.log("Question Element:", questionElement);
     if (!simulationResults) {
         questionElement.textContent = "Error: No interview data found.";
         return;
@@ -57,9 +61,10 @@ document.addEventListener("DOMContentLoaded", () => {
             submitButton.style.display = "block";
         }
     };
-
+    
     // Initial display of the first question
     displayQuestion();
+    console.log("Current Question:", simulationResults[currentQuestionIndex]?.text);
 
     // Event listener for the record button
     recordButton.addEventListener("click", async () => {

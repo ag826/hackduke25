@@ -1,11 +1,15 @@
 import logging
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, redirect, url_for, session
 import os
 from modules.genaimodell import get_summary
 from io import BytesIO
+from dotenv import load_dotenv
 
+load_dotenv()
+flask_key = os.environ["API_KEY"]
 # Initialize Flask app
 app = Flask(__name__)
+app.secret_key = flask_key
 
 # Configure logging
 logging.basicConfig(
@@ -60,7 +64,14 @@ def simulate_interview():
         app.logger.info(processed_data)
         app.logger.info("Interview simulation successful.")
 
-        app.logger.info(jsonify(processed_data))
+        #app.logger.info(jsonify(processed_data))
+        #return jsonify(processed_data)
+        # Store the processed interview data in session storage
+        session["simulationResults"] = processed_data  # Store in session for retrieval in the frontend
+        app.logger.info("Interview simulation successful.")
+
+        # Redirect to the interview page
+        #return redirect(url_for("render_page", page="interview"))
         return jsonify(processed_data)
     except Exception as e:
         app.logger.error(f"Error simulating interview: {e}")
