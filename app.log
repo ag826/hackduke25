@@ -1,0 +1,136 @@
+2025-02-08 16:18:26,659 - INFO - Starting Flask app...
+2025-02-08 16:18:26,766 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-08 16:18:26,768 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-08 16:18:26,809 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 16:18:30,398 - INFO - Starting Flask app...
+2025-02-08 16:18:30,420 - WARNING -  * Debugger is active!
+2025-02-08 16:18:30,450 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 16:18:44,077 - INFO - Home route accessed.
+2025-02-08 16:18:44,099 - INFO - 127.0.0.1 - - [08/Feb/2025 16:18:44] "GET / HTTP/1.1" 200 -
+2025-02-08 16:18:44,197 - INFO - 127.0.0.1 - - [08/Feb/2025 16:18:44] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-02-08 16:18:44,212 - INFO - 127.0.0.1 - - [08/Feb/2025 16:18:44] "GET /static/js/home.js HTTP/1.1" 200 -
+2025-02-08 16:18:44,721 - INFO - Home route accessed.
+2025-02-08 16:18:44,737 - INFO - 127.0.0.1 - - [08/Feb/2025 16:18:44] "GET / HTTP/1.1" 200 -
+2025-02-08 16:18:45,009 - INFO - Home route accessed.
+2025-02-08 16:18:45,011 - INFO - 127.0.0.1 - - [08/Feb/2025 16:18:45] "GET / HTTP/1.1" 200 -
+2025-02-08 16:18:45,268 - INFO - 127.0.0.1 - - [08/Feb/2025 16:18:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 16:18:45,404 - INFO - 127.0.0.1 - - [08/Feb/2025 16:18:45] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-08 16:18:45,574 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\jinja2\\loaders.py', reloading
+2025-02-08 16:18:45,608 - INFO - 127.0.0.1 - - [08/Feb/2025 16:18:45] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-02-08 16:18:45,697 - INFO - 127.0.0.1 - - [08/Feb/2025 16:18:45] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-08 16:18:45,846 - INFO - 127.0.0.1 - - [08/Feb/2025 16:18:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 16:22:53,810 - INFO - Starting Flask app...
+2025-02-08 16:22:53,848 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-08 16:22:53,855 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-08 16:22:53,858 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 16:22:57,115 - INFO - Starting Flask app...
+2025-02-08 16:22:57,144 - WARNING -  * Debugger is active!
+2025-02-08 16:22:57,165 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 16:23:00,909 - INFO - Home route accessed.
+2025-02-08 16:23:00,952 - INFO - 127.0.0.1 - - [08/Feb/2025 16:23:00] "GET / HTTP/1.1" 200 -
+2025-02-08 16:23:01,048 - INFO - 127.0.0.1 - - [08/Feb/2025 16:23:01] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 16:23:01,071 - INFO - 127.0.0.1 - - [08/Feb/2025 16:23:01] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-08 16:23:02,108 - INFO - 127.0.0.1 - - [08/Feb/2025 16:23:02] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-02-08 16:23:28,215 - INFO - Simulating interview...
+2025-02-08 16:23:28,356 - ERROR - Error simulating interview: Unknown mime type: When passing a file like object to `path` (instead of a
+    path-like object) you must set the `mime_type` argument
+2025-02-08 16:23:28,356 - INFO - 127.0.0.1 - - [08/Feb/2025 16:23:28] "[35m[1mPOST /simulate HTTP/1.1[0m" 500 -
+2025-02-08 16:29:18,924 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-08 16:29:22,282 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 16:29:26,265 - INFO - Starting Flask app...
+2025-02-08 16:29:26,291 - WARNING -  * Debugger is active!
+2025-02-08 16:29:26,324 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 16:30:04,125 - INFO - Home route accessed.
+2025-02-08 16:30:04,154 - INFO - 127.0.0.1 - - [08/Feb/2025 16:30:04] "GET / HTTP/1.1" 200 -
+2025-02-08 16:30:04,222 - INFO - 127.0.0.1 - - [08/Feb/2025 16:30:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 16:30:04,242 - INFO - 127.0.0.1 - - [08/Feb/2025 16:30:04] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-08 16:30:04,924 - INFO - 127.0.0.1 - - [08/Feb/2025 16:30:04] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-02-08 17:12:40,316 - INFO - Starting Flask app...
+2025-02-08 17:12:40,380 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-08 17:12:40,380 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-08 17:12:40,424 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 17:12:45,331 - INFO - Starting Flask app...
+2025-02-08 17:12:45,388 - WARNING -  * Debugger is active!
+2025-02-08 17:12:45,445 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 17:12:45,543 - INFO - Home route accessed.
+2025-02-08 17:12:45,568 - INFO - 127.0.0.1 - - [08/Feb/2025 17:12:45] "GET / HTTP/1.1" 200 -
+2025-02-08 17:12:45,598 - INFO - Home route accessed.
+2025-02-08 17:12:45,652 - INFO - 127.0.0.1 - - [08/Feb/2025 17:12:45] "GET / HTTP/1.1" 200 -
+2025-02-08 17:12:45,754 - INFO - 127.0.0.1 - - [08/Feb/2025 17:12:45] "GET /static/js/home.js HTTP/1.1" 200 -
+2025-02-08 17:12:45,773 - INFO - 127.0.0.1 - - [08/Feb/2025 17:12:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 17:12:45,801 - INFO - 127.0.0.1 - - [08/Feb/2025 17:12:45] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-08 17:12:45,858 - INFO - 127.0.0.1 - - [08/Feb/2025 17:12:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 17:12:46,986 - INFO - 127.0.0.1 - - [08/Feb/2025 17:12:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-08 17:13:14,728 - INFO - Simulating interview...
+2025-02-08 17:13:14,778 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\flask\\app.py', reloading
+2025-02-08 17:13:14,846 - INFO - Received resume: <_io.BytesIO object at 0x000001DA0D8B85E0>, <class '_io.BytesIO'>
+2025-02-08 17:13:14,846 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+2025-02-08 17:13:14,846 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+2025-02-08 17:13:14,860 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\http\\server.py', reloading
+2025-02-08 17:13:14,863 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\socketserver.py', reloading
+2025-02-08 17:13:18,133 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 17:13:21,842 - INFO - Starting Flask app...
+2025-02-08 17:13:21,882 - WARNING -  * Debugger is active!
+2025-02-08 17:13:21,913 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 17:13:21,961 - INFO - Simulating interview...
+2025-02-08 17:13:22,029 - INFO - Received resume: <_io.BytesIO object at 0x000002C8960CC8B0>, <class '_io.BytesIO'>
+2025-02-08 17:13:27,658 - INFO -  Explain your experience using Random Forest, KM Curves, and Regression techniques in analyzing treatment patterns for oncology patients at ZS Associates.  
+2025-02-08 17:13:51,420 - INFO - Simulating interview...
+2025-02-08 17:13:51,499 - INFO - Received resume: <_io.BytesIO object at 0x000002C89B1F8A90>, <class '_io.BytesIO'>
+2025-02-08 17:13:55,370 - INFO -  Tell me about a time you had to work with a large dataset. How did you approach the challenge, and what were the results? 
+2025-02-08 17:13:55,371 - ERROR - Error simulating interview: run loop already started
+2025-02-08 17:13:55,375 - INFO - 127.0.0.1 - - [08/Feb/2025 17:13:55] "[35m[1mPOST /simulate HTTP/1.1[0m" 500 -
+2025-02-08 17:14:03,741 - INFO - Simulating interview...
+2025-02-08 17:14:03,827 - INFO - Received resume: <_io.BytesIO object at 0x000002C89B37C9A0>, <class '_io.BytesIO'>
+2025-02-08 17:14:07,310 - INFO -  Tell me about your experience with predictive modeling, specifically mentioning any instances where you used Random Forest or KM Curves.
+2025-02-08 17:14:07,310 - ERROR - Error simulating interview: run loop already started
+2025-02-08 17:14:07,310 - INFO - 127.0.0.1 - - [08/Feb/2025 17:14:07] "[35m[1mPOST /simulate HTTP/1.1[0m" 500 -
+2025-02-08 17:15:43,031 - INFO - 127.0.0.1 - - [08/Feb/2025 17:15:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 17:17:17,703 - INFO - Starting Flask app...
+2025-02-08 17:17:17,799 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-08 17:17:17,800 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-08 17:17:17,821 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 17:17:21,289 - INFO - Starting Flask app...
+2025-02-08 17:17:21,317 - WARNING -  * Debugger is active!
+2025-02-08 17:17:21,347 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 17:17:23,292 - INFO - Home route accessed.
+2025-02-08 17:17:23,332 - INFO - 127.0.0.1 - - [08/Feb/2025 17:17:23] "GET / HTTP/1.1" 200 -
+2025-02-08 17:17:23,585 - INFO - 127.0.0.1 - - [08/Feb/2025 17:17:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 17:17:23,649 - INFO - 127.0.0.1 - - [08/Feb/2025 17:17:23] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-08 17:18:00,463 - INFO - Simulating interview...
+2025-02-08 17:18:00,558 - INFO - Received resume: <_io.BytesIO object at 0x000002C9C0FCC9A0>, <class '_io.BytesIO'>
+2025-02-08 17:18:06,372 - INFO -  Can you walk me through your experience using Random Forest, KM Curves, and Regression techniques in your previous role at ZS Associates, focusing on the challenges you faced and how you overcame them? 
+2025-02-08 17:27:00,213 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\voice2text.py', reloading
+2025-02-08 17:27:00,213 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\modules\\voice2text.py', reloading
+2025-02-08 17:27:00,222 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\modules\\voice2text.py', reloading
+2025-02-08 17:27:03,885 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 17:27:10,859 - INFO - Starting Flask app...
+2025-02-08 17:27:10,892 - WARNING -  * Debugger is active!
+2025-02-08 17:27:10,921 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 17:28:50,732 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-08 17:28:50,732 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-08 17:28:51,705 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 17:28:57,073 - INFO - Starting Flask app...
+2025-02-08 17:28:57,105 - WARNING -  * Debugger is active!
+2025-02-08 17:28:57,153 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 17:28:58,778 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-08 17:28:58,785 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-08 17:29:05,000 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 17:29:10,232 - INFO - Starting Flask app...
+2025-02-08 17:29:10,289 - WARNING -  * Debugger is active!
+2025-02-08 17:29:10,437 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 17:29:12,841 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-08 17:29:12,856 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-08 17:29:14,392 - INFO -  * Restarting with watchdog (windowsapi)
