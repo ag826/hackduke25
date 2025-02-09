@@ -2,6 +2,7 @@ import google.generativeai as genai
 import os
 from dotenv import load_dotenv
 from google.generativeai import GenerativeModel
+import tempfile
 
 load_dotenv()
 api_key = os.environ["API_KEY"]
@@ -71,6 +72,18 @@ def get_summary(
     for str in question_list:
         if str != "":
             final_questions.append(str)
+
+    with tempfile.NamedTemporaryFile(
+        mode="w",
+        delete=False,
+        suffix=".txt",
+        dir="../tempfiles",
+        prefix="question_bank",
+    ) as temp_file:
+        # Write the questions to the temporary file
+        for question in question_list:
+            temp_file.write(question + "\n")
+
     return final_questions
 
 
