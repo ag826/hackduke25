@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1>Interview Simulation Results</h1>
+
+    <!-- Loading Spinner -->
+    <div id="loading" style="display: none;">
+        <p>Loading...</p>
+    </div>
+
+    <!-- Results Container -->
+    <div id="results">
+        <!-- Results will be populated here by JavaScript -->
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="{{ url_for('static', filename='js/results_review.js') }}"></script>
+{% endblock %}

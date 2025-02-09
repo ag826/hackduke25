@@ -160,3 +160,613 @@ cache:pipe:0: Invalid argument
 2025-02-09 06:23:14,267 - INFO - 172.20.0.1 - - [09/Feb/2025 06:23:14] "GET /interview HTTP/1.1" 200 -
 2025-02-09 06:23:14,416 - INFO - 172.20.0.1 - - [09/Feb/2025 06:23:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
 2025-02-09 06:23:14,543 - INFO - 172.20.0.1 - - [09/Feb/2025 06:23:14] "GET /static/js/interview.js HTTP/1.1" 200 -
+2025-02-09 06:36:28,036 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.20.0.2:8080
+2025-02-09 06:36:28,037 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 06:36:37,486 - INFO - Home route accessed.
+2025-02-09 06:36:37,595 - INFO - 172.20.0.1 - - [09/Feb/2025 06:36:37] "GET / HTTP/1.1" 200 -
+2025-02-09 06:36:37,741 - INFO - 172.20.0.1 - - [09/Feb/2025 06:36:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 06:36:37,886 - INFO - 172.20.0.1 - - [09/Feb/2025 06:36:37] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 06:37:13,273 - INFO - Simulating interview...
+2025-02-09 06:37:13,332 - INFO - Received resume: <_io.BytesIO object at 0x7f63e1bb8040>, <class '_io.BytesIO'>
+2025-02-09 06:37:34,135 - INFO - ["Describe your experience working with SQL, providing specific examples of queries you've written and the challenges you faced.", 'What are your experiences with data engineering, and can you provide an example of a project where you had to design and implement a data pipeline?', 'Explain your experience with Python, focusing on libraries used for data science and any relevant projects.', 'Walk me through your experience with MLOps, detailing a project where you deployed and managed machine learning models in a production environment.', 'How would you approach a problem where you need to analyze a large dataset, taking into consideration scalability and performance?', '\n']
+2025-02-09 06:37:34,137 - INFO - Interview simulation successful.
+2025-02-09 06:37:34,144 - INFO - 172.20.0.1 - - [09/Feb/2025 06:37:34] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 06:37:34,211 - INFO - Interview route accessed.
+2025-02-09 06:37:34,245 - INFO - 172.20.0.1 - - [09/Feb/2025 06:37:34] "GET /interview HTTP/1.1" 200 -
+2025-02-09 06:37:34,313 - INFO - 172.20.0.1 - - [09/Feb/2025 06:37:34] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 06:37:34,315 - INFO - 172.20.0.1 - - [09/Feb/2025 06:37:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 06:37:47,169 - INFO - 172.20.0.1 - - [09/Feb/2025 06:37:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 06:38:37,937 - INFO - Getting final feedback...
+2025-02-09 06:38:37,960 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined'), ('question-5', 'undefined')])
+2025-02-09 06:38:37,962 - INFO - undefined
+2025-02-09 06:38:37,963 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 06:38:37,964 - INFO - Received file MIME type: audio/webm;codecs=opus
+2025-02-09 06:38:40,304 - ERROR - Error transcribing answer: Decoding failed. ffmpeg returned error code: 1
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 5.1.6-0+deb12u1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with gcc 12 (Debian 12.2.0-14)
+  configuration: --prefix=/usr --extra-version=0+deb12u1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librist --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --disable-sndio --enable-libjxl --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-libplacebo --enable-librav1e --enable-shared
+  libavutil      57. 28.100 / 57. 28.100
+  libavcodec     59. 37.100 / 59. 37.100
+  libavformat    59. 27.100 / 59. 27.100
+  libavdevice    59.  7.100 / 59.  7.100
+  libavfilter     8. 44.100 /  8. 44.100
+  libswscale      6.  7.100 /  6.  7.100
+  libswresample   4.  7.100 /  4.  7.100
+  libpostproc    56.  6.100 / 56.  6.100
+[cache @ 0x55e119457280] Inner protocol failed to seekback end : -38
+    Last message repeated 1 times
+[mp3float @ 0x55e119460580] Header missing
+    Last message repeated 17 times
+[cache @ 0x55e119457280] Inner protocol failed to seekback end : -38
+    Last message repeated 1 times
+[mp3 @ 0x55e119456a40] Could not find codec parameters for stream 0 (Audio: mp3 (mp3float), 0 channels, fltp): unspecified frame size
+Consider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options
+Input #0, mp3, from 'cache:pipe:0':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Audio: mp3, 0 channels, fltp
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s32le (native))
+Press [q] to stop, [?] for help
+[mp3float @ 0x55e119474580] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55e119474580] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55e119474580] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55e119474580] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55e119474580] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55e119474580] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55e119474580] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55e119474580] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55e119474580] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55e119474580] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55e119474580] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55e119474580] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55e119474580] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55e119474580] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55e119474580] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55e119474580] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55e119474580] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55e119474580] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[abuffer @ 0x55e119476f40] Value inf for parameter 'time_base' out of range [0 - 2.14748e+09]
+    Last message repeated 1 times
+[abuffer @ 0x55e119476f40] Error setting option time_base to value 1/0.
+[graph_0_in_0_0 @ 0x55e11946b900] Error applying options to the filter.
+Error reinitializing filters!
+Error while filtering: Numerical result out of range
+Finishing stream 0:0 without any data written to it.
+[abuffer @ 0x55e119473440] Value inf for parameter 'time_base' out of range [0 - 2.14748e+09]
+    Last message repeated 1 times
+[abuffer @ 0x55e119473440] Error setting option time_base to value 1/0.
+[graph_0_in_0_0 @ 0x55e119473340] Error applying options to the filter.
+Error configuring filter graph
+[cache @ 0x55e119457280] Statistics, cache hits:32791 cache misses:3
+Conversion failed!
+
+2025-02-09 06:38:40,305 - INFO - Transcribed answers are: None
+2025-02-09 06:38:40,312 - INFO - undefined
+2025-02-09 06:38:40,313 - INFO - <FileStorage: 'answer-1.webm' ('audio/webm;codecs=opus')>
+2025-02-09 06:38:40,313 - INFO - Received file MIME type: audio/webm;codecs=opus
+2025-02-09 06:38:41,160 - ERROR - Error transcribing answer: Decoding failed. ffmpeg returned error code: 1
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 5.1.6-0+deb12u1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with gcc 12 (Debian 12.2.0-14)
+  configuration: --prefix=/usr --extra-version=0+deb12u1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librist --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --disable-sndio --enable-libjxl --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-libplacebo --enable-librav1e --enable-shared
+  libavutil      57. 28.100 / 57. 28.100
+  libavcodec     59. 37.100 / 59. 37.100
+  libavformat    59. 27.100 / 59. 27.100
+  libavdevice    59.  7.100 / 59.  7.100
+  libavfilter     8. 44.100 /  8. 44.100
+  libswscale      6.  7.100 /  6.  7.100
+  libswresample   4.  7.100 /  4.  7.100
+  libpostproc    56.  6.100 / 56.  6.100
+[cache @ 0x55ba48a53280] Inner protocol failed to seekback end : -38
+    Last message repeated 1 times
+[mp3float @ 0x55ba48a5c580] Header missing
+    Last message repeated 19 times
+[cache @ 0x55ba48a53280] Inner protocol failed to seekback end : -38
+    Last message repeated 1 times
+[mp3 @ 0x55ba48a52a40] Could not find codec parameters for stream 0 (Audio: mp3 (mp3float), 0 channels, fltp): unspecified frame size
+Consider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options
+Input #0, mp3, from 'cache:pipe:0':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Audio: mp3, 0 channels, fltp
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s32le (native))
+Press [q] to stop, [?] for help
+[mp3float @ 0x55ba48a73b00] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55ba48a73b00] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55ba48a73b00] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55ba48a73b00] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55ba48a73b00] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55ba48a73b00] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55ba48a73b00] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55ba48a73b00] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55ba48a73b00] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55ba48a73b00] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55ba48a73b00] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55ba48a73b00] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55ba48a73b00] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55ba48a73b00] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55ba48a73b00] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55ba48a73b00] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55ba48a73b00] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55ba48a73b00] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55ba48a73b00] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55ba48a73b00] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[abuffer @ 0x55ba48a6a340] Value inf for parameter 'time_base' out of range [0 - 2.14748e+09]
+    Last message repeated 1 times
+[abuffer @ 0x55ba48a6a340] Error setting option time_base to value 1/0.
+[graph_0_in_0_0 @ 0x55ba48a73a00] Error applying options to the filter.
+Error reinitializing filters!
+Error while filtering: Numerical result out of range
+Finishing stream 0:0 without any data written to it.
+[abuffer @ 0x55ba48a6ff80] Value inf for parameter 'time_base' out of range [0 - 2.14748e+09]
+    Last message repeated 1 times
+[abuffer @ 0x55ba48a6ff80] Error setting option time_base to value 1/0.
+[graph_0_in_0_0 @ 0x55ba48a6fe80] Error applying options to the filter.
+Error configuring filter graph
+[cache @ 0x55ba48a53280] Statistics, cache hits:32788 cache misses:3
+Conversion failed!
+
+2025-02-09 06:38:41,161 - INFO - Transcribed answers are: None
+2025-02-09 06:38:41,161 - INFO - undefined
+2025-02-09 06:38:41,162 - INFO - <FileStorage: 'answer-2.webm' ('audio/webm;codecs=opus')>
+2025-02-09 06:38:41,163 - INFO - Received file MIME type: audio/webm;codecs=opus
+2025-02-09 06:38:41,970 - ERROR - Error transcribing answer: Decoding failed. ffmpeg returned error code: 1
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 5.1.6-0+deb12u1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with gcc 12 (Debian 12.2.0-14)
+  configuration: --prefix=/usr --extra-version=0+deb12u1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librist --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --disable-sndio --enable-libjxl --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-libplacebo --enable-librav1e --enable-shared
+  libavutil      57. 28.100 / 57. 28.100
+  libavcodec     59. 37.100 / 59. 37.100
+  libavformat    59. 27.100 / 59. 27.100
+  libavdevice    59.  7.100 / 59.  7.100
+  libavfilter     8. 44.100 /  8. 44.100
+  libswscale      6.  7.100 /  6.  7.100
+  libswresample   4.  7.100 /  4.  7.100
+  libpostproc    56.  6.100 / 56.  6.100
+[cache @ 0x563c87c12280] Inner protocol failed to seekback end : -38
+    Last message repeated 1 times
+[mp3 @ 0x563c87c11a40] Failed to read frame size: Could not seek to 56869.
+[cache @ 0x563c87c12280] Statistics, cache hits:23085 cache misses:2
+cache:pipe:0: Invalid argument
+
+2025-02-09 06:38:41,971 - INFO - Transcribed answers are: None
+2025-02-09 06:38:41,972 - INFO - undefined
+2025-02-09 06:38:41,973 - INFO - <FileStorage: 'answer-3.webm' ('audio/webm;codecs=opus')>
+2025-02-09 06:38:41,974 - INFO - Received file MIME type: audio/webm;codecs=opus
+2025-02-09 06:38:42,565 - ERROR - Error transcribing answer: Decoding failed. ffmpeg returned error code: 1
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 5.1.6-0+deb12u1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with gcc 12 (Debian 12.2.0-14)
+  configuration: --prefix=/usr --extra-version=0+deb12u1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librist --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --disable-sndio --enable-libjxl --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-libplacebo --enable-librav1e --enable-shared
+  libavutil      57. 28.100 / 57. 28.100
+  libavcodec     59. 37.100 / 59. 37.100
+  libavformat    59. 27.100 / 59. 27.100
+  libavdevice    59.  7.100 / 59.  7.100
+  libavfilter     8. 44.100 /  8. 44.100
+  libswscale      6.  7.100 /  6.  7.100
+  libswresample   4.  7.100 /  4.  7.100
+  libpostproc    56.  6.100 / 56.  6.100
+[cache @ 0x55b214d99280] Inner protocol failed to seekback end : -38
+    Last message repeated 1 times
+[mp3 @ 0x55b214d98a40] Failed to read frame size: Could not seek to 57829.
+[cache @ 0x55b214d99280] Statistics, cache hits:24046 cache misses:2
+cache:pipe:0: Invalid argument
+
+2025-02-09 06:38:42,566 - INFO - Transcribed answers are: None
+2025-02-09 06:38:42,566 - INFO - undefined
+2025-02-09 06:38:42,567 - INFO - <FileStorage: 'answer-4.webm' ('audio/webm;codecs=opus')>
+2025-02-09 06:38:42,568 - INFO - Received file MIME type: audio/webm;codecs=opus
+2025-02-09 06:38:43,310 - ERROR - Error transcribing answer: Decoding failed. ffmpeg returned error code: 1
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 5.1.6-0+deb12u1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with gcc 12 (Debian 12.2.0-14)
+  configuration: --prefix=/usr --extra-version=0+deb12u1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librist --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --disable-sndio --enable-libjxl --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-libplacebo --enable-librav1e --enable-shared
+  libavutil      57. 28.100 / 57. 28.100
+  libavcodec     59. 37.100 / 59. 37.100
+  libavformat    59. 27.100 / 59. 27.100
+  libavdevice    59.  7.100 / 59.  7.100
+  libavfilter     8. 44.100 /  8. 44.100
+  libswscale      6.  7.100 /  6.  7.100
+  libswresample   4.  7.100 /  4.  7.100
+  libpostproc    56.  6.100 / 56.  6.100
+[cache @ 0x55b6787bb280] Inner protocol failed to seekback end : -38
+    Last message repeated 1 times
+[mp3float @ 0x55b6787c4580] Header missing
+    Last message repeated 19 times
+[cache @ 0x55b6787bb280] Inner protocol failed to seekback end : -38
+    Last message repeated 1 times
+[mp3 @ 0x55b6787baa40] Could not find codec parameters for stream 0 (Audio: mp3 (mp3float), 0 channels, fltp): unspecified frame size
+Consider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options
+Input #0, mp3, from 'cache:pipe:0':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Audio: mp3, 0 channels, fltp
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s32le (native))
+Press [q] to stop, [?] for help
+[mp3float @ 0x55b6787dbcc0] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55b6787dbcc0] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55b6787dbcc0] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55b6787dbcc0] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55b6787dbcc0] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55b6787dbcc0] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55b6787dbcc0] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55b6787dbcc0] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55b6787dbcc0] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55b6787dbcc0] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55b6787dbcc0] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55b6787dbcc0] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55b6787dbcc0] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55b6787dbcc0] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55b6787dbcc0] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55b6787dbcc0] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55b6787dbcc0] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55b6787dbcc0] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55b6787dbcc0] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[mp3float @ 0x55b6787dbcc0] Header missing
+Error while decoding stream #0:0: Invalid data found when processing input
+[abuffer @ 0x55b6787cd580] Value inf for parameter 'time_base' out of range [0 - 2.14748e+09]
+    Last message repeated 1 times
+[abuffer @ 0x55b6787cd580] Error setting option time_base to value 1/0.
+[graph_0_in_0_0 @ 0x55b6787cf700] Error applying options to the filter.
+Error reinitializing filters!
+Error while filtering: Numerical result out of range
+Finishing stream 0:0 without any data written to it.
+[abuffer @ 0x55b6787cd580] Value inf for parameter 'time_base' out of range [0 - 2.14748e+09]
+    Last message repeated 1 times
+[abuffer @ 0x55b6787cd580] Error setting option time_base to value 1/0.
+[graph_0_in_0_0 @ 0x55b6787cfc40] Error applying options to the filter.
+Error configuring filter graph
+[cache @ 0x55b6787bb280] Statistics, cache hits:32786 cache misses:3
+Conversion failed!
+
+2025-02-09 06:38:43,311 - INFO - Transcribed answers are: None
+2025-02-09 06:38:43,312 - INFO - undefined
+2025-02-09 06:38:43,313 - INFO - <FileStorage: 'answer-5.webm' ('audio/webm;codecs=opus')>
+2025-02-09 06:38:43,313 - INFO - Received file MIME type: audio/webm;codecs=opus
+2025-02-09 06:38:43,988 - ERROR - Error transcribing answer: Decoding failed. ffmpeg returned error code: 1
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 5.1.6-0+deb12u1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with gcc 12 (Debian 12.2.0-14)
+  configuration: --prefix=/usr --extra-version=0+deb12u1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librist --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --disable-sndio --enable-libjxl --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-libplacebo --enable-librav1e --enable-shared
+  libavutil      57. 28.100 / 57. 28.100
+  libavcodec     59. 37.100 / 59. 37.100
+  libavformat    59. 27.100 / 59. 27.100
+  libavdevice    59.  7.100 / 59.  7.100
+  libavfilter     8. 44.100 /  8. 44.100
+  libswscale      6.  7.100 /  6.  7.100
+  libswresample   4.  7.100 /  4.  7.100
+  libpostproc    56.  6.100 / 56.  6.100
+[cache @ 0x55f1b4ed5280] Inner protocol failed to seekback end : -38
+    Last message repeated 1 times
+[mp3 @ 0x55f1b4ed4a40] Failed to read frame size: Could not seek to 52979.
+[cache @ 0x55f1b4ed5280] Statistics, cache hits:19199 cache misses:2
+cache:pipe:0: Invalid argument
+
+2025-02-09 06:38:43,989 - INFO - Transcribed answers are: None
+2025-02-09 06:38:43,994 - INFO - 172.20.0.1 - - [09/Feb/2025 06:38:43] "POST /results HTTP/1.1" 200 -
+2025-02-09 06:38:44,078 - INFO - 172.20.0.1 - - [09/Feb/2025 06:38:44] "[33mGET /results.html HTTP/1.1[0m" 404 -
+2025-02-09 06:38:44,143 - INFO - 172.20.0.1 - - [09/Feb/2025 06:38:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 06:52:27,597 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.20.0.2:8080
+2025-02-09 06:52:27,603 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 06:52:49,659 - INFO - Home route accessed.
+2025-02-09 06:52:49,691 - INFO - 172.20.0.1 - - [09/Feb/2025 06:52:49] "GET / HTTP/1.1" 200 -
+2025-02-09 06:52:49,751 - INFO - 172.20.0.1 - - [09/Feb/2025 06:52:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 06:52:49,760 - INFO - 172.20.0.1 - - [09/Feb/2025 06:52:49] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 06:53:21,401 - INFO - Simulating interview...
+2025-02-09 06:53:21,441 - INFO - Received resume: <_io.BytesIO object at 0x7fca85d55310>, <class '_io.BytesIO'>
+2025-02-09 06:53:43,342 - INFO - [' Tell me about a time you had to work with a large dataset. What challenges did you face, and how did you overcome them?  ', ' Describe your experience with SQL.  What are some of your favorite SQL functions, and how have you used them in your projects? ', ' Can you walk me through your experience developing machine learning models? What were some of the key considerations you made in terms of model selection, training, and evaluation? ', ' Explain your experience with MLOps. What are some tools and techniques you are familiar with? ', ' You mention working with several different programming languages and tools, such as Python, SQL, and Django. Can you share an experience where you had to use multiple technologies to solve a problem?\n']
+2025-02-09 06:53:43,342 - INFO - Interview simulation successful.
+2025-02-09 06:53:43,348 - INFO - 172.20.0.1 - - [09/Feb/2025 06:53:43] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 06:53:43,435 - INFO - Interview route accessed.
+2025-02-09 06:53:43,455 - INFO - 172.20.0.1 - - [09/Feb/2025 06:53:43] "GET /interview HTTP/1.1" 200 -
+2025-02-09 06:53:43,518 - INFO - 172.20.0.1 - - [09/Feb/2025 06:53:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 06:53:43,519 - INFO - 172.20.0.1 - - [09/Feb/2025 06:53:43] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 06:53:52,374 - INFO - 172.20.0.1 - - [09/Feb/2025 06:53:52] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 06:54:59,435 - INFO - Getting final feedback...
+2025-02-09 06:54:59,484 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 06:54:59,486 - INFO - undefined
+2025-02-09 06:54:59,486 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 06:55:02,013 - INFO - Transcribed answers are: None
+2025-02-09 06:55:02,014 - INFO - undefined
+2025-02-09 06:55:02,015 - INFO - <FileStorage: 'answer-1.webm' ('audio/webm;codecs=opus')>
+2025-02-09 06:55:03,273 - INFO - Transcribed answers are: 020
+2025-02-09 06:55:03,273 - INFO - undefined
+2025-02-09 06:55:03,274 - INFO - <FileStorage: 'answer-2.webm' ('audio/webm;codecs=opus')>
+2025-02-09 06:55:06,564 - INFO - Transcribed answers are: hello hello hello hello hello hello hello hello hello hello hello hello hello
+2025-02-09 06:55:06,565 - INFO - undefined
+2025-02-09 06:55:06,566 - INFO - <FileStorage: 'answer-3.webm' ('audio/webm;codecs=opus')>
+2025-02-09 06:55:07,479 - INFO - Transcribed answers are: None
+2025-02-09 06:55:07,480 - INFO - undefined
+2025-02-09 06:55:07,481 - INFO - <FileStorage: 'answer-4.webm' ('audio/webm;codecs=opus')>
+2025-02-09 06:55:08,461 - INFO - Transcribed answers are: None
+2025-02-09 06:55:08,462 - INFO - 172.20.0.1 - - [09/Feb/2025 06:55:08] "POST /results HTTP/1.1" 200 -
+2025-02-09 06:55:08,492 - INFO - 172.20.0.1 - - [09/Feb/2025 06:55:08] "[33mGET /results.html HTTP/1.1[0m" 404 -
+2025-02-09 06:55:08,557 - INFO - 172.20.0.1 - - [09/Feb/2025 06:55:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 07:08:53,533 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.20.0.2:8080
+2025-02-09 07:08:53,534 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 07:09:04,245 - INFO - Home route accessed.
+2025-02-09 07:09:04,276 - INFO - 172.20.0.1 - - [09/Feb/2025 07:09:04] "GET / HTTP/1.1" 200 -
+2025-02-09 07:09:04,467 - INFO - 172.20.0.1 - - [09/Feb/2025 07:09:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 07:09:04,483 - INFO - 172.20.0.1 - - [09/Feb/2025 07:09:04] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 07:09:26,230 - INFO - Simulating interview...
+2025-02-09 07:09:26,274 - INFO - Received resume: <_io.BytesIO object at 0x7fbfa1bfbe50>, <class '_io.BytesIO'>
+2025-02-09 07:09:46,391 - INFO - ['Tell me about a time you had to overcome a technical challenge while working on a data science project.', 'What experience do you have with SQL and Python, and how have you used these skills in previous projects?', "Describe your experience with data engineering, including any tools or technologies you've used.", 'Explain your experience with machine learning models, including model deployment and optimization.', 'Walk me through your experience with a project where you utilized NLP or other advanced analytical techniques.\n']
+2025-02-09 07:09:46,392 - INFO - Interview simulation successful.
+2025-02-09 07:09:46,403 - INFO - 172.20.0.1 - - [09/Feb/2025 07:09:46] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 07:09:46,428 - INFO - Interview route accessed.
+2025-02-09 07:09:46,467 - INFO - 172.20.0.1 - - [09/Feb/2025 07:09:46] "GET /interview HTTP/1.1" 200 -
+2025-02-09 07:09:46,540 - INFO - 172.20.0.1 - - [09/Feb/2025 07:09:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 07:09:46,541 - INFO - 172.20.0.1 - - [09/Feb/2025 07:09:46] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 07:12:45,867 - INFO - Getting final feedback...
+2025-02-09 07:12:45,891 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 07:12:45,901 - INFO - undefined
+2025-02-09 07:12:45,903 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 07:12:49,538 - INFO - Transcribed answers are: hello this is the first question I just want to test if this is working correctly
+2025-02-09 07:12:49,539 - INFO - Transcribed answers are: hello this is the first question I just want to test if this is working correctly
+2025-02-09 07:12:49,909 - ERROR - Error processing results: [Errno 21] Is a directory: '.'
+2025-02-09 07:12:49,914 - INFO - 172.20.0.1 - - [09/Feb/2025 07:12:49] "[35m[1mPOST /results HTTP/1.1[0m" 500 -
+2025-02-09 07:16:12,788 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.20.0.2:8080
+2025-02-09 07:16:12,790 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 07:21:48,276 - INFO - Home route accessed.
+2025-02-09 07:21:48,514 - INFO - 172.20.0.1 - - [09/Feb/2025 07:21:48] "GET / HTTP/1.1" 200 -
+2025-02-09 07:21:48,783 - INFO - 172.20.0.1 - - [09/Feb/2025 07:21:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 07:21:48,886 - INFO - 172.20.0.1 - - [09/Feb/2025 07:21:48] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 07:22:09,150 - INFO - Simulating interview...
+2025-02-09 07:22:09,247 - INFO - Received resume: <_io.BytesIO object at 0x7fbd2127b860>, <class '_io.BytesIO'>
+2025-02-09 07:22:30,723 - INFO - [' Tell me about a time you had to work with a large dataset.  How did you approach cleaning and preprocessing the data?', " Describe your experience with SQL. Give an example of a complex SQL query you've written and the problem it solved.", " Explain your experience with Python for data science, including specific libraries you've used (e.g., Pandas, NumPy, Scikit-learn).", "  Walk me through a data science project you've worked on. Focus on your approach, the challenges you encountered, and the results you achieved.", '  How familiar are you with AWS services relevant to data science (e.g., S3, EC2, EMR, SageMaker)?  Have you used any of these in your projects?\n']
+2025-02-09 07:22:30,724 - INFO - Interview simulation successful.
+2025-02-09 07:22:30,729 - INFO - 172.20.0.1 - - [09/Feb/2025 07:22:30] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 07:22:30,760 - INFO - Interview route accessed.
+2025-02-09 07:22:30,823 - INFO - 172.20.0.1 - - [09/Feb/2025 07:22:30] "GET /interview HTTP/1.1" 200 -
+2025-02-09 07:22:30,894 - INFO - 172.20.0.1 - - [09/Feb/2025 07:22:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 07:22:30,944 - INFO - 172.20.0.1 - - [09/Feb/2025 07:22:30] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 07:23:44,353 - INFO - Getting final feedback...
+2025-02-09 07:23:44,468 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 07:23:44,470 - INFO - undefined
+2025-02-09 07:23:44,471 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 07:23:49,211 - INFO - Transcribed answers are: tell me about a time you have to work with a large data set how did you approach cleaning and press
+2025-02-09 07:23:49,211 - INFO - Transcribed answers are: tell me about a time you have to work with a large data set how did you approach cleaning and press
+2025-02-09 07:23:53,003 - INFO - undefined
+2025-02-09 07:23:53,004 - INFO - <FileStorage: 'answer-1.webm' ('audio/webm;codecs=opus')>
+2025-02-09 07:23:57,440 - INFO - Transcribed answers are: describe your experience with sequel give an example of a complex SQL query you have written and the problem
+2025-02-09 07:23:57,441 - INFO - Transcribed answers are: describe your experience with sequel give an example of a complex SQL query you have written and the problem
+2025-02-09 07:24:00,607 - INFO - undefined
+2025-02-09 07:24:00,608 - INFO - <FileStorage: 'answer-2.webm' ('audio/webm;codecs=opus')>
+2025-02-09 07:24:01,787 - INFO - Transcribed answers are: None
+2025-02-09 07:24:01,801 - INFO - Transcribed answers are: None
+2025-02-09 07:24:04,353 - INFO - undefined
+2025-02-09 07:24:04,354 - INFO - <FileStorage: 'answer-3.webm' ('audio/webm;codecs=opus')>
+2025-02-09 07:24:09,304 - INFO - Transcribed answers are: walk me through a data science project to work on focus and approach to challenge the challenges you have cancer and the results
+2025-02-09 07:24:09,304 - INFO - Transcribed answers are: walk me through a data science project to work on focus and approach to challenge the challenges you have cancer and the results
+2025-02-09 07:24:12,222 - INFO - undefined
+2025-02-09 07:24:12,222 - INFO - <FileStorage: 'answer-4.webm' ('audio/webm;codecs=opus')>
+2025-02-09 07:24:16,219 - INFO - Transcribed answers are: Cavalier are you in with iwa Services relevant to data science have you used any
+2025-02-09 07:24:16,220 - INFO - Transcribed answers are: Cavalier are you in with iwa Services relevant to data science have you used any
+2025-02-09 07:24:18,855 - INFO - 172.20.0.1 - - [09/Feb/2025 07:24:18] "POST /results HTTP/1.1" 200 -
+2025-02-09 07:24:19,051 - INFO - 172.20.0.1 - - [09/Feb/2025 07:24:19] "[33mGET /results.html HTTP/1.1[0m" 404 -
+2025-02-09 07:24:19,117 - INFO - 172.20.0.1 - - [09/Feb/2025 07:24:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 07:24:34,091 - INFO - 172.20.0.1 - - [09/Feb/2025 07:24:34] "[33mGET /results.html%20404%20(NOT%20FOUND) HTTP/1.1[0m" 404 -
+2025-02-09 07:24:34,170 - INFO - 172.20.0.1 - - [09/Feb/2025 07:24:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 07:24:41,647 - INFO - 172.20.0.1 - - [09/Feb/2025 07:24:41] "[33mGET /results.html HTTP/1.1[0m" 404 -
+2025-02-09 07:24:41,713 - INFO - 172.20.0.1 - - [09/Feb/2025 07:24:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 07:40:21,021 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.20.0.2:8080
+2025-02-09 07:40:21,023 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 07:40:25,951 - INFO - Home route accessed.
+2025-02-09 07:40:25,981 - INFO - 172.20.0.1 - - [09/Feb/2025 07:40:25] "GET / HTTP/1.1" 200 -
+2025-02-09 07:40:26,297 - INFO - 172.20.0.1 - - [09/Feb/2025 07:40:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 07:40:26,308 - INFO - 172.20.0.1 - - [09/Feb/2025 07:40:26] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 07:40:42,085 - INFO - Simulating interview...
+2025-02-09 07:40:42,121 - INFO - Received resume: <_io.BytesIO object at 0x7f81e0890400>, <class '_io.BytesIO'>
+2025-02-09 07:41:03,769 - INFO - [' Can you describe a project where you utilized SQL and Python together to achieve a specific outcome, highlighting your problem-solving approach?  ', '  Explain your experience with MLOps, including your involvement in deploying machine learning models and managing cloud services.  ', '  Describe a situation where you had to work with imbalanced datasets. What techniques did you employ to address this challenge?  ', '  Describe your experience building recommendation systems. What algorithms did you use and how did you evaluate their performance?  ', '  Based on your resume, you have experience with various machine learning models.  Can you discuss the strengths and weaknesses of some of these models and when you might choose to use one over another?\n']
+2025-02-09 07:41:03,770 - INFO - Interview simulation successful.
+2025-02-09 07:41:03,791 - INFO - 172.20.0.1 - - [09/Feb/2025 07:41:03] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 07:41:03,847 - INFO - Interview route accessed.
+2025-02-09 07:41:03,888 - INFO - 172.20.0.1 - - [09/Feb/2025 07:41:03] "GET /interview HTTP/1.1" 200 -
+2025-02-09 07:41:04,029 - INFO - 172.20.0.1 - - [09/Feb/2025 07:41:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 07:41:04,047 - INFO - 172.20.0.1 - - [09/Feb/2025 07:41:04] "GET /static/js/interview.js HTTP/1.1" 200 -
+2025-02-09 07:42:18,433 - INFO - Getting final feedback...
+2025-02-09 07:42:18,477 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 07:42:18,478 - INFO - undefined
+2025-02-09 07:42:18,478 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 07:42:23,667 - INFO - Transcribed answers are: well I'm highly skilled in Sequel at 5:30 and I've done many projects related to Chrome installing
+2025-02-09 07:42:23,668 - INFO - Transcribed answers are: well I'm highly skilled in Sequel at 5:30 and I've done many projects related to Chrome installing
+2025-02-09 07:42:25,999 - INFO - undefined
+2025-02-09 07:42:26,000 - INFO - <FileStorage: 'answer-1.webm' ('audio/webm;codecs=opus')>
+2025-02-09 07:42:28,909 - INFO - Transcribed answers are: I've done many projects related to envelopes mainly related to air
+2025-02-09 07:42:28,910 - INFO - Transcribed answers are: I've done many projects related to envelopes mainly related to air
+2025-02-09 07:42:32,134 - INFO - undefined
+2025-02-09 07:42:32,135 - INFO - <FileStorage: 'answer-2.webm' ('audio/webm;codecs=opus')>
+2025-02-09 07:42:36,838 - INFO - Transcribed answers are: 54 Quincy data sets as incredible credit default credit default creation
+2025-02-09 07:42:36,839 - INFO - Transcribed answers are: 54 Quincy data sets as incredible credit default credit default creation
+2025-02-09 07:42:39,604 - INFO - undefined
+2025-02-09 07:42:39,604 - INFO - <FileStorage: 'answer-3.webm' ('audio/webm;codecs=opus')>
+2025-02-09 07:42:42,501 - INFO - Transcribed answers are: I have a lot of experience in building recognition systems with tensorflow
+2025-02-09 07:42:42,501 - INFO - Transcribed answers are: I have a lot of experience in building recognition systems with tensorflow
+2025-02-09 07:42:45,046 - INFO - undefined
+2025-02-09 07:42:45,047 - INFO - <FileStorage: 'answer-4.webm' ('audio/webm;codecs=opus')>
+2025-02-09 07:42:50,652 - INFO - Transcribed answers are: I have a lot of strengths strengths and weaknesses of some levels this is an increase of very front over fitting
+2025-02-09 07:42:50,653 - INFO - Transcribed answers are: I have a lot of strengths strengths and weaknesses of some levels this is an increase of very front over fitting
+2025-02-09 07:42:53,435 - INFO - 172.20.0.1 - - [09/Feb/2025 07:42:53] "POST /results HTTP/1.1" 200 -
+2025-02-09 07:42:53,498 - INFO - 172.20.0.1 - - [09/Feb/2025 07:42:53] "[33mGET /results.html HTTP/1.1[0m" 404 -
+2025-02-09 07:42:53,580 - INFO - 172.20.0.1 - - [09/Feb/2025 07:42:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 07:44:43,187 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.20.0.2:8080
+2025-02-09 07:44:43,189 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 07:50:04,667 - INFO - Home route accessed.
+2025-02-09 07:50:04,863 - INFO - 172.20.0.1 - - [09/Feb/2025 07:50:04] "GET / HTTP/1.1" 200 -
+2025-02-09 07:50:05,139 - INFO - 172.20.0.1 - - [09/Feb/2025 07:50:05] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 07:50:05,141 - INFO - 172.20.0.1 - - [09/Feb/2025 07:50:05] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 07:50:50,277 - INFO - Simulating interview...
+2025-02-09 07:50:50,409 - INFO - Received resume: <_io.BytesIO object at 0x7f21fac18040>, <class '_io.BytesIO'>
+2025-02-09 07:51:12,206 - INFO - [' Can you describe a time you had to work with a large dataset, and what challenges you faced during the process?  ', ' What experience do you have with SQL, specifically in querying and manipulating data?  ', "  Explain your experience with Python, highlighting any relevant data science libraries you've used. ", ' Walk me through your experience with the MLOps framework, focusing on your role in deploying machine learning models. ', '  Describe a project where you used machine learning to solve a business problem.  What was your approach, and what were the results?\n']
+2025-02-09 07:51:12,207 - INFO - Interview simulation successful.
+2025-02-09 07:51:12,221 - INFO - 172.20.0.1 - - [09/Feb/2025 07:51:12] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 07:51:12,304 - INFO - Interview route accessed.
+2025-02-09 07:51:12,328 - INFO - 172.20.0.1 - - [09/Feb/2025 07:51:12] "GET /interview HTTP/1.1" 200 -
+2025-02-09 07:51:12,423 - INFO - 172.20.0.1 - - [09/Feb/2025 07:51:12] "GET /static/js/interview.js HTTP/1.1" 200 -
+2025-02-09 07:51:12,431 - INFO - 172.20.0.1 - - [09/Feb/2025 07:51:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 07:52:44,064 - INFO - Getting final feedback...
+2025-02-09 07:52:44,181 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 07:52:44,182 - INFO - undefined
+2025-02-09 07:52:44,183 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 07:52:52,307 - INFO - Transcribed answers are: the world series of what I had a pretty deposit temperature in the Armenians Rose
+2025-02-09 07:52:52,308 - INFO - Transcribed answers are: the world series of what I had a pretty deposit temperature in the Armenians Rose
+2025-02-09 07:52:54,401 - INFO - undefined
+2025-02-09 07:52:54,401 - INFO - <FileStorage: 'answer-1.webm' ('audio/webm;codecs=opus')>
+2025-02-09 07:52:57,481 - INFO - Transcribed answers are: I work with Oracle to me and people say
+2025-02-09 07:52:57,482 - INFO - Transcribed answers are: I work with Oracle to me and people say
+2025-02-09 07:52:59,918 - INFO - undefined
+2025-02-09 07:52:59,920 - INFO - <FileStorage: 'answer-2.webm' ('audio/webm;codecs=opus')>
+2025-02-09 07:53:04,978 - INFO - Transcribed answers are: Kalahari work with python building classes instructors
+2025-02-09 07:53:04,978 - INFO - Transcribed answers are: Kalahari work with python building classes instructors
+2025-02-09 07:53:07,212 - INFO - undefined
+2025-02-09 07:53:07,213 - INFO - <FileStorage: 'answer-3.webm' ('audio/webm;codecs=opus')>
+2025-02-09 07:53:11,324 - INFO - Transcribed answers are: airflow cancellation
+2025-02-09 07:53:11,324 - INFO - Transcribed answers are: airflow cancellation
+2025-02-09 07:53:14,703 - INFO - undefined
+2025-02-09 07:53:14,703 - INFO - <FileStorage: 'answer-4.webm' ('audio/webm;codecs=opus')>
+2025-02-09 07:53:17,670 - INFO - Transcribed answers are: definition of Praise the Lord was in my country
+2025-02-09 07:53:17,670 - INFO - Transcribed answers are: definition of Praise the Lord was in my country
+2025-02-09 07:53:20,349 - INFO - 172.20.0.1 - - [09/Feb/2025 07:53:20] "POST /results HTTP/1.1" 200 -
+2025-02-09 07:53:20,550 - INFO - 172.20.0.1 - - [09/Feb/2025 07:53:20] "[33mGET /results_review.html HTTP/1.1[0m" 404 -
+2025-02-09 07:53:20,676 - INFO - 172.20.0.1 - - [09/Feb/2025 07:53:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 07:58:52,780 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.20.0.2:8080
+2025-02-09 07:58:52,781 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 07:59:14,590 - INFO - Home route accessed.
+2025-02-09 07:59:14,631 - INFO - 172.20.0.1 - - [09/Feb/2025 07:59:14] "GET / HTTP/1.1" 200 -
+2025-02-09 07:59:14,703 - INFO - 172.20.0.1 - - [09/Feb/2025 07:59:14] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 07:59:14,703 - INFO - 172.20.0.1 - - [09/Feb/2025 07:59:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 07:59:15,987 - INFO - Home route accessed.
+2025-02-09 07:59:15,988 - INFO - 172.20.0.1 - - [09/Feb/2025 07:59:15] "GET / HTTP/1.1" 200 -
+2025-02-09 07:59:16,033 - INFO - 172.20.0.1 - - [09/Feb/2025 07:59:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 07:59:16,035 - INFO - 172.20.0.1 - - [09/Feb/2025 07:59:16] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 07:59:46,805 - INFO - Simulating interview...
+2025-02-09 07:59:46,904 - INFO - Received resume: <_io.BytesIO object at 0x7f8000418810>, <class '_io.BytesIO'>
+2025-02-09 08:00:07,825 - INFO - [' Explain your experience with developing and deploying machine learning models, focusing on the MLOps framework and any cost reduction strategies you implemented. ', ' Describe your experience with implementing a sentiment analysis model, including the specific NLP model used, and the impact it had on the business.  ', ' Discuss your experience building recommendation systems, outlining the techniques used and the results achieved in terms of sales improvement or other key metrics.  ', ' Walk me through your experience with time series forecasting, highlighting the modeling techniques you applied and how your model contributed to business decisions (e.g., expansion of data center). ', " Detail your experience with SQL, providing examples of complex queries you've written and the datasets you've worked with.  ", '\n']
+2025-02-09 08:00:07,826 - INFO - Interview simulation successful.
+2025-02-09 08:00:07,830 - INFO - 172.20.0.1 - - [09/Feb/2025 08:00:07] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 08:00:07,866 - INFO - Interview route accessed.
+2025-02-09 08:00:07,886 - INFO - 172.20.0.1 - - [09/Feb/2025 08:00:07] "GET /interview HTTP/1.1" 200 -
+2025-02-09 08:00:07,956 - INFO - 172.20.0.1 - - [09/Feb/2025 08:00:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 08:00:07,974 - INFO - 172.20.0.1 - - [09/Feb/2025 08:00:07] "GET /static/js/interview.js HTTP/1.1" 200 -
+2025-02-09 08:01:13,591 - INFO - Getting final feedback...
+2025-02-09 08:01:13,690 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined'), ('question-5', 'undefined')])
+2025-02-09 08:01:13,691 - INFO - undefined
+2025-02-09 08:01:13,692 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 08:01:18,500 - INFO - Transcribed answers are: in terms of airflow on kubernetes
+2025-02-09 08:01:18,502 - INFO - Transcribed answers are: in terms of airflow on kubernetes
+2025-02-09 08:01:21,132 - INFO - undefined
+2025-02-09 08:01:21,133 - INFO - <FileStorage: 'answer-1.webm' ('audio/webm;codecs=opus')>
+2025-02-09 08:01:25,260 - INFO - Transcribed answers are: seriously information center in the house this week and 3rd of December
+2025-02-09 08:01:25,260 - INFO - Transcribed answers are: seriously information center in the house this week and 3rd of December
+2025-02-09 08:01:27,925 - INFO - undefined
+2025-02-09 08:01:27,926 - INFO - <FileStorage: 'answer-2.webm' ('audio/webm;codecs=opus')>
+2025-02-09 08:01:30,701 - INFO - Transcribed answers are: experiencing tensorflow for recognition systems
+2025-02-09 08:01:30,702 - INFO - Transcribed answers are: experiencing tensorflow for recognition systems
+2025-02-09 08:01:33,393 - INFO - undefined
+2025-02-09 08:01:33,394 - INFO - <FileStorage: 'answer-3.webm' ('audio/webm;codecs=opus')>
+2025-02-09 08:01:37,214 - INFO - Transcribed answers are: bad experience with time series please help cleaners exclamation point
+2025-02-09 08:01:37,215 - INFO - Transcribed answers are: bad experience with time series please help cleaners exclamation point
+2025-02-09 08:01:40,219 - INFO - undefined
+2025-02-09 08:01:40,220 - INFO - <FileStorage: 'answer-4.webm' ('audio/webm;codecs=opus')>
+2025-02-09 08:01:42,451 - INFO - Transcribed answers are: I have plenty of experience before I could be
+2025-02-09 08:01:42,452 - INFO - Transcribed answers are: I have plenty of experience before I could be
+2025-02-09 08:01:44,751 - INFO - undefined
+2025-02-09 08:01:44,752 - INFO - <FileStorage: 'answer-5.webm' ('audio/webm;codecs=opus')>
+2025-02-09 08:01:46,250 - INFO - Transcribed answers are: I have one last question
+2025-02-09 08:01:46,250 - INFO - Transcribed answers are: I have one last question
+2025-02-09 08:01:48,684 - INFO - 172.20.0.1 - - [09/Feb/2025 08:01:48] "POST /results HTTP/1.1" 200 -
+2025-02-09 08:01:48,698 - INFO - Results_review route accessed.
+2025-02-09 08:01:48,713 - INFO - 172.20.0.1 - - [09/Feb/2025 08:01:48] "GET /results_review HTTP/1.1" 200 -
+2025-02-09 08:01:48,785 - INFO - 172.20.0.1 - - [09/Feb/2025 08:01:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 08:01:48,797 - INFO - 172.20.0.1 - - [09/Feb/2025 08:01:48] "GET /static/js/results_review.js HTTP/1.1" 200 -

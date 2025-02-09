@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitButton = document.getElementById("submitButton");
     const loadingDiv = document.getElementById("loading");
     const resultsDiv = document.getElementById("results");
+    loadingDiv.style.display = "block";
     let answers = [];
     let mediaRecorder;
     let audioChunks = [];
@@ -107,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const result = await response.json();
             sessionStorage.setItem("interviewResults", JSON.stringify(result));
-            window.location.href = 'results.html';
+            window.location.href = '/results_review';
         } catch (error) {
             alert(`Error: ${error.message}`);
         }

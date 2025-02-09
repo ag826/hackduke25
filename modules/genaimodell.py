@@ -52,10 +52,10 @@ def review_answers(
     position,
     company_name,
     job_description,
-    resume_pdf_path,
+    resume_pdf,
     model=genai.GenerativeModel("gemini-1.5-flash"),
 ):
-    resume = genai.upload_file(resume_pdf_path)
+    #resume = genai.upload_file(resume_pdf, mime_type="application/pdf")  # Corrected here
     response = model.generate_content(
         [
             "For the candidate who is preparing for the interview, review his answer to the questions. Remember the following information about the candidate:",
@@ -72,17 +72,20 @@ def review_answers(
             "Score on a scale of 1-10 (in increments of 0.5) based on the most important parameters you would use to answer this question."
             " Elaborate briefly on the parameters you used to evaluate this"
             "All your responses to the questions above should be in the second person only, output your answers in a pipe '|' delimited format. Do not include any additional information before or after this. Give only your answer and none of these grading parameters. Be professional in your responses",
-            resume,
+            #resume,
         ]
     )
 
     review = response.text
     feedback_list = review.split("|")
-    final_list = []
-    for str in feedback_list[1::2]:
-        final_list.append(str)
+    
+    result = {
+        "question": question,
+        "abstract_response": feedback_list[0].strip(),
+        "suggested_improvements": [feedback_list[i].strip() for i in range(1, len(feedback_list), 2)]
+    }
 
-    return final_list
+    return result
 
 
 if __name__ == "__main__":

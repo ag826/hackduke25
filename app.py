@@ -25,34 +25,6 @@ logging.basicConfig(
     ],
 )
 
-
-def is_valid_audio(file_storage):
-    try:
-        # Read file and reset pointer for future use
-        file_data = file_storage.read()
-        file_storage.seek(0)  # Reset for saving or reprocessing
-
-        # Detect file format
-        mime_type = file_storage.content_type
-        app.logger.info(f"Received file MIME type: {mime_type}")
-
-        # Ensure correct format handling
-        if "webm" in mime_type:
-            audio = AudioSegment.from_file(BytesIO(file_data), format="webm")
-        elif "mp3" in mime_type:
-            audio = AudioSegment.from_file(BytesIO(file_data), format="mp3")
-        else:
-            raise ValueError(f"Unsupported audio format: {mime_type}")
-
-        # Play the audio (Optional: Remove in production)
-        play(audio)
-
-        return True
-    except Exception as e:
-        app.logger.error(f"Invalid audio file: {e}")
-        return False
-
-
 @app.route("/")
 def home():
     app.logger.info("Home route accessed.")
@@ -61,7 +33,7 @@ def home():
 
 @app.route("/<page>")
 def render_page(page):
-    valid_pages = ["interview", "results"]
+    valid_pages = ["interview", "results_review"]
     if page in valid_pages:
         app.logger.info(f"{page.capitalize()} route accessed.")
         return render_template(f"{page}.html")
@@ -79,56 +51,35 @@ def read_question(text):
         return jsonify({"error": str(e)}), 500
 
 
+def webm_to_mp3(webm_file, output_path):
+    """ Converts WebM file to MP3 format """
+    audio = AudioSegment.from_file(webm_file, format="webm")
+    audio.export(output_path, format="mp3")
+    return output_path
+
 # To convert the answers from .mp3 to text
-def transcribe_answer(path):
+def transcribe_answer(audio_file):
     try:
-        answer_text = mp3_to_text(path)
+        temp_webm_path = "/tmp/uploaded_audio.webm"  # Temporary WebM file
+        temp_mp3_path = "/tmp/uploaded_audio.mp3"    # Temporary MP3 file
+
+        audio_file.save(temp_webm_path)  # Save the WebM file first
+
+        # Convert WebM to MP3
+        webm_to_mp3(temp_webm_path, temp_mp3_path)
+
+        # Convert MP3 to text
+        answer_text = mp3_to_text(temp_mp3_path)
         return answer_text
     except Exception as e:
         app.logger.error(f"Error transcribing answer: {e}")
-        #return jsonify({"error": str(e)}), 500
+        return None
 
 
 # To get final feedback from Gemini
 @app.route("/results", methods=["POST"])
 def results():
     app.logger.info("Getting final feedback...")
-    """
-    try:
-        # Get the matrix of questions and answers
-        matrix = request.form.get("matrix")
-        position = request.form.get("position")
-        company = request.form.get("company")
-        job_description = request.form.get("jobDescription")
-        resume = request.files["resume"]
-        app.logger.info(matrix, position, company, job_description, resume)
-
-        if not matrix or not position or not company or not job_description or not resume:
-            return jsonify({"error": "Missing required fields"}), 400
-
-        # Convert the resume file to a format compatible with genai
-        resume_bytes = BytesIO(resume.read())
-        app.logger.info(f"Received resume: {resume_bytes}, {type(resume_bytes)}")
-
-        # Get the final feedback from Gemini
-        response_matrix = matrix
-        for row in response_matrix:
-            question = row[0]
-            answer = transcribe_answer(row[1])
-            response_matrix[row][1] = answer
-            feedback_review = review_answers(
-                question,
-                answer,
-                position,
-                company,
-                job_description,
-                resume_bytes,
-            )
-            for i in len(feedback_review):
-                row[i + 2] = feedback_review[i]
-        app.logger.info("Final feedback received.")
-        return jsonify(response_matrix)
-    """
     try:
         # Get the matrix of questions and answers
         matrix = []
@@ -140,26 +91,20 @@ def results():
                 app.logger.info(question)
                 audio_file = request.files.get(f"audio-{index}")
                 app.logger.info(audio_file)
-
-                # Validate and play the uploaded audio file
-                if not is_valid_audio(audio_file):
-                    return jsonify({"error": f"Invalid audio file: audio-{index}"}), 400
                 
                 # Convert the audio file to text
                 answer_text = transcribe_answer(audio_file)
                 app.logger.info("Transcribed answers are: %s", answer_text)
-                matrix.append({"question": question, "answer": answer_text})
-                #app.logger.info(matrix)
-                #Question and answer
+                #matrix.append({"question": question, "answer": answer_text})
                 #TODO retrieve:
-                """
-                position = request.form.get("position")
-                company = request.form.get("company")
-                job_description = request.form.get("jobDescription")
-                resume = request.files["resume"]  # This is a FileStorage object
-                """ 
-        
-        return jsonify({"status": "success", "matrix": matrix}), 200
+                position = 'Data Science Intern'#request.form.get("position")
+                company = 'Amazon Web Services'#request.form.get("company")
+                job_description = 'data science internship covering data engineering, SQL, python'#request.form.get("jobDescription")
+                resume = ""  # This is a FileStorage object
+                
+                app.logger.info("Transcribed answers are: %s", answer_text)
+                matrix.append(review_answers(question, answer_text, position, company, job_description, resume)) 
+        return jsonify(matrix)
     except Exception as e:
         app.logger.error(f"Error processing results: {e}")
         return jsonify({"error": str(e)}), 500
