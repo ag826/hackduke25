@@ -1,42 +1,44 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-    <h1>Welcome to the Interview Simulator!</h1>
-    <p>This application helps you prepare for your interviews by simulating real interview scenarios.</p>
+    <div class="container mt-5">
+        <h1 class="text-center text-primary fw-bold mb-4">Welcome to the Interview Simulator!</h1>
+        <p class="text-center text-muted mb-5">Prepare for your interviews with real-world simulations and detailed feedback.</p>
 
-    <!-- Interview Simulation Form -->
-    <h2>Simulate an Interview</h2>
-    <p>Enter the details of the position you are applying for, and upload your resume to get started!</p>
+        <div class="card shadow-lg rounded-3 p-5 mt-4">
+            <h2 class="text-center mb-3 text-dark">Simulate an Interview</h2>
+            <p class="text-center text-muted mb-4">Enter your details and upload your resume to get started.</p>
 
-    <form id="interview-form" enctype="multipart/form-data">
-        <div class="mb-3">
-            <label for="position" class="form-label">Position:</label>
-            <input type="text" id="position" class="form-control" placeholder="Enter the position you are applying for" required>
+            <form id="interview-form" enctype="multipart/form-data">
+                <div class="mb-4">
+                    <label for="position" class="form-label fs-5 fw-medium">Position:</label>
+                    <input type="text" id="position" class="form-control form-control-lg shadow-sm" placeholder="Enter the position" required>
+                </div>
+                <div class="mb-4">
+                    <label for="company" class="form-label fs-5 fw-medium">Company Name:</label>
+                    <input type="text" id="company" class="form-control form-control-lg shadow-sm" placeholder="Enter the company name" required>
+                </div>
+                <div class="mb-4">
+                    <label for="job-description" class="form-label fs-5 fw-medium">Job Description:</label>
+                    <textarea id="job-description" class="form-control form-control-lg shadow-sm" rows="4" placeholder="Enter the job description" required></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="resume" class="form-label fs-5 fw-medium">Upload Resume (PDF):</label>
+                    <input type="file" id="resume" class="form-control form-control-lg shadow-sm" accept="application/pdf" required>
+                </div>
+                <div class="text-center mt-3">
+                    <button type="submit" class="btn btn-primary btn-lg shadow">Simulate Interview</button>
+                </div>
+            </form>
         </div>
-        <div class="mb-3">
-            <label for="company" class="form-label">Company Name:</label>
-            <input type="text" id="company" class="form-control" placeholder="Enter the company name" required>
-        </div>
-        <div class="mb-3">
-            <label for="job-description" class="form-label">Job Description:</label>
-            <textarea id="job-description" class="form-control" rows="3" placeholder="Enter the job description" required></textarea>
-        </div>
-        <div class="mb-3">
-            <label for="resume" class="form-label">Upload Resume (PDF):</label>
-            <input type="file" id="resume" class="form-control" accept="application/pdf" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Simulate Interview</button>
-    </form>
 
-    <div id="loading" style="display: none;">
-        <div class="spinner-border" role="status">
-            <span class="visually-hidden">Loading...</span>
+        <div id="loading" class="text-center mt-4" style="display: none;">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
         </div>
-    </div>
 
-    <!-- Results container -->
-    <div id="results" class="mt-4">
-        <!-- Interview simulation results will appear here -->
+        <div id="results" class="mt-4"></div>
     </div>
 
     <script src="{{ url_for('static', filename='js/home.js') }}"></script>

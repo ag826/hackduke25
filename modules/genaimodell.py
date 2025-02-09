@@ -71,7 +71,7 @@ def review_answers(
             "Sample of how the answer can be changed to best answer this question (Do not allucinate, use only information availale from the resume)"
             "Score on a scale of 1-10 (in increments of 0.5) based on the most important parameters you would use to answer this question."
             " Elaborate briefly on the parameters you used to evaluate this"
-            "All your responses to the questions above should be in the second person only, output your answers in a pipe '|' delimited format. Do not include any additional information before or after this. Give only your answer and none of these grading parameters",
+            "All your responses to the questions above should be in the second person only, output your answers in a pipe '|' delimited format. Do not include any additional information before or after this. Give only your answer and none of these grading parameters. Be professional in your responses",
             resume,
         ]
     )

@@ -25,6 +25,7 @@ logging.basicConfig(
     ],
 )
 
+
 def is_valid_audio(file_storage):
     try:
         # Read file and reset pointer for future use
@@ -139,15 +140,15 @@ def results():
                 app.logger.info(question)
                 audio_file = request.files.get(f"audio-{index}")
                 app.logger.info(audio_file)
-                
+
                 # Validate and play the uploaded audio file
                 if not is_valid_audio(audio_file):
                     return jsonify({"error": f"Invalid audio file: audio-{index}"}), 400
                 
                 # Convert the audio file to text
-                answer = transcribe_answer(audio_file)
-                app.logger.info("Transcribed answers are: %s", answer)
-                #matrix.append([question, answer])
+                answer_text = transcribe_answer(audio_file)
+                app.logger.info("Transcribed answers are: %s", answer_text)
+                matrix.append({"question": question, "answer": answer_text})
                 #app.logger.info(matrix)
         
         return jsonify({"status": "success", "matrix": matrix}), 200
