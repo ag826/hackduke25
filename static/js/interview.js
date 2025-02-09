@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             const result = await response.json();
-            //sessionStorage.setItem("interviewResults", JSON.stringify(result));
+            sessionStorage.setItem("interviewResults", JSON.stringify(result));
             window.location.href = 'results.html';
         } catch (error) {
             alert(`Error: ${error.message}`);

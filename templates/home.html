@@ -19,6 +19,16 @@
                     <input type="text" id="company" class="form-control form-control-lg shadow-sm" placeholder="Enter the company name" required>
                 </div>
                 <div class="mb-4">
+                    <label for="profile-type" class="form-label fs-5 fw-medium">Type of Profile Interview:</label>
+                    <select id="profile-type" class="form-select form-select-lg shadow-sm" required>
+                        <option value="" disabled selected>Select the type of interview</option>
+                        <option value="behavioral">Behavioral</option>
+                        <option value="technical">Technical</option>
+                        <option value="initial-call">Initial Call</option>
+                        <option value="manager">Manager</option>
+                    </select>
+                </div>
+                <div class="mb-4">
                     <label for="job-description" class="form-label fs-5 fw-medium">Job Description:</label>
                     <textarea id="job-description" class="form-control form-control-lg shadow-sm" rows="4" placeholder="Enter the job description" required></textarea>
                 </div>

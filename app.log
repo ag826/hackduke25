@@ -1,0 +1,162 @@
+2025-02-09 06:06:55,273 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.20.0.2:8080
+2025-02-09 06:06:55,275 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 06:07:05,452 - INFO - Home route accessed.
+2025-02-09 06:07:05,515 - INFO - 172.20.0.1 - - [09/Feb/2025 06:07:05] "GET / HTTP/1.1" 200 -
+2025-02-09 06:07:05,654 - INFO - 172.20.0.1 - - [09/Feb/2025 06:07:05] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 06:07:05,656 - INFO - 172.20.0.1 - - [09/Feb/2025 06:07:05] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-02-09 06:07:11,045 - INFO - 172.20.0.1 - - [09/Feb/2025 06:07:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 06:07:33,280 - INFO - Simulating interview...
+2025-02-09 06:07:33,362 - INFO - Received resume: <_io.BytesIO object at 0x7f58c81f8cc0>, <class '_io.BytesIO'>
+2025-02-09 06:07:54,825 - INFO - [' Tell me about a time you had to work with a large dataset.  How did you approach cleaning and preparing the data?', "Describe your experience with SQL.  Give an example of a complex query you've written and the challenges you faced.", 'Explain your experience with Python for data science. What libraries are you most familiar with, and how have you used them in projects?', 'Walk me through your experience in a previous role where you implemented a machine learning model. What were the steps involved, and what were the results?', 'In your experience, what are some of the common challenges in working with data engineering, and how do you overcome them?\n']
+2025-02-09 06:07:54,825 - INFO - Interview simulation successful.
+2025-02-09 06:07:54,833 - INFO - 172.20.0.1 - - [09/Feb/2025 06:07:54] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 06:07:54,927 - INFO - Interview route accessed.
+2025-02-09 06:07:54,962 - INFO - 172.20.0.1 - - [09/Feb/2025 06:07:54] "GET /interview HTTP/1.1" 200 -
+2025-02-09 06:07:55,121 - INFO - 172.20.0.1 - - [09/Feb/2025 06:07:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 06:07:55,136 - INFO - 172.20.0.1 - - [09/Feb/2025 06:07:55] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 06:11:26,710 - INFO - Getting final feedback...
+2025-02-09 06:11:26,763 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 06:11:26,771 - INFO - undefined
+2025-02-09 06:11:26,772 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 06:11:26,777 - INFO - Received file MIME type: audio/webm;codecs=opus
+2025-02-09 06:11:30,437 - ERROR - Error transcribing answer: Decoding failed. ffmpeg returned error code: 1
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 5.1.6-0+deb12u1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with gcc 12 (Debian 12.2.0-14)
+  configuration: --prefix=/usr --extra-version=0+deb12u1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librist --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --disable-sndio --enable-libjxl --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-libplacebo --enable-librav1e --enable-shared
+  libavutil      57. 28.100 / 57. 28.100
+  libavcodec     59. 37.100 / 59. 37.100
+  libavformat    59. 27.100 / 59. 27.100
+  libavdevice    59.  7.100 / 59.  7.100
+  libavfilter     8. 44.100 /  8. 44.100
+  libswscale      6.  7.100 /  6.  7.100
+  libswresample   4.  7.100 /  4.  7.100
+  libpostproc    56.  6.100 / 56.  6.100
+[cache @ 0x5600f2b94280] Inner protocol failed to seekback end : -38
+    Last message repeated 1 times
+[mp3 @ 0x5600f2b93a40] Failed to read frame size: Could not seek to 45161.
+[cache @ 0x5600f2b94280] Statistics, cache hits:11377 cache misses:2
+cache:pipe:0: Invalid argument
+
+2025-02-09 06:11:30,441 - INFO - Transcribed answers are: None
+2025-02-09 06:11:30,488 - INFO - undefined
+2025-02-09 06:11:30,489 - INFO - <FileStorage: 'answer-1.webm' ('audio/webm;codecs=opus')>
+2025-02-09 06:11:30,490 - INFO - Received file MIME type: audio/webm;codecs=opus
+2025-02-09 06:11:31,246 - ERROR - Error transcribing answer: Decoding failed. ffmpeg returned error code: 1
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 5.1.6-0+deb12u1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with gcc 12 (Debian 12.2.0-14)
+  configuration: --prefix=/usr --extra-version=0+deb12u1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librist --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --disable-sndio --enable-libjxl --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-libplacebo --enable-librav1e --enable-shared
+  libavutil      57. 28.100 / 57. 28.100
+  libavcodec     59. 37.100 / 59. 37.100
+  libavformat    59. 27.100 / 59. 27.100
+  libavdevice    59.  7.100 / 59.  7.100
+  libavfilter     8. 44.100 /  8. 44.100
+  libswscale      6.  7.100 /  6.  7.100
+  libswresample   4.  7.100 /  4.  7.100
+  libpostproc    56.  6.100 / 56.  6.100
+[cache @ 0x55b620635280] Inner protocol failed to seekback end : -38
+    Last message repeated 1 times
+[mp3 @ 0x55b620634a40] Failed to read frame size: Could not seek to 25809.
+[cache @ 0x55b620635280] Statistics, cache hits:2 cache misses:1
+cache:pipe:0: Invalid argument
+
+2025-02-09 06:11:31,246 - INFO - Transcribed answers are: None
+2025-02-09 06:11:31,247 - INFO - undefined
+2025-02-09 06:11:31,248 - INFO - <FileStorage: 'answer-2.webm' ('audio/webm;codecs=opus')>
+2025-02-09 06:11:31,249 - INFO - Received file MIME type: audio/webm;codecs=opus
+2025-02-09 06:11:31,875 - ERROR - Error transcribing answer: Decoding failed. ffmpeg returned error code: 1
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 5.1.6-0+deb12u1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with gcc 12 (Debian 12.2.0-14)
+  configuration: --prefix=/usr --extra-version=0+deb12u1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librist --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --disable-sndio --enable-libjxl --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-libplacebo --enable-librav1e --enable-shared
+  libavutil      57. 28.100 / 57. 28.100
+  libavcodec     59. 37.100 / 59. 37.100
+  libavformat    59. 27.100 / 59. 27.100
+  libavdevice    59.  7.100 / 59.  7.100
+  libavfilter     8. 44.100 /  8. 44.100
+  libswscale      6.  7.100 /  6.  7.100
+  libswresample   4.  7.100 /  4.  7.100
+  libpostproc    56.  6.100 / 56.  6.100
+[cache @ 0x55f8607ea280] Inner protocol failed to seekback end : -38
+    Last message repeated 1 times
+[mp3 @ 0x55f8607e9a40] Failed to read frame size: Could not seek to 32616.
+[cache @ 0x55f8607ea280] Statistics, cache hits:2 cache misses:1
+cache:pipe:0: Invalid argument
+
+2025-02-09 06:11:31,877 - INFO - Transcribed answers are: None
+2025-02-09 06:11:31,879 - INFO - undefined
+2025-02-09 06:11:31,880 - INFO - <FileStorage: 'answer-3.webm' ('audio/webm;codecs=opus')>
+2025-02-09 06:11:31,882 - INFO - Received file MIME type: audio/webm;codecs=opus
+2025-02-09 06:11:32,529 - ERROR - Error transcribing answer: Decoding failed. ffmpeg returned error code: 1
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 5.1.6-0+deb12u1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with gcc 12 (Debian 12.2.0-14)
+  configuration: --prefix=/usr --extra-version=0+deb12u1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librist --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --disable-sndio --enable-libjxl --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-libplacebo --enable-librav1e --enable-shared
+  libavutil      57. 28.100 / 57. 28.100
+  libavcodec     59. 37.100 / 59. 37.100
+  libavformat    59. 27.100 / 59. 27.100
+  libavdevice    59.  7.100 / 59.  7.100
+  libavfilter     8. 44.100 /  8. 44.100
+  libswscale      6.  7.100 /  6.  7.100
+  libswresample   4.  7.100 /  4.  7.100
+  libpostproc    56.  6.100 / 56.  6.100
+[cache @ 0x55eb7b524280] Inner protocol failed to seekback end : -38
+    Last message repeated 1 times
+[mp3 @ 0x55eb7b523a40] Failed to read frame size: Could not seek to 29572.
+[cache @ 0x55eb7b524280] Statistics, cache hits:2 cache misses:1
+cache:pipe:0: Invalid argument
+
+2025-02-09 06:11:32,530 - INFO - Transcribed answers are: None
+2025-02-09 06:11:32,531 - INFO - undefined
+2025-02-09 06:11:32,532 - INFO - <FileStorage: 'answer-4.webm' ('audio/webm;codecs=opus')>
+2025-02-09 06:11:32,533 - INFO - Received file MIME type: audio/webm;codecs=opus
+2025-02-09 06:11:33,157 - ERROR - Error transcribing answer: Decoding failed. ffmpeg returned error code: 1
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 5.1.6-0+deb12u1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with gcc 12 (Debian 12.2.0-14)
+  configuration: --prefix=/usr --extra-version=0+deb12u1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librist --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --disable-sndio --enable-libjxl --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-libplacebo --enable-librav1e --enable-shared
+  libavutil      57. 28.100 / 57. 28.100
+  libavcodec     59. 37.100 / 59. 37.100
+  libavformat    59. 27.100 / 59. 27.100
+  libavdevice    59.  7.100 / 59.  7.100
+  libavfilter     8. 44.100 /  8. 44.100
+  libswscale      6.  7.100 /  6.  7.100
+  libswresample   4.  7.100 /  4.  7.100
+  libpostproc    56.  6.100 / 56.  6.100
+[cache @ 0x55a33eec8280] Inner protocol failed to seekback end : -38
+    Last message repeated 1 times
+[mp3 @ 0x55a33eec7a40] Failed to read frame size: Could not seek to 17963.
+[cache @ 0x55a33eec8280] Statistics, cache hits:2 cache misses:1
+cache:pipe:0: Invalid argument
+
+2025-02-09 06:11:33,157 - INFO - Transcribed answers are: None
+2025-02-09 06:11:33,173 - INFO - 172.20.0.1 - - [09/Feb/2025 06:11:33] "POST /results HTTP/1.1" 200 -
+2025-02-09 06:11:33,390 - INFO - 172.20.0.1 - - [09/Feb/2025 06:11:33] "[33mGET /results.html HTTP/1.1[0m" 404 -
+2025-02-09 06:11:33,583 - INFO - 172.20.0.1 - - [09/Feb/2025 06:11:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 06:18:58,001 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.20.0.2:8080
+2025-02-09 06:18:58,004 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 06:19:49,313 - INFO - Home route accessed.
+2025-02-09 06:19:49,464 - INFO - 172.20.0.1 - - [09/Feb/2025 06:19:49] "GET / HTTP/1.1" 200 -
+2025-02-09 06:19:49,709 - INFO - 172.20.0.1 - - [09/Feb/2025 06:19:49] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 06:19:49,710 - INFO - 172.20.0.1 - - [09/Feb/2025 06:19:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 06:23:14,198 - INFO - Interview route accessed.
+2025-02-09 06:23:14,267 - INFO - 172.20.0.1 - - [09/Feb/2025 06:23:14] "GET /interview HTTP/1.1" 200 -
+2025-02-09 06:23:14,416 - INFO - 172.20.0.1 - - [09/Feb/2025 06:23:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 06:23:14,543 - INFO - 172.20.0.1 - - [09/Feb/2025 06:23:14] "GET /static/js/interview.js HTTP/1.1" 200 -

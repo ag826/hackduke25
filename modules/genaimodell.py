@@ -91,7 +91,7 @@ if __name__ == "__main__":
     questions = get_summary(
         "Data Science Intern",
         "Amazon Web Services",
-        "data science internship covering data engineering, SQL, python",
+        " ",
         resume_path,
     )
 

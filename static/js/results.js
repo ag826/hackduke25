@@ -1,7 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     const resultsDiv = document.getElementById("results");
     const loadingDiv = document.getElementById("loading");
+    const simulationResults = JSON.parse(sessionStorage.getItem("simulationResults")); // Questions
+    const interviewResults = JSON.parse(sessionStorage.getItem("interviewResults")); // Answers
+    
 
+    // sessionStorage.setItem("interviewResults", JSON.stringify(result));
     // Show the loading spinner
     loadingDiv.style.display = "block";
     resultsDiv.innerHTML = ""; // Clear previous results

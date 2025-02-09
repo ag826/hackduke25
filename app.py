@@ -150,12 +150,19 @@ def results():
                 app.logger.info("Transcribed answers are: %s", answer_text)
                 matrix.append({"question": question, "answer": answer_text})
                 #app.logger.info(matrix)
+                #Question and answer
+                #TODO retrieve:
+                """
+                position = request.form.get("position")
+                company = request.form.get("company")
+                job_description = request.form.get("jobDescription")
+                resume = request.files["resume"]  # This is a FileStorage object
+                """ 
         
         return jsonify({"status": "success", "matrix": matrix}), 200
     except Exception as e:
         app.logger.error(f"Error processing results: {e}")
         return jsonify({"error": str(e)}), 500
-
 
 # Backend Processing
 @app.route("/simulate", methods=["POST"])
@@ -169,6 +176,7 @@ def simulate_interview():
         company = request.form.get("company")
         job_description = request.form.get("jobDescription")
         resume = request.files["resume"]  # This is a FileStorage object
+        # TODO: profile-type 
         app.logger.info(position, company, job_description, resume)
         # Convert the resume file to a format compatible with genai
         resume_bytes = BytesIO(resume.read())
