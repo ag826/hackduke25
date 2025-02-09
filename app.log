@@ -1104,3 +1104,75 @@
 2025-02-09 16:57:20,104 - INFO - Transcribed answers are: does it recording One recording one hello world
 2025-02-09 16:57:20,115 - ERROR - Error processing results: 'str' object has no attribute 'generate_content'
 2025-02-09 16:57:20,119 - INFO - 172.20.0.1 - - [09/Feb/2025 16:57:20] "[35m[1mPOST /results HTTP/1.1[0m" 500 -
+2025-02-09 17:00:34,126 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.20.0.2:8080
+2025-02-09 17:00:34,127 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 17:00:44,246 - INFO - Home route accessed.
+2025-02-09 17:00:44,310 - INFO - 172.20.0.1 - - [09/Feb/2025 17:00:44] "GET / HTTP/1.1" 200 -
+2025-02-09 17:00:44,397 - INFO - 172.20.0.1 - - [09/Feb/2025 17:00:44] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 17:00:44,400 - INFO - 172.20.0.1 - - [09/Feb/2025 17:00:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 17:01:04,982 - INFO - Simulating interview...
+2025-02-09 17:01:05,016 - INFO - Received resume: <_io.BytesIO object at 0x7f9c92fb6040>, <class '_io.BytesIO'>
+2025-02-09 17:01:24,844 - INFO - [' Tell me about a time you had to work with a large dataset and encountered challenges in processing or analyzing it. How did you overcome these challenges? ', ' Can you describe a situation where you had to work on a project with a tight deadline? What was your approach to ensure timely completion? ', '  Describe a situation where you had to explain a complex technical concept to someone with limited technical knowledge. How did you approach this communication challenge? ', '  Give me an example of a time you failed in a project or task. What did you learn from that experience, and how would you approach a similar situation differently? ', '  Tell me about a time you worked on a team project where there were disagreements or conflicting opinions. How did you navigate these differences to achieve a successful outcome?\n']
+2025-02-09 17:01:24,847 - INFO - Interview simulation successful.
+2025-02-09 17:01:24,876 - INFO - 172.20.0.1 - - [09/Feb/2025 17:01:24] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 17:01:24,936 - INFO - Interview route accessed.
+2025-02-09 17:01:24,982 - INFO - 172.20.0.1 - - [09/Feb/2025 17:01:24] "GET /interview HTTP/1.1" 200 -
+2025-02-09 17:01:25,069 - INFO - 172.20.0.1 - - [09/Feb/2025 17:01:25] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 17:01:25,071 - INFO - 172.20.0.1 - - [09/Feb/2025 17:01:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 17:01:25,075 - INFO - 172.20.0.1 - - [09/Feb/2025 17:01:25] "[36mGET /static/assets/profile.jpg HTTP/1.1[0m" 304 -
+2025-02-09 17:02:26,975 - INFO - Getting final feedback...
+2025-02-09 17:02:27,011 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 17:02:27,013 - INFO - undefined
+2025-02-09 17:02:27,014 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 17:02:33,138 - INFO - Transcribed answers are: contact charges for sale I don't know I'm working with Apache hive
+2025-02-09 17:02:34,575 - INFO - Temporary interview.json file deleted.
+2025-02-09 17:02:34,577 - INFO - undefined
+2025-02-09 17:02:34,578 - INFO - <FileStorage: 'answer-1.webm' ('audio/webm;codecs=opus')>
+2025-02-09 17:02:39,889 - INFO - Transcribed answers are: contact I don't know I did a forecasting project for 10 minutes
+2025-02-09 17:02:39,892 - ERROR - Error reading JSON file: [Errno 2] No such file or directory: 'interview.json'
+2025-02-09 17:02:39,896 - INFO - 172.20.0.1 - - [09/Feb/2025 17:02:39] "[35m[1mPOST /results HTTP/1.1[0m" 500 -
+2025-02-09 17:03:52,952 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.20.0.2:8080
+2025-02-09 17:03:52,953 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 17:03:54,305 - INFO - Home route accessed.
+2025-02-09 17:03:54,361 - INFO - 172.20.0.1 - - [09/Feb/2025 17:03:54] "GET / HTTP/1.1" 200 -
+2025-02-09 17:03:54,426 - INFO - 172.20.0.1 - - [09/Feb/2025 17:03:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 17:03:54,427 - INFO - 172.20.0.1 - - [09/Feb/2025 17:03:54] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 17:04:15,365 - INFO - Simulating interview...
+2025-02-09 17:04:15,394 - INFO - Received resume: <_io.BytesIO object at 0x7f553cb33ef0>, <class '_io.BytesIO'>
+2025-02-09 17:04:21,611 - INFO - [' Tell me about a time you had to work with a large dataset and faced challenges in processing it. How did you overcome those challenges?', ' Can you describe a situation where you had to explain a complex technical concept to a non-technical audience? How did you approach it?', ' Describe a project where you used SQL and Python together. What was your role and what were the results?', ' Give me an example of a time you had to debug a complex code.  What was your process for identifying and fixing the problem?', '  Describe a time you worked on a team project where there were conflicting priorities. How did you navigate those conflicts and reach a solution?\n']
+2025-02-09 17:04:21,613 - INFO - Interview simulation successful.
+2025-02-09 17:04:21,631 - INFO - 172.20.0.1 - - [09/Feb/2025 17:04:21] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 17:04:21,702 - INFO - Interview route accessed.
+2025-02-09 17:04:21,733 - INFO - 172.20.0.1 - - [09/Feb/2025 17:04:21] "GET /interview HTTP/1.1" 200 -
+2025-02-09 17:04:21,801 - INFO - 172.20.0.1 - - [09/Feb/2025 17:04:21] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 17:04:21,808 - INFO - 172.20.0.1 - - [09/Feb/2025 17:04:21] "[36mGET /static/assets/profile.jpg HTTP/1.1[0m" 304 -
+2025-02-09 17:04:21,811 - INFO - 172.20.0.1 - - [09/Feb/2025 17:04:21] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 17:05:06,983 - INFO - Getting final feedback...
+2025-02-09 17:05:07,008 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 17:05:07,010 - INFO - undefined
+2025-02-09 17:05:07,011 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 17:05:11,448 - INFO - Transcribed answers are: No answer provided
+2025-02-09 17:05:13,395 - INFO - undefined
+2025-02-09 17:05:13,396 - INFO - <FileStorage: 'answer-1.webm' ('audio/webm;codecs=opus')>
+2025-02-09 17:05:16,572 - INFO - Transcribed answers are: No answer provided
+2025-02-09 17:05:18,517 - INFO - undefined
+2025-02-09 17:05:18,519 - INFO - <FileStorage: 'answer-2.webm' ('audio/webm;codecs=opus')>
+2025-02-09 17:05:23,126 - INFO - Transcribed answers are: I've done this project with single python I don't know for data engine
+2025-02-09 17:05:24,250 - INFO - undefined
+2025-02-09 17:05:24,252 - INFO - <FileStorage: 'answer-3.webm' ('audio/webm;codecs=opus')>
+2025-02-09 17:05:26,197 - INFO - Transcribed answers are: I used the debugger
+2025-02-09 17:05:28,143 - INFO - undefined
+2025-02-09 17:05:28,145 - INFO - <FileStorage: 'answer-4.webm' ('audio/webm;codecs=opus')>
+2025-02-09 17:05:30,911 - INFO - Transcribed answers are: I don't know I spoke with them
+2025-02-09 17:05:33,830 - INFO - Temporary interview.json file deleted.
+2025-02-09 17:05:33,831 - INFO - 172.20.0.1 - - [09/Feb/2025 17:05:33] "POST /results HTTP/1.1" 200 -
+2025-02-09 17:05:33,853 - INFO - Results_review route accessed.
+2025-02-09 17:05:33,941 - INFO - 172.20.0.1 - - [09/Feb/2025 17:05:33] "GET /results_review HTTP/1.1" 200 -
+2025-02-09 17:05:33,993 - INFO - 172.20.0.1 - - [09/Feb/2025 17:05:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 17:05:33,994 - INFO - 172.20.0.1 - - [09/Feb/2025 17:05:33] "GET /static/js/results_review.js HTTP/1.1" 200 -

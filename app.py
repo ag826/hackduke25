@@ -121,11 +121,11 @@ def results():
                 # Append the reviewed answers to the matrix
                 matrix.append(review_answers(question, answer_text, position, company, job_description))
                 # Delete the temporary "interview.json" file
-                try:
-                    os.remove("interview.json")
-                    app.logger.info("Temporary interview.json file deleted.")
-                except Exception as e:
-                    app.logger.error(f"Error deleting temporary interview.json file: {e}")
+        try:
+            os.remove("interview.json")
+            app.logger.info("Temporary interview.json file deleted.")
+        except Exception as e:
+            app.logger.error(f"Error deleting temporary interview.json file: {e}")
         return jsonify(matrix)
     except Exception as e:
         app.logger.error(f"Error processing results: {e}")
