@@ -134,3 +134,28 @@
 2025-02-08 17:29:12,841 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
 2025-02-08 17:29:12,856 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
 2025-02-08 17:29:14,392 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 01:02:00,922 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.20.0.2:8080
+2025-02-09 01:02:00,923 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 01:02:06,414 - INFO - Home route accessed.
+2025-02-09 01:02:06,439 - INFO - 172.20.0.1 - - [09/Feb/2025 01:02:06] "GET / HTTP/1.1" 200 -
+2025-02-09 01:02:06,576 - INFO - 172.20.0.1 - - [09/Feb/2025 01:02:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 01:02:06,578 - INFO - 172.20.0.1 - - [09/Feb/2025 01:02:06] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 01:02:24,928 - INFO - Simulating interview...
+2025-02-09 01:02:24,955 - INFO - Received resume: <_io.BytesIO object at 0x7f33a19709a0>, <class '_io.BytesIO'>
+2025-02-09 01:02:29,054 - INFO - [' Tell me about a time you had to work with a large dataset. What challenges did you encounter, and how did you overcome them? ', " Describe your experience with SQL.  Give an example of a complex query you've written and the problem it solved. ", ' Explain your experience with Python and any relevant libraries used in data science projects (e.g., Pandas, NumPy, Scikit-learn). ', '  Walk me through your experience with MLOps, specifically focusing on your project at Banco Ganadero. What were the key challenges, and what was your role in addressing those challenges? ', '  You mention working on recommendation systems. Describe your approach to building a recommendation system, including any specific algorithms or techniques you employed.  How did you evaluate the performance of your system?\n']
+2025-02-09 01:02:29,055 - INFO - Interview simulation successful.
+2025-02-09 01:02:29,056 - INFO - Interview simulation successful.
+2025-02-09 01:02:29,058 - INFO - 172.20.0.1 - - [09/Feb/2025 01:02:29] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 01:02:29,081 - INFO - Interview route accessed.
+2025-02-09 01:02:29,099 - INFO - 172.20.0.1 - - [09/Feb/2025 01:02:29] "GET /interview HTTP/1.1" 200 -
+2025-02-09 01:02:29,179 - INFO - 172.20.0.1 - - [09/Feb/2025 01:02:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 01:02:29,183 - INFO - 172.20.0.1 - - [09/Feb/2025 01:02:29] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 01:02:47,889 - INFO - Getting final feedback...
+2025-02-09 01:02:47,892 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 01:02:47,893 - INFO - undefined
+2025-02-09 01:02:47,893 - INFO - <FileStorage: 'answer-0.mp3' ('audio/mpeg')>
+2025-02-09 01:02:47,928 - ERROR - Invalid audio file: [Errno 2] No such file or directory: 'ffprobe'
+2025-02-09 01:02:47,931 - INFO - 172.20.0.1 - - [09/Feb/2025 01:02:47] "[31m[1mPOST /results HTTP/1.1[0m" 400 -

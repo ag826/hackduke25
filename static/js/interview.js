@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         mediaRecorder.start();
 
         mediaRecorder.addEventListener("dataavailable", event => {
+            console.log("Data available", event.data);
             audioChunks.push(event.data);
         });
 
@@ -41,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
             mediaRecorder.addEventListener("stop", () => {
                 const audioBlob = new Blob(audioChunks, { type: 'audio/mpeg' });
                 audioChunks = [];
+                console.log("Stop function", audioBlob);
                 resolve(audioBlob);
             });
             mediaRecorder.stop();
@@ -52,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const displayQuestion = () => {
         if (currentQuestionIndex < simulationResults.length) {
-            questionElement.textContent = simulationResults[currentQuestionIndex].text;
+            questionElement.textContent = simulationResults[currentQuestionIndex];
             recordButton.style.display = "block";
             submitButton.style.display = "none";
         } else {
@@ -61,10 +63,13 @@ document.addEventListener("DOMContentLoaded", () => {
             submitButton.style.display = "block";
         }
     };
-    
+    console.log("Total Questions:", simulationResults.length);
+    console.log("Current Index:", currentQuestionIndex);
+    console.log("First Question:", simulationResults[0]);
+    console.log("Current Question:", simulationResults[currentQuestionIndex]); // Should NOT be undefined
     // Initial display of the first question
     displayQuestion();
-    console.log("Current Question:", simulationResults[currentQuestionIndex]?.text);
+    console.log("Current Question:", simulationResults[currentQuestionIndex]);
 
     // Event listener for the record button
     recordButton.addEventListener("click", async () => {
@@ -73,11 +78,11 @@ document.addEventListener("DOMContentLoaded", () => {
             recordButton.textContent = "Stop Recording";
         } else {
             const audioBlob = await stopRecording();
-            const audioUrl = URL.createObjectURL(audioBlob);
-            const audioElement = document.createElement("audio");
-            audioElement.controls = true;
-            audioElement.src = audioUrl;
-            resultsDiv.appendChild(audioElement);
+            //const audioUrl = URL.createObjectURL(audioBlob);
+            //const audioElement = document.createElement("audio");
+            //audioElement.controls = true;
+            //audioElement.src = audioUrl;
+            //resultsDiv.appendChild(audioElement);
             answers.push({ question: simulationResults[currentQuestionIndex].text, audioBlob });
             currentQuestionIndex++;
             displayQuestion();
@@ -92,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
             formData.append(`audio-${index}`, answer.audioBlob, `answer-${index}.mp3`);
             formData.append(`question-${index}`, answer.question);
         });
-
+        console.log("FormData:", formData);
         try {
             const response = await fetch('/results', {
                 method: 'POST',
@@ -104,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             const result = await response.json();
-            sessionStorage.setItem("interviewResults", JSON.stringify(result));
+            //sessionStorage.setItem("interviewResults", JSON.stringify(result));
             window.location.href = 'results.html';
         } catch (error) {
             alert(`Error: ${error.message}`);

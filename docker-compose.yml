@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  flask_app:
+    container_name: flask_audio_app
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_ENV=development
+      - FLASK_APP=app.py
+    command: flask run --host=0.0.0.0 --port=8080
+    restart: always

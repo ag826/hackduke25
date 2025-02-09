@@ -5,6 +5,9 @@ from modules.genaimodell import get_summary, review_answers
 from modules.voice2text import text_to_voice, mp3_to_text
 from io import BytesIO
 from dotenv import load_dotenv
+from pydub import AudioSegment
+from pydub.playback import play  # To play the audio
+
 
 load_dotenv()
 flask_key = os.environ["API_KEY"]
@@ -21,6 +24,20 @@ logging.basicConfig(
         logging.StreamHandler(),  # Log to console
     ],
 )
+
+def is_valid_audio(file_storage):
+    try:
+        # Load audio from the uploaded file
+        audio = AudioSegment.from_file(BytesIO(file_storage.read()), format="mp3")
+        file_storage.seek(0)  # Reset file pointer for later saving
+
+        # Play the audio
+        play(audio)
+
+        return True
+    except Exception as e:
+        app.logger.error(f"Invalid audio file: {e}")
+        return False
 
 
 @app.route("/")
@@ -61,14 +78,26 @@ def transcribe_answer(path):
 
 # To get final feedback from Gemini
 @app.route("/results", methods=["POST"])
-def results(
-    matrix,
-    position,
-    company_name,
-    job_description,
-    resume_pdf_path,
-):
+def results():
+    app.logger.info("Getting final feedback...")
+    """
     try:
+        # Get the matrix of questions and answers
+        matrix = request.form.get("matrix")
+        position = request.form.get("position")
+        company = request.form.get("company")
+        job_description = request.form.get("jobDescription")
+        resume = request.files["resume"]
+        app.logger.info(matrix, position, company, job_description, resume)
+
+        if not matrix or not position or not company or not job_description or not resume:
+            return jsonify({"error": "Missing required fields"}), 400
+
+        # Convert the resume file to a format compatible with genai
+        resume_bytes = BytesIO(resume.read())
+        app.logger.info(f"Received resume: {resume_bytes}, {type(resume_bytes)}")
+
+        # Get the final feedback from Gemini
         response_matrix = matrix
         for row in response_matrix:
             question = row[0]
@@ -78,14 +107,35 @@ def results(
                 question,
                 answer,
                 position,
-                company_name,
+                company,
                 job_description,
-                resume_pdf_path,
+                resume_bytes,
             )
             for i in len(feedback_review):
                 row[i + 2] = feedback_review[i]
+        app.logger.info("Final feedback received.")
         return jsonify(response_matrix)
+    """
+    try:
+        # Get the matrix of questions and answers
+        matrix = []
+        app.logger.info(request.form)
+        for key in request.form.keys():
+            if key.startswith("question-"):
+                index = key.split("-")[1]
+                question = request.form.get(f"question-{index}")
+                app.logger.info(question)
+                audio_file = request.files.get(f"audio-{index}")
+                app.logger.info(audio_file)
+                
+                # Validate and play the uploaded audio file
+                if not is_valid_audio(audio_file):
+                    return jsonify({"error": f"Invalid audio file: audio-{index}"}), 400
+
+        
+        return jsonify({"status": "success", "matrix": matrix}), 200
     except Exception as e:
+        app.logger.error(f"Error processing results: {e}")
         return jsonify({"error": str(e)}), 500
 
 

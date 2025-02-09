@@ -1,6 +1,8 @@
 # Use the official Python image as a base
 FROM python:3.9-slim
 
+RUN apt-get update && apt-get install -y espeak espeak-ng ffmpeg
+
 # Set the working directory inside the container
 WORKDIR /app
 

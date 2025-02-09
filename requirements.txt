@@ -33,3 +33,4 @@ google-generativeai
 SpeechRecognition
 pyttsx3
 pyodb
+pydub
