@@ -160,3 +160,526 @@ cache:pipe:0: Invalid argument
 2025-02-09 06:23:14,267 - INFO - 172.20.0.1 - - [09/Feb/2025 06:23:14] "GET /interview HTTP/1.1" 200 -
 2025-02-09 06:23:14,416 - INFO - 172.20.0.1 - - [09/Feb/2025 06:23:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
 2025-02-09 06:23:14,543 - INFO - 172.20.0.1 - - [09/Feb/2025 06:23:14] "GET /static/js/interview.js HTTP/1.1" 200 -
+2025-02-09 02:00:16,696 - INFO - Starting Flask app...
+2025-02-09 02:00:16,862 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-09 02:00:16,864 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 02:00:16,896 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 02:00:25,845 - INFO - Starting Flask app...
+2025-02-09 02:00:25,914 - WARNING -  * Debugger is active!
+2025-02-09 02:00:25,952 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 02:00:26,043 - INFO - Home route accessed.
+2025-02-09 02:00:26,063 - INFO - 127.0.0.1 - - [09/Feb/2025 02:00:26] "GET / HTTP/1.1" 200 -
+2025-02-09 02:00:26,226 - INFO - 127.0.0.1 - - [09/Feb/2025 02:00:26] "GET /static/js/home.js HTTP/1.1" 200 -
+2025-02-09 02:00:26,315 - INFO - 127.0.0.1 - - [09/Feb/2025 02:00:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:06:49,542 - INFO - Home route accessed.
+2025-02-09 02:06:49,545 - INFO - 127.0.0.1 - - [09/Feb/2025 02:06:49] "GET / HTTP/1.1" 200 -
+2025-02-09 02:06:49,626 - INFO - 127.0.0.1 - - [09/Feb/2025 02:06:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:06:49,695 - INFO - 127.0.0.1 - - [09/Feb/2025 02:06:49] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 02:08:54,174 - INFO - 127.0.0.1 - - [09/Feb/2025 02:08:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:11:56,110 - INFO - Starting Flask app...
+2025-02-09 02:11:56,295 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-09 02:11:56,298 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 02:11:56,345 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 02:12:05,841 - INFO - Starting Flask app...
+2025-02-09 02:12:05,905 - WARNING -  * Debugger is active!
+2025-02-09 02:12:05,955 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 02:12:06,053 - INFO - Home route accessed.
+2025-02-09 02:12:06,074 - INFO - 127.0.0.1 - - [09/Feb/2025 02:12:06] "GET / HTTP/1.1" 200 -
+2025-02-09 02:12:06,149 - INFO - 127.0.0.1 - - [09/Feb/2025 02:12:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:12:06,216 - INFO - 127.0.0.1 - - [09/Feb/2025 02:12:06] "GET /static/js/home.js HTTP/1.1" 200 -
+2025-02-09 02:12:20,823 - INFO - Simulating interview...
+2025-02-09 02:12:20,885 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\logging\\__init__.py', reloading
+2025-02-09 02:12:21,352 - INFO - Received resume: <_io.BytesIO object at 0x000001587FE20FE0>, <class '_io.BytesIO'>
+2025-02-09 02:12:21,354 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\flask\\app.py', reloading
+2025-02-09 02:12:21,421 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+2025-02-09 02:12:21,423 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+2025-02-09 02:12:21,425 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\http\\server.py', reloading
+2025-02-09 02:12:21,485 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\socketserver.py', reloading
+2025-02-09 02:12:24,607 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 02:12:34,868 - INFO - Starting Flask app...
+2025-02-09 02:12:34,921 - WARNING -  * Debugger is active!
+2025-02-09 02:12:34,952 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 02:12:35,057 - INFO - Simulating interview...
+2025-02-09 02:12:35,254 - INFO - Received resume: <_io.BytesIO object at 0x00000299C9020F40>, <class '_io.BytesIO'>
+2025-02-09 02:12:42,003 - INFO - [' Tell me about a time you had to work on a project with a team. What was your role, and what challenges did you encounter?', 'Describe a situation where you had to analyze a large dataset to find insights. What methods did you use, and what were your findings?', 'Give me an example of a time you had to overcome a technical challenge. How did you approach the problem, and what was the outcome?', 'Tell me about a time you failed. What did you learn from the experience?', 'Describe a situation where you had to present your findings to a non-technical audience. How did you tailor your presentation to ensure they understood the key takeaways?\n']
+2025-02-09 02:12:42,069 - INFO - Interview simulation successful.
+2025-02-09 02:12:42,076 - INFO - 127.0.0.1 - - [09/Feb/2025 02:12:42] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 02:12:42,315 - INFO - Interview route accessed.
+2025-02-09 02:12:42,415 - INFO - 127.0.0.1 - - [09/Feb/2025 02:12:42] "GET /interview HTTP/1.1" 200 -
+2025-02-09 02:12:42,631 - INFO - 127.0.0.1 - - [09/Feb/2025 02:12:42] "[33mGET /assets/profile.jpg HTTP/1.1[0m" 404 -
+2025-02-09 02:12:42,697 - INFO - 127.0.0.1 - - [09/Feb/2025 02:12:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:12:42,713 - INFO - 127.0.0.1 - - [09/Feb/2025 02:12:42] "GET /static/js/interview.js HTTP/1.1" 200 -
+2025-02-09 02:13:06,638 - INFO - Getting final feedback...
+2025-02-09 02:13:06,659 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 02:13:06,665 - INFO - undefined
+2025-02-09 02:13:06,666 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 02:13:06,667 - INFO - Received file MIME type: audio/webm;codecs=opus
+2025-02-09 02:13:09,444 - ERROR - Error transcribing answer: Decoding failed. ffmpeg returned error code: 3199971767
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with clang version 19.1.2
+  configuration: --prefix=/d/bld/ffmpeg_1729893022917/_h_env/Library --cc=clang.exe --cxx=clang++.exe --nm=llvm-nm --ar=llvm-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --ld=lld-link --target-os=win64 --enable-cross-compile --toolchain=msvc --host-cc=clang.exe --extra-libs=ucrt.lib --extra-libs=vcruntime.lib --extra-libs=oldnames.lib --strip=llvm-strip --disable-stripping --host-extralibs= --disable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libopus --enable-librsvg --pkg-config=/d/bld/ffmpeg_1729893022917/_build_env/Library/bin/pkg-config
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[cache @ 000001547711A300] Inner protocol failed to seekback end : -40
+    Last message repeated 1 times
+[mp3 @ 00000154771792C0] Failed to find two consecutive MPEG audio frames.
+[cache @ 000001547711A300] Statistics, cache hits:2 cache misses:1
+[in#0 @ 00000154771362C0] Error opening input: Invalid data found when processing input
+Error opening input file cache:pipe:0.
+Error opening input files: Invalid data found when processing input
+
+2025-02-09 02:13:09,452 - INFO - Transcribed answers are: None
+2025-02-09 02:13:09,454 - INFO - undefined
+2025-02-09 02:13:09,455 - INFO - <FileStorage: 'answer-1.webm' ('audio/webm;codecs=opus')>
+2025-02-09 02:13:09,456 - INFO - Received file MIME type: audio/webm;codecs=opus
+2025-02-09 02:13:10,151 - INFO - Getting final feedback...
+2025-02-09 02:13:10,160 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 02:13:10,164 - INFO - undefined
+2025-02-09 02:13:10,167 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 02:13:10,183 - INFO - Received file MIME type: audio/webm;codecs=opus
+2025-02-09 02:13:12,384 - ERROR - Error transcribing answer: Decoding failed. ffmpeg returned error code: 3199971767
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with clang version 19.1.2
+  configuration: --prefix=/d/bld/ffmpeg_1729893022917/_h_env/Library --cc=clang.exe --cxx=clang++.exe --nm=llvm-nm --ar=llvm-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --ld=lld-link --target-os=win64 --enable-cross-compile --toolchain=msvc --host-cc=clang.exe --extra-libs=ucrt.lib --extra-libs=vcruntime.lib --extra-libs=oldnames.lib --strip=llvm-strip --disable-stripping --host-extralibs= --disable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libopus --enable-librsvg --pkg-config=/d/bld/ffmpeg_1729893022917/_build_env/Library/bin/pkg-config
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[cache @ 000001F354AFA840] Inner protocol failed to seekback end : -40
+    Last message repeated 1 times
+[mp3 @ 000001F354B54E80] Failed to find two consecutive MPEG audio frames.
+[cache @ 000001F354AFA840] Statistics, cache hits:2 cache misses:1
+[in#0 @ 000001F354B539C0] Error opening input: Invalid data found when processing input
+Error opening input file cache:pipe:0.
+Error opening input files: Invalid data found when processing input
+
+2025-02-09 02:13:12,440 - INFO - Transcribed answers are: None
+2025-02-09 02:13:12,492 - INFO - undefined
+2025-02-09 02:13:12,512 - INFO - <FileStorage: 'answer-1.webm' ('audio/webm;codecs=opus')>
+2025-02-09 02:13:12,555 - INFO - Received file MIME type: audio/webm;codecs=opus
+2025-02-09 02:13:13,720 - ERROR - Error transcribing answer: Decoding failed. ffmpeg returned error code: 3199971767
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with clang version 19.1.2
+  configuration: --prefix=/d/bld/ffmpeg_1729893022917/_h_env/Library --cc=clang.exe --cxx=clang++.exe --nm=llvm-nm --ar=llvm-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --ld=lld-link --target-os=win64 --enable-cross-compile --toolchain=msvc --host-cc=clang.exe --extra-libs=ucrt.lib --extra-libs=vcruntime.lib --extra-libs=oldnames.lib --strip=llvm-strip --disable-stripping --host-extralibs= --disable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libopus --enable-librsvg --pkg-config=/d/bld/ffmpeg_1729893022917/_build_env/Library/bin/pkg-config
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[cache @ 000002843768E1C0] Inner protocol failed to seekback end : -40
+    Last message repeated 1 times
+[mp3 @ 00000284376E78C0] Failed to find two consecutive MPEG audio frames.
+[cache @ 000002843768E1C0] Statistics, cache hits:2 cache misses:1
+[in#0 @ 00000284376D8D80] Error opening input: Invalid data found when processing input
+Error opening input file cache:pipe:0.
+Error opening input files: Invalid data found when processing input
+
+2025-02-09 02:13:13,730 - INFO - Transcribed answers are: None
+2025-02-09 02:13:13,731 - INFO - undefined
+2025-02-09 02:13:13,732 - INFO - <FileStorage: 'answer-2.webm' ('audio/webm;codecs=opus')>
+2025-02-09 02:13:13,733 - INFO - Received file MIME type: audio/webm;codecs=opus
+2025-02-09 02:13:16,427 - ERROR - Error transcribing answer: Decoding failed. ffmpeg returned error code: 3199971767
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with clang version 19.1.2
+  configuration: --prefix=/d/bld/ffmpeg_1729893022917/_h_env/Library --cc=clang.exe --cxx=clang++.exe --nm=llvm-nm --ar=llvm-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --ld=lld-link --target-os=win64 --enable-cross-compile --toolchain=msvc --host-cc=clang.exe --extra-libs=ucrt.lib --extra-libs=vcruntime.lib --extra-libs=oldnames.lib --strip=llvm-strip --disable-stripping --host-extralibs= --disable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libopus --enable-librsvg --pkg-config=/d/bld/ffmpeg_1729893022917/_build_env/Library/bin/pkg-config
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[cache @ 000001269A8EA840] Inner protocol failed to seekback end : -40
+    Last message repeated 1 times
+[mp3 @ 000001269A942300] Failed to find two consecutive MPEG audio frames.
+[cache @ 000001269A8EA840] Statistics, cache hits:2 cache misses:1
+[in#0 @ 000001269A938540] Error opening input: Invalid data found when processing input
+Error opening input file cache:pipe:0.
+Error opening input files: Invalid data found when processing input
+
+2025-02-09 02:13:16,437 - INFO - Transcribed answers are: None
+2025-02-09 02:13:16,438 - INFO - undefined
+2025-02-09 02:13:16,439 - INFO - <FileStorage: 'answer-2.webm' ('audio/webm;codecs=opus')>
+2025-02-09 02:13:16,440 - INFO - Received file MIME type: audio/webm;codecs=opus
+2025-02-09 02:13:17,408 - ERROR - Error transcribing answer: Decoding failed. ffmpeg returned error code: 3199971767
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with clang version 19.1.2
+  configuration: --prefix=/d/bld/ffmpeg_1729893022917/_h_env/Library --cc=clang.exe --cxx=clang++.exe --nm=llvm-nm --ar=llvm-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --ld=lld-link --target-os=win64 --enable-cross-compile --toolchain=msvc --host-cc=clang.exe --extra-libs=ucrt.lib --extra-libs=vcruntime.lib --extra-libs=oldnames.lib --strip=llvm-strip --disable-stripping --host-extralibs= --disable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libopus --enable-librsvg --pkg-config=/d/bld/ffmpeg_1729893022917/_build_env/Library/bin/pkg-config
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[cache @ 00000252B6B0B940] Inner protocol failed to seekback end : -40
+    Last message repeated 1 times
+[mp3 @ 00000252B6B4C300] Failed to find two consecutive MPEG audio frames.
+[cache @ 00000252B6B0B940] Statistics, cache hits:2 cache misses:1
+[in#0 @ 00000252B6B062C0] Error opening input: Invalid data found when processing input
+Error opening input file cache:pipe:0.
+Error opening input files: Invalid data found when processing input
+
+2025-02-09 02:13:17,423 - INFO - Transcribed answers are: None
+2025-02-09 02:13:17,424 - INFO - undefined
+2025-02-09 02:13:17,424 - INFO - <FileStorage: 'answer-3.webm' ('audio/webm;codecs=opus')>
+2025-02-09 02:13:17,426 - INFO - Received file MIME type: audio/webm;codecs=opus
+2025-02-09 02:13:20,089 - ERROR - Error transcribing answer: Decoding failed. ffmpeg returned error code: 3199971767
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with clang version 19.1.2
+  configuration: --prefix=/d/bld/ffmpeg_1729893022917/_h_env/Library --cc=clang.exe --cxx=clang++.exe --nm=llvm-nm --ar=llvm-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --ld=lld-link --target-os=win64 --enable-cross-compile --toolchain=msvc --host-cc=clang.exe --extra-libs=ucrt.lib --extra-libs=vcruntime.lib --extra-libs=oldnames.lib --strip=llvm-strip --disable-stripping --host-extralibs= --disable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libopus --enable-librsvg --pkg-config=/d/bld/ffmpeg_1729893022917/_build_env/Library/bin/pkg-config
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[cache @ 0000026B041EEE40] Inner protocol failed to seekback end : -40
+    Last message repeated 1 times
+[mp3 @ 0000026B04252B40] Failed to find two consecutive MPEG audio frames.
+[cache @ 0000026B041EEE40] Statistics, cache hits:2 cache misses:1
+[in#0 @ 0000026B0424E680] Error opening input: Invalid data found when processing input
+Error opening input file cache:pipe:0.
+Error opening input files: Invalid data found when processing input
+
+2025-02-09 02:13:20,098 - INFO - Transcribed answers are: None
+2025-02-09 02:13:20,099 - INFO - undefined
+2025-02-09 02:13:20,100 - INFO - <FileStorage: 'answer-4.webm' ('audio/webm;codecs=opus')>
+2025-02-09 02:13:20,100 - INFO - Received file MIME type: audio/webm;codecs=opus
+2025-02-09 02:13:20,689 - ERROR - Error transcribing answer: Decoding failed. ffmpeg returned error code: 3199971767
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with clang version 19.1.2
+  configuration: --prefix=/d/bld/ffmpeg_1729893022917/_h_env/Library --cc=clang.exe --cxx=clang++.exe --nm=llvm-nm --ar=llvm-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --ld=lld-link --target-os=win64 --enable-cross-compile --toolchain=msvc --host-cc=clang.exe --extra-libs=ucrt.lib --extra-libs=vcruntime.lib --extra-libs=oldnames.lib --strip=llvm-strip --disable-stripping --host-extralibs= --disable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libopus --enable-librsvg --pkg-config=/d/bld/ffmpeg_1729893022917/_build_env/Library/bin/pkg-config
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[cache @ 00000294131113C0] Inner protocol failed to seekback end : -40
+    Last message repeated 1 times
+[mp3 @ 000002941315C480] Failed to find two consecutive MPEG audio frames.
+[cache @ 00000294131113C0] Statistics, cache hits:2 cache misses:1
+[in#0 @ 00000294131162C0] Error opening input: Invalid data found when processing input
+Error opening input file cache:pipe:0.
+Error opening input files: Invalid data found when processing input
+
+2025-02-09 02:13:20,701 - INFO - Transcribed answers are: None
+2025-02-09 02:13:20,704 - INFO - undefined
+2025-02-09 02:13:20,705 - INFO - <FileStorage: 'answer-3.webm' ('audio/webm;codecs=opus')>
+2025-02-09 02:13:20,706 - INFO - Received file MIME type: audio/webm;codecs=opus
+2025-02-09 02:13:23,629 - ERROR - Error transcribing answer: Decoding failed. ffmpeg returned error code: 3199971767
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with clang version 19.1.2
+  configuration: --prefix=/d/bld/ffmpeg_1729893022917/_h_env/Library --cc=clang.exe --cxx=clang++.exe --nm=llvm-nm --ar=llvm-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --ld=lld-link --target-os=win64 --enable-cross-compile --toolchain=msvc --host-cc=clang.exe --extra-libs=ucrt.lib --extra-libs=vcruntime.lib --extra-libs=oldnames.lib --strip=llvm-strip --disable-stripping --host-extralibs= --disable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libopus --enable-librsvg --pkg-config=/d/bld/ffmpeg_1729893022917/_build_env/Library/bin/pkg-config
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[cache @ 00000154366AC300] Inner protocol failed to seekback end : -40
+    Last message repeated 1 times
+[mp3 @ 00000154366B5A40] Failed to find two consecutive MPEG audio frames.
+[cache @ 00000154366AC300] Statistics, cache hits:2 cache misses:1
+[in#0 @ 00000154366762C0] Error opening input: Invalid data found when processing input
+Error opening input file cache:pipe:0.
+Error opening input files: Invalid data found when processing input
+
+2025-02-09 02:13:23,641 - INFO - Transcribed answers are: None
+2025-02-09 02:13:23,645 - INFO - 127.0.0.1 - - [09/Feb/2025 02:13:23] "POST /results HTTP/1.1" 200 -
+2025-02-09 02:13:23,744 - INFO - 127.0.0.1 - - [09/Feb/2025 02:13:23] "[33mGET /results.html HTTP/1.1[0m" 404 -
+2025-02-09 02:13:24,638 - ERROR - Error transcribing answer: Decoding failed. ffmpeg returned error code: 3199971767
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with clang version 19.1.2
+  configuration: --prefix=/d/bld/ffmpeg_1729893022917/_h_env/Library --cc=clang.exe --cxx=clang++.exe --nm=llvm-nm --ar=llvm-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --ld=lld-link --target-os=win64 --enable-cross-compile --toolchain=msvc --host-cc=clang.exe --extra-libs=ucrt.lib --extra-libs=vcruntime.lib --extra-libs=oldnames.lib --strip=llvm-strip --disable-stripping --host-extralibs= --disable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libopus --enable-librsvg --pkg-config=/d/bld/ffmpeg_1729893022917/_build_env/Library/bin/pkg-config
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[cache @ 000001E6E3386800] Inner protocol failed to seekback end : -40
+    Last message repeated 1 times
+[mp3 @ 000001E6E33E4A40] Failed to find two consecutive MPEG audio frames.
+[cache @ 000001E6E3386800] Statistics, cache hits:2 cache misses:1
+[in#0 @ 000001E6E33A62C0] Error opening input: Invalid data found when processing input
+Error opening input file cache:pipe:0.
+Error opening input files: Invalid data found when processing input
+
+2025-02-09 02:13:24,647 - INFO - Transcribed answers are: None
+2025-02-09 02:13:24,649 - INFO - undefined
+2025-02-09 02:13:24,652 - INFO - <FileStorage: 'answer-4.webm' ('audio/webm;codecs=opus')>
+2025-02-09 02:13:24,655 - INFO - Received file MIME type: audio/webm;codecs=opus
+2025-02-09 02:13:28,215 - ERROR - Error transcribing answer: Decoding failed. ffmpeg returned error code: 3199971767
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with clang version 19.1.2
+  configuration: --prefix=/d/bld/ffmpeg_1729893022917/_h_env/Library --cc=clang.exe --cxx=clang++.exe --nm=llvm-nm --ar=llvm-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --ld=lld-link --target-os=win64 --enable-cross-compile --toolchain=msvc --host-cc=clang.exe --extra-libs=ucrt.lib --extra-libs=vcruntime.lib --extra-libs=oldnames.lib --strip=llvm-strip --disable-stripping --host-extralibs= --disable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libopus --enable-librsvg --pkg-config=/d/bld/ffmpeg_1729893022917/_build_env/Library/bin/pkg-config
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[cache @ 000001C5C9386340] Inner protocol failed to seekback end : -40
+    Last message repeated 1 times
+[mp3 @ 000001C5C93CB2C0] Failed to find two consecutive MPEG audio frames.
+[cache @ 000001C5C9386340] Statistics, cache hits:2 cache misses:1
+[in#0 @ 000001C5C938C3C0] Error opening input: Invalid data found when processing input
+Error opening input file cache:pipe:0.
+Error opening input files: Invalid data found when processing input
+
+2025-02-09 02:13:28,225 - INFO - Transcribed answers are: None
+2025-02-09 02:13:28,228 - INFO - 127.0.0.1 - - [09/Feb/2025 02:13:28] "POST /results HTTP/1.1" 200 -
+2025-02-09 02:13:28,706 - INFO - 127.0.0.1 - - [09/Feb/2025 02:13:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:13:30,377 - INFO - Home route accessed.
+2025-02-09 02:13:30,389 - INFO - 127.0.0.1 - - [09/Feb/2025 02:13:30] "GET / HTTP/1.1" 200 -
+2025-02-09 02:13:30,447 - INFO - 127.0.0.1 - - [09/Feb/2025 02:13:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:13:30,479 - INFO - 127.0.0.1 - - [09/Feb/2025 02:13:30] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 02:18:02,545 - INFO - 127.0.0.1 - - [09/Feb/2025 02:18:02] "[33mGET /profile.jpg HTTP/1.1[0m" 404 -
+2025-02-09 02:18:02,625 - INFO - 127.0.0.1 - - [09/Feb/2025 02:18:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:18:31,834 - INFO - Starting Flask app...
+2025-02-09 02:18:32,014 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-09 02:18:32,016 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 02:18:32,083 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 02:18:40,885 - INFO - Starting Flask app...
+2025-02-09 02:18:40,971 - WARNING -  * Debugger is active!
+2025-02-09 02:18:41,022 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 02:18:41,136 - INFO - Home route accessed.
+2025-02-09 02:18:41,160 - INFO - 127.0.0.1 - - [09/Feb/2025 02:18:41] "GET / HTTP/1.1" 200 -
+2025-02-09 02:18:41,255 - INFO - 127.0.0.1 - - [09/Feb/2025 02:18:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:18:41,290 - INFO - 127.0.0.1 - - [09/Feb/2025 02:18:41] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 02:19:00,872 - INFO - Simulating interview...
+2025-02-09 02:19:01,121 - INFO - Received resume: <_io.BytesIO object at 0x0000018C3ED01170>, <class '_io.BytesIO'>
+2025-02-09 02:19:07,479 - INFO - [' Tell me about a time you had to work with a large dataset. What challenges did you face, and how did you overcome them? ', '  Describe your experience with Java and C++.  Which projects have you worked on using these languages, and what were the key takeaways? ', ' Explain your understanding of predictive modeling techniques, such as Random Forest or KM Curves. Have you used them in any projects, and what were the results? ', '  Walk me through your experience with data visualization. What tools are you proficient in, and can you share an example of a compelling visualization you created? ', ' How would you approach a problem where you need to segment a large customer base for targeted marketing campaigns? What techniques would you use and why?\n']
+2025-02-09 02:19:07,481 - INFO - Interview simulation successful.
+2025-02-09 02:19:07,483 - INFO - 127.0.0.1 - - [09/Feb/2025 02:19:07] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 02:19:07,564 - INFO - Interview route accessed.
+2025-02-09 02:19:07,589 - INFO - 127.0.0.1 - - [09/Feb/2025 02:19:07] "GET /interview HTTP/1.1" 200 -
+2025-02-09 02:19:07,666 - INFO - 127.0.0.1 - - [09/Feb/2025 02:19:07] "[33mGET /static/assets/profile.jpg HTTP/1.1[0m" 404 -
+2025-02-09 02:19:07,686 - INFO - 127.0.0.1 - - [09/Feb/2025 02:19:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:19:07,703 - INFO - 127.0.0.1 - - [09/Feb/2025 02:19:07] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 02:19:29,709 - INFO - 127.0.0.1 - - [09/Feb/2025 02:19:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:21:02,582 - INFO - Home route accessed.
+2025-02-09 02:21:02,597 - INFO - 127.0.0.1 - - [09/Feb/2025 02:21:02] "GET / HTTP/1.1" 200 -
+2025-02-09 02:21:02,754 - INFO - 127.0.0.1 - - [09/Feb/2025 02:21:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:21:02,972 - INFO - 127.0.0.1 - - [09/Feb/2025 02:21:02] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 02:22:19,842 - INFO - Starting Flask app...
+2025-02-09 02:22:20,023 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-09 02:22:20,025 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 02:22:20,087 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 02:22:29,396 - INFO - Starting Flask app...
+2025-02-09 02:22:29,476 - WARNING -  * Debugger is active!
+2025-02-09 02:22:29,526 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 02:22:29,677 - INFO - Home route accessed.
+2025-02-09 02:22:29,706 - INFO - 127.0.0.1 - - [09/Feb/2025 02:22:29] "GET / HTTP/1.1" 200 -
+2025-02-09 02:22:29,785 - INFO - 127.0.0.1 - - [09/Feb/2025 02:22:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:22:29,863 - INFO - 127.0.0.1 - - [09/Feb/2025 02:22:29] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 02:22:45,388 - INFO - Simulating interview...
+2025-02-09 02:22:45,805 - INFO - Received resume: <_io.BytesIO object at 0x000001BE44970F90>, <class '_io.BytesIO'>
+2025-02-09 02:22:51,803 - INFO - [' Can you describe a situation where you had to work with a large dataset and how you approached cleaning and preparing it for analysis?', 'Describe your experience with any programming languages relevant to data science, such as Python or SQL.  What are some of your favorite libraries and why?', 'Give an example of a project where you had to communicate complex data insights to a non-technical audience. How did you ensure they understood?', 'Walk me through your experience with predictive modeling.  What techniques are you most familiar with, and when would you choose to use them?', 'Tell me about a time you faced a technical challenge in a project. How did you approach problem-solving and what was the outcome?\n']
+2025-02-09 02:22:51,805 - INFO - Interview simulation successful.
+2025-02-09 02:22:51,807 - INFO - 127.0.0.1 - - [09/Feb/2025 02:22:51] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 02:22:51,883 - INFO - Interview route accessed.
+2025-02-09 02:22:51,894 - INFO - 127.0.0.1 - - [09/Feb/2025 02:22:51] "GET /interview HTTP/1.1" 200 -
+2025-02-09 02:22:51,992 - INFO - 127.0.0.1 - - [09/Feb/2025 02:22:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:22:52,014 - INFO - 127.0.0.1 - - [09/Feb/2025 02:22:52] "[33mGET /assets/profile.jpg HTTP/1.1[0m" 404 -
+2025-02-09 02:22:52,056 - INFO - 127.0.0.1 - - [09/Feb/2025 02:22:52] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 02:23:03,291 - INFO - 127.0.0.1 - - [09/Feb/2025 02:23:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:24:12,062 - INFO - Home route accessed.
+2025-02-09 02:24:12,067 - INFO - 127.0.0.1 - - [09/Feb/2025 02:24:12] "GET / HTTP/1.1" 200 -
+2025-02-09 02:24:12,203 - INFO - 127.0.0.1 - - [09/Feb/2025 02:24:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:24:13,284 - INFO - 127.0.0.1 - - [09/Feb/2025 02:24:13] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 02:24:26,597 - INFO - 127.0.0.1 - - [09/Feb/2025 02:24:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:25:02,821 - INFO - Starting Flask app...
+2025-02-09 02:25:03,000 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-09 02:25:03,002 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 02:25:03,040 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 02:25:12,567 - INFO - Starting Flask app...
+2025-02-09 02:25:12,634 - WARNING -  * Debugger is active!
+2025-02-09 02:25:12,668 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 02:25:12,773 - INFO - Home route accessed.
+2025-02-09 02:25:12,796 - INFO - 127.0.0.1 - - [09/Feb/2025 02:25:12] "GET / HTTP/1.1" 200 -
+2025-02-09 02:25:12,873 - INFO - 127.0.0.1 - - [09/Feb/2025 02:25:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:25:12,949 - INFO - 127.0.0.1 - - [09/Feb/2025 02:25:12] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 02:25:26,087 - INFO - Simulating interview...
+2025-02-09 02:25:26,571 - INFO - Received resume: <_io.BytesIO object at 0x00000217AADC0FE0>, <class '_io.BytesIO'>
+2025-02-09 02:25:32,833 - INFO - [' Tell me about a time you had to manage a complex project with multiple stakeholders and competing priorities. How did you approach it, and what was the outcome? ', ' Describe a situation where you had to analyze a large dataset to identify key insights. What methods did you use, and what were the most significant findings? ', ' Give me an example of a time you had to translate complex data insights into actionable recommendations for a business decision. What was the impact of your recommendations? ', ' Describe a situation where you had to overcome a significant challenge or obstacle in a project. How did you approach the problem, and what was the result? ', ' Tell me about a time you had to work effectively with a team to achieve a common goal. What was your role, and what contributions did you make? ']
+2025-02-09 02:25:32,835 - INFO - Interview simulation successful.
+2025-02-09 02:25:32,837 - INFO - 127.0.0.1 - - [09/Feb/2025 02:25:32] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 02:25:32,916 - INFO - Interview route accessed.
+2025-02-09 02:25:32,956 - INFO - 127.0.0.1 - - [09/Feb/2025 02:25:32] "GET /interview HTTP/1.1" 200 -
+2025-02-09 02:25:33,015 - INFO - 127.0.0.1 - - [09/Feb/2025 02:25:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:25:33,061 - INFO - 127.0.0.1 - - [09/Feb/2025 02:25:33] "[33mGET /assets/profile.jpg HTTP/1.1[0m" 404 -
+2025-02-09 02:25:33,064 - INFO - 127.0.0.1 - - [09/Feb/2025 02:25:33] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 02:27:24,702 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-09 02:27:24,704 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 02:27:29,034 - INFO - Home route accessed.
+2025-02-09 02:27:29,089 - INFO - 127.0.0.1 - - [09/Feb/2025 02:27:29] "GET / HTTP/1.1" 200 -
+2025-02-09 02:27:29,221 - INFO - 127.0.0.1 - - [09/Feb/2025 02:27:29] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-02-09 02:27:29,289 - INFO - 127.0.0.1 - - [09/Feb/2025 02:27:29] "GET /static/js/home.js HTTP/1.1" 200 -
+2025-02-09 02:27:30,504 - INFO - 127.0.0.1 - - [09/Feb/2025 02:27:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-09 02:27:35,981 - INFO - 127.0.0.1 - - [09/Feb/2025 02:27:35] "GET /static/assets/profile.jpg HTTP/1.1" 200 -
+2025-02-09 02:27:49,992 - INFO - Simulating interview...
+2025-02-09 02:27:50,249 - INFO - Received resume: <_io.BytesIO object at 0x00000254C924A250>, <class '_io.BytesIO'>
+2025-02-09 02:27:56,858 - INFO - [' Given your experience at ZS Associates analyzing treatment patterns for 19K+ oncologists using predictive modeling techniques like Random Forest and KM curves, can you describe a situation where you had to overcome challenges in handling a large dataset for predictive modeling?  ', ' Can you explain your experience with the K-Means clustering technique and how you used it to segment doctors and tailor marketing strategies at ZS Associates?  ', " Describe your experience with building and optimizing data pipelines, specifically focusing on your work at ZS Associates where you managed 279K+ cancer patients' data. ", ' Given your background in mechanical engineering and your data science coursework at Duke, can you discuss a project where you successfully integrated knowledge from both domains? ', ' You mention developing performance dashboards and reducing human error and RTV orders by 18% at Just Deliveries.  Can you walk me through the technical approach you used to achieve this, highlighting the data analysis involved?\n']
+2025-02-09 02:27:56,860 - INFO - Interview simulation successful.
+2025-02-09 02:27:56,862 - INFO - 127.0.0.1 - - [09/Feb/2025 02:27:56] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 02:27:56,931 - INFO - Interview route accessed.
+2025-02-09 02:27:56,962 - INFO - 127.0.0.1 - - [09/Feb/2025 02:27:56] "GET /interview HTTP/1.1" 200 -
+2025-02-09 02:27:57,058 - INFO - 127.0.0.1 - - [09/Feb/2025 02:27:57] "GET /static/js/interview.js HTTP/1.1" 200 -
+2025-02-09 02:27:57,081 - INFO - 127.0.0.1 - - [09/Feb/2025 02:27:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:27:57,135 - INFO - 127.0.0.1 - - [09/Feb/2025 02:27:57] "[36mGET /static/assets/profile.jpg HTTP/1.1[0m" 304 -
+2025-02-09 02:42:17,892 - INFO - Starting Flask app...
+2025-02-09 02:42:18,071 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-09 02:42:18,073 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 02:42:18,118 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 02:42:25,081 - INFO - Starting Flask app...
+2025-02-09 02:42:25,135 - WARNING -  * Debugger is active!
+2025-02-09 02:42:25,164 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 02:42:29,825 - INFO - Home route accessed.
+2025-02-09 02:42:29,901 - INFO - 127.0.0.1 - - [09/Feb/2025 02:42:29] "GET / HTTP/1.1" 200 -
+2025-02-09 02:42:29,995 - INFO - 127.0.0.1 - - [09/Feb/2025 02:42:29] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-02-09 02:42:30,064 - INFO - 127.0.0.1 - - [09/Feb/2025 02:42:30] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 02:42:48,721 - INFO - Simulating interview...
+2025-02-09 02:42:48,939 - INFO - Received resume: <_io.BytesIO object at 0x0000019068530EF0>, <class '_io.BytesIO'>
+2025-02-09 02:42:55,080 - INFO - ['Tell me about a time you had to work on a project with a team. How did you contribute and what challenges did you face?', 'Describe a situation where you had to analyze a large dataset and draw meaningful conclusions. What methods did you use and what were the key findings?', 'Give me an example of a time you had to learn a new skill quickly. How did you approach the learning process and what was the outcome?', 'Tell me about a time you had to present your findings to a non-technical audience. How did you tailor your presentation to ensure they understood your work?', 'Describe a time you faced a significant challenge in a project. How did you overcome the obstacle and what did you learn from the experience?']
+2025-02-09 02:42:55,082 - INFO - Interview simulation successful.
+2025-02-09 02:42:55,084 - INFO - 127.0.0.1 - - [09/Feb/2025 02:42:55] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 02:42:55,168 - INFO - Interview route accessed.
+2025-02-09 02:42:55,199 - INFO - 127.0.0.1 - - [09/Feb/2025 02:42:55] "GET /interview HTTP/1.1" 200 -
+2025-02-09 02:42:55,289 - INFO - 127.0.0.1 - - [09/Feb/2025 02:42:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:42:55,298 - INFO - 127.0.0.1 - - [09/Feb/2025 02:42:55] "GET /static/assets/profile.jpg HTTP/1.1" 200 -
+2025-02-09 02:42:55,367 - INFO - 127.0.0.1 - - [09/Feb/2025 02:42:55] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 02:43:20,589 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\modules\\genaimodell.py', reloading
+2025-02-09 02:43:30,312 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 02:43:38,742 - INFO - Starting Flask app...
+2025-02-09 02:43:38,788 - WARNING -  * Debugger is active!
+2025-02-09 02:43:38,827 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 02:45:36,801 - INFO - Starting Flask app...
+2025-02-09 02:45:36,993 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-09 02:45:36,995 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 02:45:37,033 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 02:45:46,379 - INFO - Starting Flask app...
+2025-02-09 02:45:46,449 - WARNING -  * Debugger is active!
+2025-02-09 02:45:46,489 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 02:45:46,591 - INFO - Home route accessed.
+2025-02-09 02:45:46,611 - INFO - 127.0.0.1 - - [09/Feb/2025 02:45:46] "GET / HTTP/1.1" 200 -
+2025-02-09 02:45:46,703 - INFO - 127.0.0.1 - - [09/Feb/2025 02:45:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:45:46,758 - INFO - 127.0.0.1 - - [09/Feb/2025 02:45:46] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 02:46:04,178 - INFO - Simulating interview...
+2025-02-09 02:46:04,477 - INFO - Received resume: <_io.BytesIO object at 0x00000193C1B40EA0>, <class '_io.BytesIO'>
+2025-02-09 02:46:11,184 - INFO - [' Given your experience at ZS Associates using Random Forest, KM Curves, and Regression techniques for predictive modeling, can you describe a situation where you had to choose the right model for a specific problem and justify your choice? ', '  Can you explain your experience with creating analytics pipelines and dashboards, particularly focusing on a project where you managed a large volume of data (e.g., 279K+ cancer patients)?  ', '  Describe a time when you had to utilize advanced clustering techniques (like K-Means) to segment a customer base. How did you measure the success of your segmentation strategy? ', '  Your resume highlights your experience in market research. Can you walk me through a project where you used market research to inform strategic decisions, focusing on the methodologies and results? ', ' Considering your work on the DTC pilot project at Just Deliveries, can you explain your approach to optimizing and digitizing the delivery network model and how you measured the success of your interventions?\n']
+2025-02-09 02:46:11,186 - INFO - Interview simulation successful.
+2025-02-09 02:46:11,189 - INFO - 127.0.0.1 - - [09/Feb/2025 02:46:11] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 02:46:11,287 - INFO - Interview route accessed.
+2025-02-09 02:46:11,310 - INFO - 127.0.0.1 - - [09/Feb/2025 02:46:11] "GET /interview HTTP/1.1" 200 -
+2025-02-09 02:46:11,368 - INFO - 127.0.0.1 - - [09/Feb/2025 02:46:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:46:11,411 - INFO - 127.0.0.1 - - [09/Feb/2025 02:46:11] "[36mGET /static/assets/profile.jpg HTTP/1.1[0m" 304 -
+2025-02-09 02:46:11,413 - INFO - 127.0.0.1 - - [09/Feb/2025 02:46:11] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 02:50:33,619 - INFO - Starting Flask app...
+2025-02-09 02:50:33,810 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-09 02:50:33,812 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 02:50:33,860 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 02:50:44,218 - INFO - Starting Flask app...
+2025-02-09 02:50:44,274 - WARNING -  * Debugger is active!
+2025-02-09 02:50:44,311 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 02:50:44,427 - INFO - Home route accessed.
+2025-02-09 02:50:44,445 - INFO - 127.0.0.1 - - [09/Feb/2025 02:50:44] "GET / HTTP/1.1" 200 -
+2025-02-09 02:50:44,557 - INFO - 127.0.0.1 - - [09/Feb/2025 02:50:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:50:44,623 - INFO - 127.0.0.1 - - [09/Feb/2025 02:50:44] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 02:51:00,959 - INFO - Simulating interview...
+2025-02-09 02:51:01,323 - INFO - Received resume: <_io.BytesIO object at 0x0000019D159113A0>, <class '_io.BytesIO'>
+2025-02-09 02:51:08,474 - INFO - [' Tell me about your experience with Java and C programming languages, focusing on projects where you applied these skills. ', ' Can you describe a situation where you had to analyze a large dataset, identify key insights, and communicate those findings effectively to a non-technical audience?  ', '  Your resume mentions experience with predictive modeling.  Describe a project where you used predictive modeling techniques (e.g., Random Forest, KM Curves, Regression) and explain the challenges you encountered and how you overcame them. ', '  You have experience with AWS services (S3, Athena, Redshift, EMR).  Give me an example of a time you used these services for a data-related task, highlighting your problem-solving approach. ', '  Based on your experience with data visualization and storytelling, how would you approach presenting complex data insights to a senior leadership team at AWS in a compelling and concise manner?\n']
+2025-02-09 02:51:08,478 - INFO - Interview simulation successful.
+2025-02-09 02:51:08,480 - INFO - 127.0.0.1 - - [09/Feb/2025 02:51:08] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 02:51:08,556 - INFO - Interview route accessed.
+2025-02-09 02:51:08,598 - INFO - 127.0.0.1 - - [09/Feb/2025 02:51:08] "GET /interview HTTP/1.1" 200 -
+2025-02-09 02:51:08,647 - INFO - 127.0.0.1 - - [09/Feb/2025 02:51:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:51:08,751 - INFO - 127.0.0.1 - - [09/Feb/2025 02:51:08] "[36mGET /static/assets/profile.jpg HTTP/1.1[0m" 304 -
+2025-02-09 02:51:08,901 - INFO - 127.0.0.1 - - [09/Feb/2025 02:51:08] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 02:51:49,312 - INFO - Interview route accessed.
+2025-02-09 02:51:49,328 - INFO - 127.0.0.1 - - [09/Feb/2025 02:51:49] "GET /interview HTTP/1.1" 200 -
+2025-02-09 02:51:49,399 - INFO - 127.0.0.1 - - [09/Feb/2025 02:51:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 02:51:49,465 - INFO - 127.0.0.1 - - [09/Feb/2025 02:51:49] "[36mGET /static/assets/profile.jpg HTTP/1.1[0m" 304 -
+2025-02-09 02:51:49,487 - INFO - 127.0.0.1 - - [09/Feb/2025 02:51:49] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -

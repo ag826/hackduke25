@@ -13,15 +13,41 @@ gemini_client = genai.GenerativeModel(
 )
 
 
+# Profiler of the interviewer
+def interview_profile(
+    position,
+    company_name,
+    profile,
+    job_description,
+    model=genai.GenerativeModel("gemini-1.5-flash"),
+):
+    response = model.generate_content(
+        [
+            "Based on the information given below for a candidate preparing for an interview, generate a fictional yet realistic description of a hypothetical interviewer who would conduct this interview"
+            "Describe the critical background and profile of the interviewer in 3 sentences"
+            f"The position the candidate is applying for is: {position}"
+            f"The company name the candidate is applying to is: {company_name}"
+            f"The job description of the position the candidate is applying for is: {job_description}"
+            f"The type of interview the the candidate is preparing for is: {profile}"
+            "Deliver your output in first person, and share details a candidate would only be able to find through public resources",
+        ]
+    )
+    interviewer_desc = response.text
+    return interviewer_desc
+
+
 # Initial interview questions
 def get_summary(
     position,
     company_name,
+    profile,
     job_description,
     resume_pdf,
     model=genai.GenerativeModel("gemini-1.5-flash"),
 ):
-    resume = genai.upload_file(resume_pdf, mime_type="application/pdf")  # Corrected here
+    resume = genai.upload_file(
+        resume_pdf, mime_type="application/pdf"
+    )  # Corrected here
 
     response = model.generate_content(
         [
@@ -30,10 +56,12 @@ def get_summary(
             f"The position the candidate is applying for is: {position}"
             f"The company name the candidate is applying to is: {company_name}"
             f"The job description of the position the candidate is applying for is: {job_description}"
+            f"The type of interview the the candidate is preparing for is: {profile}"
             "The resume of the candidate applying for this position is attached as a pdf below."
             "First understand the position the candidate is applying for based on the job description and your knowledge of the type of questions the company usually asks in interviews",
             "Then use the context from the resume to generate the 5 questions the candidate is most likely to recieve in an interview."
-            "Return the 5 questions in a pipe '|' seperated format to me. Return only the five questions in this format, do not include anything else before or after the questions",
+            "Return the 5 questions in a pipe '|' seperated format to me. Return only the five questions in this format, do not include anything else before or after the questions"
+            "Ensure there is a flow to the questions that you ask",
             resume,
         ]
     )
@@ -87,22 +115,30 @@ def review_answers(
 
 if __name__ == "__main__":
 
-    resume_path = "C:\\Users\\asus\\Desktop\\DUKE\\INTERNSHIPS\\PROJ UPD\\Resume - Adil Keku Gazder.pdf"
-    questions = get_summary(
+    profile = interview_profile(
         "Data Science Intern",
         "Amazon Web Services",
-        " ",
-        resume_path,
-    )
-
-    review = review_answers(
-        "Your resume highlights your work on a portfolio optimization algorithm. Can you describe the algorithm you used, the challenges you faced, and how you evaluated its performance?",
-        "Yes I did a really cool project",
-        "Data Science Intern",
-        "Amazon Web Services",
+        "Behavioural",
         "data science internship covering data engineering, SQL, python",
-        resume_path,
     )
-    print(f"LIKELY QUESTIONS ARE:{questions}")
-    print("")
-    print(f"FEEDBACK:{review}")
+    print(profile)
+
+    # resume_path = "C:\\Users\\asus\\Desktop\\DUKE\\INTERNSHIPS\\PROJ UPD\\Resume - Adil Keku Gazder.pdf"
+    # questions = get_summary(
+    #     "Data Science Intern",
+    #     "Amazon Web Services",
+    #     " ",
+    #     resume_path,
+    # )
+
+    # review = review_answers(
+    #     "Your resume highlights your work on a portfolio optimization algorithm. Can you describe the algorithm you used, the challenges you faced, and how you evaluated its performance?",
+    #     "Yes I did a really cool project",
+    #     "Data Science Intern",
+    #     "Amazon Web Services",
+    #     "data science internship covering data engineering, SQL, python",
+    #     resume_path,
+    # )
+    # print(f"LIKELY QUESTIONS ARE:{questions}")
+    # print("")
+    # print(f"FEEDBACK:{review}")

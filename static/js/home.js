@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const resumeInput = document.getElementById("resume");
     const resultsDiv = document.getElementById("results");
     const loadingDiv = document.getElementById("loading");
+    const profileInput = document.getElementById("profile-type");
 
     // Event listener for the interview form
     interviewForm.addEventListener("submit", async (event) => {
@@ -15,8 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const company = companyInput.value.trim();
         const jobDescription = jobDescriptionInput.value.trim();
         const resume = resumeInput.files[0];
+        const profile=profileInput.value.trim()
 
-        if (!position || !company || !jobDescription || !resume) {
+        if (!position || !company || !jobDescription || !resume || !profile) {
             resultsDiv.innerHTML = "<p class='text-danger'>Please fill in all fields and upload your resume.</p>";
             return;
         }
@@ -30,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
         formData.append("company", company);
         formData.append("jobDescription", jobDescription);
         formData.append("resume", resume);
+        formData.append("profile_type", profile);
 
         try {
             // Send the form data to the simulate API
