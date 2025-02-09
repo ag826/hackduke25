@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const improvementsDiv = document.createElement("div");
                 const improvementsList = result.suggested_improvements.map(improvement => `<li>${improvement}</li>`).join('');
                 improvementsDiv.innerHTML = `
-                    <h2>Suggested Improvements</h2>
+                    <h3>Feedback on your responses:</h3>
                     <ul>${improvementsList}</ul>
                 `;
                 resultContainer.appendChild(improvementsDiv);
