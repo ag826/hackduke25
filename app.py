@@ -1,7 +1,7 @@
 import logging
 from flask import Flask, request, jsonify, render_template, redirect, url_for, session
 import os
-from modules.genaimodell import get_summary, review_answers
+from modules.genaimodell import get_summary, review_answers, interview_profile
 from modules.voice2text import text_to_voice, mp3_to_text
 from io import BytesIO
 from dotenv import load_dotenv
@@ -94,8 +94,11 @@ def results():
                 
                 # Convert the audio file to text
                 answer_text = transcribe_answer(audio_file)
+                answer_text = answer_text if answer_text else "No answer provided"
                 app.logger.info("Transcribed answers are: %s", answer_text)
                 #matrix.append({"question": question, "answer": answer_text})
+                #app.logger.info(matrix)
+                #Question and answer
                 #TODO retrieve:
                 position = 'Data Science Intern'#request.form.get("position")
                 company = 'Amazon Web Services'#request.form.get("company")
@@ -109,6 +112,7 @@ def results():
         app.logger.error(f"Error processing results: {e}")
         return jsonify({"error": str(e)}), 500
 
+
 # Backend Processing
 @app.route("/simulate", methods=["POST"])
 def simulate_interview():
@@ -120,9 +124,9 @@ def simulate_interview():
         position = request.form.get("position")
         company = request.form.get("company")
         job_description = request.form.get("jobDescription")
+        profile = request.form.get("profile_type")
         resume = request.files["resume"]  # This is a FileStorage object
-        # TODO: profile-type 
-        app.logger.info(position, company, job_description, resume)
+        app.logger.info(position, company, job_description, profile, resume)
         # Convert the resume file to a format compatible with genai
         resume_bytes = BytesIO(resume.read())
         app.logger.info(f"Received resume: {resume_bytes}, {type(resume_bytes)}")
@@ -134,12 +138,21 @@ def simulate_interview():
         processed_data = get_summary(
             position,
             company,
+            profile,
             job_description,
             resume_bytes,
         )
+        interviewer_profile = interview_profile(
+            position,
+            company,
+            profile,
+            job_description,
+        )
         app.logger.info(processed_data)
         app.logger.info("Interview simulation successful.")
-        session["simulationResults"] = processed_data  # Store in session for retrieval in the frontend
+        session["simulationResults"] = (
+            processed_data  # Store in session for retrieval in the frontend
+        )
         return jsonify(processed_data)
     except Exception as e:
         app.logger.error(f"Error simulating interview: {e}")

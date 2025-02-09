@@ -3,12 +3,12 @@
 {% block content %}
 <div class="container py-5">
     <h1 class="text-center mb-4">Interview Application</h1>
-    <p class="text-center mb-4">Answer the following questions:</p>
+    <p class="text-center mb-4">Record your answers to the following questions. Your answers will be submitted after you have answered all the questions. The background of your interviewer has also been shared for reference:</p>
 
     <!-- Profile image canvas -->
     <div class="mb-4 text-center">
-        <label for="profileCanvas" class="form-label d-block mb-2 text-muted">Profile Image:</label>
-        <canvas id="profileCanvas" width="200" height="200" class="rounded-circle border border-3" style="background-color: #f8f9fa;"></canvas>
+        <label for="profileImage" class="form-label d-block mb-2 text-muted">Meet your interviewer!</label>
+        <img src="{{ url_for('static', filename='assets/profile.jpg') }}" alt="Profile Image" class="profile-img">
     </div>
 
     <!-- Question display -->
