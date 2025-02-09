@@ -118,13 +118,13 @@ def review_answers(
 
     result = {
         "question": question,
-        "What worked?": feedback_list[0].strip(),
-        "What could have been improved?": feedback_list[1].strip(),
-        "Given your background, a suggested answer to this question": feedback_list[
+        "what_worked": feedback_list[0].strip(),
+        "what_improve": feedback_list[1].strip(),
+        "alt_answer": feedback_list[
             2
         ].strip(),
-        "Overall score": feedback_list[3].strip(),
-        "Evaluation criteria": feedback_list[4].strip(),
+        "overall_score": feedback_list[3].strip(),
+        "criteria": feedback_list[4].strip(),
     }
     return result
 

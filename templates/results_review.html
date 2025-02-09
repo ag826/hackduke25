@@ -1,16 +1,20 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-    <h1>Interview Simulation Results</h1>
+    <div class="container">
+        <!-- Header Section -->
+        <h1 class="page-title">Interview Simulation Results</h1>
 
-    <!-- Loading Spinner -->
-    <div id="loading" style="display: none;">
-        <p>Loading...</p>
-    </div>
+        <!-- Loading Spinner -->
+        <div id="loading" class="loading-spinner" style="display: none;">
+            <div class="spinner"></div>
+            <p class="loading-text">Loading...</p>
+        </div>
 
-    <!-- Results Container -->
-    <div id="results">
-        <!-- Results will be populated here by JavaScript -->
+        <!-- Results Container -->
+        <div id="results" class="results-container">
+            <!-- Results will be populated here by JavaScript -->
+        </div>
     </div>
 
     <!-- Link to external JavaScript file -->
