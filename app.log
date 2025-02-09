@@ -459,3 +459,351 @@ Error opening input files: Invalid data found when processing input
 2025-02-08 23:00:43,046 - INFO - Getting final feedback...
 2025-02-08 23:00:43,049 - INFO - ImmutableMultiDict([])
 2025-02-08 23:00:43,052 - INFO - 127.0.0.1 - - [08/Feb/2025 23:00:43] "POST /results HTTP/1.1" 200 -
+2025-02-08 23:29:46,196 - INFO - Starting Flask app...
+2025-02-08 23:29:46,423 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-08 23:29:46,426 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-08 23:29:46,460 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 23:29:56,986 - INFO - Starting Flask app...
+2025-02-08 23:29:57,055 - WARNING -  * Debugger is active!
+2025-02-08 23:29:57,091 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 23:29:57,192 - INFO - Home route accessed.
+2025-02-08 23:29:57,221 - INFO - 127.0.0.1 - - [08/Feb/2025 23:29:57] "GET / HTTP/1.1" 200 -
+2025-02-08 23:29:57,361 - INFO - 127.0.0.1 - - [08/Feb/2025 23:29:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 23:29:57,406 - INFO - 127.0.0.1 - - [08/Feb/2025 23:29:57] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-08 23:30:09,791 - INFO - Simulating interview...
+2025-02-08 23:30:09,850 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\logging\\__init__.py', reloading
+2025-02-08 23:30:10,107 - INFO - Received resume: <_io.BytesIO object at 0x0000017D16650CC0>, <class '_io.BytesIO'>
+2025-02-08 23:30:10,121 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\flask\\app.py', reloading
+2025-02-08 23:30:10,130 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+2025-02-08 23:30:10,133 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+2025-02-08 23:30:10,136 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\http\\server.py', reloading
+2025-02-08 23:30:10,138 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\socketserver.py', reloading
+2025-02-08 23:30:10,140 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\threading.py', reloading
+2025-02-08 23:30:13,138 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 23:30:20,898 - INFO - Starting Flask app...
+2025-02-08 23:30:20,959 - WARNING -  * Debugger is active!
+2025-02-08 23:30:20,990 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 23:30:21,075 - INFO - Simulating interview...
+2025-02-08 23:30:21,205 - INFO - Received resume: <_io.BytesIO object at 0x00000198FF8A0C70>, <class '_io.BytesIO'>
+2025-02-08 23:30:27,095 - INFO - [' What specific data science projects are you most proud of, and what challenges did you overcome in completing them? ', ' Can you describe your experience with various machine learning algorithms and your understanding of their strengths and weaknesses? ', ' How would you approach a problem involving large datasets, and what tools and techniques would you use for efficient data processing and analysis?  ', '  Give me an example of a time you had to work with incomplete or messy data; how did you handle the situation? ', ' How familiar are you with AWS services, and what experience do you have with cloud computing?', '\n']
+2025-02-08 23:30:27,097 - INFO - Interview simulation successful.
+2025-02-08 23:30:27,098 - INFO - Interview simulation successful.
+2025-02-08 23:30:27,102 - INFO - 127.0.0.1 - - [08/Feb/2025 23:30:27] "POST /simulate HTTP/1.1" 200 -
+2025-02-08 23:30:27,198 - INFO - Interview route accessed.
+2025-02-08 23:30:27,246 - INFO - 127.0.0.1 - - [08/Feb/2025 23:30:27] "GET /interview HTTP/1.1" 200 -
+2025-02-08 23:30:27,305 - INFO - 127.0.0.1 - - [08/Feb/2025 23:30:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 23:30:27,423 - INFO - 127.0.0.1 - - [08/Feb/2025 23:30:27] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-08 23:30:51,642 - INFO - Getting final feedback...
+2025-02-08 23:30:51,647 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined'), ('question-5', 'undefined')])
+2025-02-08 23:30:51,649 - INFO - undefined
+2025-02-08 23:30:51,650 - INFO - <FileStorage: 'answer-0.mp3' ('audio/mpeg')>
+2025-02-08 23:30:52,529 - ERROR - Invalid audio file: Decoding failed. ffmpeg returned error code: 3199971767
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with clang version 19.1.2
+  configuration: --prefix=/d/bld/ffmpeg_1729893022917/_h_env/Library --cc=clang.exe --cxx=clang++.exe --nm=llvm-nm --ar=llvm-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --ld=lld-link --target-os=win64 --enable-cross-compile --toolchain=msvc --host-cc=clang.exe --extra-libs=ucrt.lib --extra-libs=vcruntime.lib --extra-libs=oldnames.lib --strip=llvm-strip --disable-stripping --host-extralibs= --disable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libopus --enable-librsvg --pkg-config=/d/bld/ffmpeg_1729893022917/_build_env/Library/bin/pkg-config
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[cache @ 000002B355C7E080] Inner protocol failed to seekback end : -40
+    Last message repeated 1 times
+[mp3 @ 000002B355CD3C40] Failed to find two consecutive MPEG audio frames.
+[cache @ 000002B355C7E080] Statistics, cache hits:0 cache misses:0
+[in#0 @ 000002B355CC8C40] Error opening input: Invalid data found when processing input
+Error opening input file cache:pipe:0.
+Error opening input files: Invalid data found when processing input
+
+2025-02-08 23:30:52,538 - INFO - 127.0.0.1 - - [08/Feb/2025 23:30:52] "[31m[1mPOST /results HTTP/1.1[0m" 400 -
+2025-02-08 23:30:56,398 - INFO - Getting final feedback...
+2025-02-08 23:30:56,404 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined'), ('question-5', 'undefined')])
+2025-02-08 23:30:56,409 - INFO - undefined
+2025-02-08 23:30:56,411 - INFO - <FileStorage: 'answer-0.mp3' ('audio/mpeg')>
+2025-02-08 23:30:56,887 - ERROR - Invalid audio file: Decoding failed. ffmpeg returned error code: 3199971767
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with clang version 19.1.2
+  configuration: --prefix=/d/bld/ffmpeg_1729893022917/_h_env/Library --cc=clang.exe --cxx=clang++.exe --nm=llvm-nm --ar=llvm-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --ld=lld-link --target-os=win64 --enable-cross-compile --toolchain=msvc --host-cc=clang.exe --extra-libs=ucrt.lib --extra-libs=vcruntime.lib --extra-libs=oldnames.lib --strip=llvm-strip --disable-stripping --host-extralibs= --disable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libopus --enable-librsvg --pkg-config=/d/bld/ffmpeg_1729893022917/_build_env/Library/bin/pkg-config
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[cache @ 000002545844CC00] Inner protocol failed to seekback end : -40
+    Last message repeated 1 times
+[mp3 @ 00000254584A61C0] Failed to find two consecutive MPEG audio frames.
+[cache @ 000002545844CC00] Statistics, cache hits:0 cache misses:0
+[in#0 @ 0000025458466140] Error opening input: Invalid data found when processing input
+Error opening input file cache:pipe:0.
+Error opening input files: Invalid data found when processing input
+
+2025-02-08 23:30:56,898 - INFO - 127.0.0.1 - - [08/Feb/2025 23:30:56] "[31m[1mPOST /results HTTP/1.1[0m" 400 -
+2025-02-08 23:35:48,551 - INFO - Starting Flask app...
+2025-02-08 23:35:48,984 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-08 23:35:48,991 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-08 23:35:49,089 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 23:36:01,077 - INFO - Starting Flask app...
+2025-02-08 23:36:01,164 - WARNING -  * Debugger is active!
+2025-02-08 23:36:01,232 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 23:36:01,366 - INFO - Home route accessed.
+2025-02-08 23:36:01,392 - INFO - 127.0.0.1 - - [08/Feb/2025 23:36:01] "GET / HTTP/1.1" 200 -
+2025-02-08 23:36:01,608 - INFO - 127.0.0.1 - - [08/Feb/2025 23:36:01] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-08 23:36:01,681 - INFO - 127.0.0.1 - - [08/Feb/2025 23:36:01] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 23:36:17,709 - INFO - Simulating interview...
+2025-02-08 23:36:17,903 - INFO - Received resume: <_io.BytesIO object at 0x000002CDC6D80CC0>, <class '_io.BytesIO'>
+2025-02-08 23:36:24,373 - INFO - ['What specific projects from your resume best demonstrate your ability to leverage data to make impactful business decisions, and how did you measure the success of those projects?', 'What technical skills do you possess that are directly applicable to the Data Science Intern role at AWS, and can you provide specific examples of how you have used these skills in previous projects or coursework?', 'Describe a challenging technical problem you encountered during a project or internship, and explain how you approached and solved it.  What did you learn from the experience?', 'How familiar are you with AWS services (e.g., S3, Redshift, EMR), and how would you apply your knowledge of these services to a data science project within Amazon?', 'Can you explain your understanding of different machine learning models and algorithms, and how would you choose the appropriate model for a given problem?  Provide examples from your experience.']
+2025-02-08 23:36:24,375 - INFO - Interview simulation successful.
+2025-02-08 23:36:24,375 - INFO - Interview simulation successful.
+2025-02-08 23:36:24,377 - INFO - 127.0.0.1 - - [08/Feb/2025 23:36:24] "POST /simulate HTTP/1.1" 200 -
+2025-02-08 23:36:24,473 - INFO - Interview route accessed.
+2025-02-08 23:36:24,487 - INFO - 127.0.0.1 - - [08/Feb/2025 23:36:24] "GET /interview HTTP/1.1" 200 -
+2025-02-08 23:36:24,588 - INFO - 127.0.0.1 - - [08/Feb/2025 23:36:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 23:36:24,606 - INFO - 127.0.0.1 - - [08/Feb/2025 23:36:24] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-08 23:36:58,050 - INFO - Getting final feedback...
+2025-02-08 23:36:58,065 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-08 23:36:58,067 - INFO - undefined
+2025-02-08 23:36:58,071 - INFO - <FileStorage: 'answer-0.mp3' ('audio/mpeg')>
+2025-02-08 23:36:58,904 - ERROR - Invalid audio file: Decoding failed. ffmpeg returned error code: 3199971767
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with clang version 19.1.2
+  configuration: --prefix=/d/bld/ffmpeg_1729893022917/_h_env/Library --cc=clang.exe --cxx=clang++.exe --nm=llvm-nm --ar=llvm-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --ld=lld-link --target-os=win64 --enable-cross-compile --toolchain=msvc --host-cc=clang.exe --extra-libs=ucrt.lib --extra-libs=vcruntime.lib --extra-libs=oldnames.lib --strip=llvm-strip --disable-stripping --host-extralibs= --disable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libopus --enable-librsvg --pkg-config=/d/bld/ffmpeg_1729893022917/_build_env/Library/bin/pkg-config
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[cache @ 000001F9E10ACC00] Inner protocol failed to seekback end : -40
+    Last message repeated 1 times
+[mp3 @ 000001F9E1107FC0] Failed to find two consecutive MPEG audio frames.
+[cache @ 000001F9E10ACC00] Statistics, cache hits:0 cache misses:0
+[in#0 @ 000001F9E10C6140] Error opening input: Invalid data found when processing input
+Error opening input file cache:pipe:0.
+Error opening input files: Invalid data found when processing input
+
+2025-02-08 23:36:58,971 - INFO - 127.0.0.1 - - [08/Feb/2025 23:36:58] "[31m[1mPOST /results HTTP/1.1[0m" 400 -
+2025-02-08 23:59:08,798 - INFO - Starting Flask app...
+2025-02-08 23:59:08,970 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-08 23:59:08,972 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-08 23:59:09,003 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 23:59:18,075 - INFO - Starting Flask app...
+2025-02-08 23:59:18,126 - WARNING -  * Debugger is active!
+2025-02-08 23:59:18,168 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 23:59:20,275 - INFO - Home route accessed.
+2025-02-08 23:59:20,326 - INFO - 127.0.0.1 - - [08/Feb/2025 23:59:20] "GET / HTTP/1.1" 200 -
+2025-02-08 23:59:20,810 - INFO - 127.0.0.1 - - [08/Feb/2025 23:59:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 23:59:20,918 - INFO - 127.0.0.1 - - [08/Feb/2025 23:59:20] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-08 23:59:44,039 - INFO - Simulating interview...
+2025-02-08 23:59:44,243 - INFO - Received resume: <_io.BytesIO object at 0x000002073B8E6E80>, <class '_io.BytesIO'>
+2025-02-08 23:59:51,675 - INFO - [' Can you walk me through your experience using Python, Java, and C++ in your previous roles, highlighting projects where you leveraged these languages for data science tasks? ', ' Describe a challenging data science project you encountered, detailing the problem, your approach to solving it, the tools you used, and the outcome. ', ' Given your experience with AWS services (S3, Athena, Redshift, EMR), how would you design a data pipeline for processing large datasets efficiently on AWS? ', " Based on your resume, you've worked with various machine learning models (e.g., Random Forest, K-Means).  Explain your understanding of the strengths and limitations of these models and when you might choose one over the other. ", ' How would you approach a problem where you need to analyze unstructured data, and how would you prepare that data for use in a machine learning model?\n']
+2025-02-08 23:59:51,677 - INFO - Interview simulation successful.
+2025-02-08 23:59:51,679 - INFO - Interview simulation successful.
+2025-02-08 23:59:51,683 - INFO - 127.0.0.1 - - [08/Feb/2025 23:59:51] "POST /simulate HTTP/1.1" 200 -
+2025-02-08 23:59:51,805 - INFO - Interview route accessed.
+2025-02-08 23:59:51,820 - INFO - 127.0.0.1 - - [08/Feb/2025 23:59:51] "GET /interview HTTP/1.1" 200 -
+2025-02-08 23:59:51,868 - INFO - 127.0.0.1 - - [08/Feb/2025 23:59:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 23:59:52,278 - INFO - 127.0.0.1 - - [08/Feb/2025 23:59:52] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 00:00:30,777 - INFO - Getting final feedback...
+2025-02-09 00:00:30,785 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 00:00:30,787 - INFO - undefined
+2025-02-09 00:00:30,789 - INFO - <FileStorage: 'answer-0.mp3' ('audio/mpeg')>
+2025-02-09 00:00:31,397 - ERROR - Invalid audio file: Decoding failed. ffmpeg returned error code: 3199971767
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with clang version 19.1.2
+  configuration: --prefix=/d/bld/ffmpeg_1729893022917/_h_env/Library --cc=clang.exe --cxx=clang++.exe --nm=llvm-nm --ar=llvm-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --ld=lld-link --target-os=win64 --enable-cross-compile --toolchain=msvc --host-cc=clang.exe --extra-libs=ucrt.lib --extra-libs=vcruntime.lib --extra-libs=oldnames.lib --strip=llvm-strip --disable-stripping --host-extralibs= --disable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libopus --enable-librsvg --pkg-config=/d/bld/ffmpeg_1729893022917/_build_env/Library/bin/pkg-config
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[cache @ 000001969A4CE480] Inner protocol failed to seekback end : -40
+    Last message repeated 1 times
+[mp3 @ 000001969A52F4C0] Failed to find two consecutive MPEG audio frames.
+[cache @ 000001969A4CE480] Statistics, cache hits:0 cache misses:0
+[in#0 @ 000001969A519680] Error opening input: Invalid data found when processing input
+Error opening input file cache:pipe:0.
+Error opening input files: Invalid data found when processing input
+
+2025-02-09 00:00:31,407 - INFO - 127.0.0.1 - - [09/Feb/2025 00:00:31] "[31m[1mPOST /results HTTP/1.1[0m" 400 -
+2025-02-09 00:03:23,347 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 00:03:23,350 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 00:03:26,997 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 00:03:42,593 - INFO - Starting Flask app...
+2025-02-09 00:03:42,692 - WARNING -  * Debugger is active!
+2025-02-09 00:03:42,750 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 00:04:02,891 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\flask\\helpers.py', reloading
+2025-02-09 00:04:09,846 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 00:05:20,439 - INFO - Starting Flask app...
+2025-02-09 00:05:20,614 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-09 00:05:20,616 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 00:05:20,689 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 00:05:28,635 - INFO - Starting Flask app...
+2025-02-09 00:05:28,686 - WARNING -  * Debugger is active!
+2025-02-09 00:05:28,718 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 00:05:42,276 - INFO - Home route accessed.
+2025-02-09 00:05:42,315 - INFO - 127.0.0.1 - - [09/Feb/2025 00:05:42] "GET / HTTP/1.1" 200 -
+2025-02-09 00:05:42,417 - INFO - 127.0.0.1 - - [09/Feb/2025 00:05:42] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 00:05:42,467 - INFO - 127.0.0.1 - - [09/Feb/2025 00:05:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 00:05:57,394 - INFO - Simulating interview...
+2025-02-09 00:05:58,174 - INFO - Received resume: <_io.BytesIO object at 0x000001E961D20CC0>, <class '_io.BytesIO'>
+2025-02-09 00:06:05,263 - INFO - [' What specific projects from your resume best demonstrate your proficiency in Java, and how did you leverage your Java skills to achieve specific outcomes?', 'Can you describe a time you had to work with a large dataset, the challenges you encountered, and how you overcame them using your data science skills?', "Describe your experience with cloud computing services like AWS, focusing on specific services you've used and projects where you applied them.", 'Given your background in finance and your data science skills, how would you approach a problem involving financial modeling within an AWS environment?', 'Explain a situation where you had to learn a new programming language or tool quickly. How did you approach the learning process, and what were the results?']
+2025-02-09 00:06:05,268 - INFO - Interview simulation successful.
+2025-02-09 00:06:05,270 - INFO - Interview simulation successful.
+2025-02-09 00:06:05,274 - INFO - 127.0.0.1 - - [09/Feb/2025 00:06:05] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 00:06:05,369 - INFO - Interview route accessed.
+2025-02-09 00:06:05,381 - INFO - 127.0.0.1 - - [09/Feb/2025 00:06:05] "GET /interview HTTP/1.1" 200 -
+2025-02-09 00:06:05,476 - INFO - 127.0.0.1 - - [09/Feb/2025 00:06:05] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 00:06:05,599 - INFO - 127.0.0.1 - - [09/Feb/2025 00:06:05] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 00:06:18,724 - INFO - Getting final feedback...
+2025-02-09 00:06:18,729 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 00:06:18,730 - INFO - undefined
+2025-02-09 00:06:18,734 - INFO - <FileStorage: 'answer-0.mp3' ('audio/mpeg')>
+2025-02-09 00:06:19,304 - ERROR - Invalid audio file: Decoding failed. ffmpeg returned error code: 3199971767
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with clang version 19.1.2
+  configuration: --prefix=/d/bld/ffmpeg_1729893022917/_h_env/Library --cc=clang.exe --cxx=clang++.exe --nm=llvm-nm --ar=llvm-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --ld=lld-link --target-os=win64 --enable-cross-compile --toolchain=msvc --host-cc=clang.exe --extra-libs=ucrt.lib --extra-libs=vcruntime.lib --extra-libs=oldnames.lib --strip=llvm-strip --disable-stripping --host-extralibs= --disable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libopus --enable-librsvg --pkg-config=/d/bld/ffmpeg_1729893022917/_build_env/Library/bin/pkg-config
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[cache @ 000002A44BF0E080] Inner protocol failed to seekback end : -40
+    Last message repeated 1 times
+[mp3 @ 000002A44BF70DC0] Failed to find two consecutive MPEG audio frames.
+[cache @ 000002A44BF0E080] Statistics, cache hits:0 cache misses:0
+[in#0 @ 000002A44BF5A300] Error opening input: Invalid data found when processing input
+Error opening input file cache:pipe:0.
+Error opening input files: Invalid data found when processing input
+
+2025-02-09 00:06:19,313 - INFO - 127.0.0.1 - - [09/Feb/2025 00:06:19] "[31m[1mPOST /results HTTP/1.1[0m" 400 -
+2025-02-09 00:06:40,576 - INFO - Getting final feedback...
+2025-02-09 00:06:40,581 - INFO - ImmutableMultiDict([])
+2025-02-09 00:06:40,583 - INFO - 127.0.0.1 - - [09/Feb/2025 00:06:40] "POST /results HTTP/1.1" 200 -
+2025-02-09 00:08:14,679 - INFO - Getting final feedback...
+2025-02-09 00:08:14,682 - INFO - ImmutableMultiDict([])
+2025-02-09 00:08:14,688 - INFO - 127.0.0.1 - - [09/Feb/2025 00:08:14] "POST /results HTTP/1.1" 200 -
+2025-02-09 00:08:19,729 - INFO - Getting final feedback...
+2025-02-09 00:08:19,730 - INFO - ImmutableMultiDict([])
+2025-02-09 00:08:19,732 - INFO - 127.0.0.1 - - [09/Feb/2025 00:08:19] "POST /results HTTP/1.1" 200 -
+2025-02-09 00:09:18,065 - INFO - Getting final feedback...
+2025-02-09 00:09:18,069 - INFO - ImmutableMultiDict([])
+2025-02-09 00:09:18,073 - INFO - 127.0.0.1 - - [09/Feb/2025 00:09:18] "POST /results HTTP/1.1" 200 -
+2025-02-09 00:10:10,525 - INFO - 127.0.0.1 - - [09/Feb/2025 00:10:10] "[31m[1mPOST /results%20 HTTP/1.1[0m" 405 -
+2025-02-09 00:10:21,258 - INFO - 127.0.0.1 - - [09/Feb/2025 00:10:21] "[31m[1mPOST /results%20 HTTP/1.1[0m" 405 -
+2025-02-09 00:12:32,254 - INFO - 127.0.0.1 - - [09/Feb/2025 00:12:32] "[31m[1mPOST /results%20 HTTP/1.1[0m" 405 -
+2025-02-09 00:12:44,195 - INFO - 127.0.0.1 - - [09/Feb/2025 00:12:44] "[33mGET /results%20 HTTP/1.1[0m" 404 -
+2025-02-09 00:12:49,319 - INFO - 127.0.0.1 - - [09/Feb/2025 00:12:49] "[31m[1mPOST /results%20 HTTP/1.1[0m" 405 -
+2025-02-09 00:43:41,120 - INFO - Starting Flask app...
+2025-02-09 00:43:41,431 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-09 00:43:41,433 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 00:43:41,536 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 00:43:56,638 - INFO - Starting Flask app...
+2025-02-09 00:43:56,807 - WARNING -  * Debugger is active!
+2025-02-09 00:43:56,906 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 00:43:57,107 - INFO - Home route accessed.
+2025-02-09 00:43:57,201 - INFO - 127.0.0.1 - - [09/Feb/2025 00:43:57] "[31m[1mPOST /results%20?question="what%20is%20your%20name"&answer HTTP/1.1[0m" 405 -
+2025-02-09 00:43:57,234 - INFO - 127.0.0.1 - - [09/Feb/2025 00:43:57] "GET / HTTP/1.1" 200 -
+2025-02-09 00:43:58,767 - INFO - 127.0.0.1 - - [09/Feb/2025 00:43:58] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 00:43:59,364 - INFO - 127.0.0.1 - - [09/Feb/2025 00:43:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 00:45:11,214 - INFO - 127.0.0.1 - - [09/Feb/2025 00:45:11] "[31m[1mPOST /results%20?question="what%20is%20your%20name"&answer HTTP/1.1[0m" 405 -
+2025-02-09 00:45:29,802 - INFO - Getting final feedback...
+2025-02-09 00:45:30,052 - INFO - ImmutableMultiDict([('question-', 'what is your name')])
+2025-02-09 00:45:30,134 - INFO - what is your name
+2025-02-09 00:45:30,155 - INFO - <FileStorage: 'Secret Psychology to Nail an Interview.mp3' ('audio/mpeg')>
+2025-02-09 00:50:15,155 - INFO - 127.0.0.1 - - [09/Feb/2025 00:50:15] "POST /results HTTP/1.1" 200 -
+2025-02-09 00:51:35,727 - INFO - Home route accessed.
+2025-02-09 00:51:35,825 - INFO - 127.0.0.1 - - [09/Feb/2025 00:51:35] "GET / HTTP/1.1" 200 -
+2025-02-09 00:51:36,196 - INFO - 127.0.0.1 - - [09/Feb/2025 00:51:36] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 00:51:36,430 - INFO - 127.0.0.1 - - [09/Feb/2025 00:51:36] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 00:51:39,852 - INFO - Home route accessed.
+2025-02-09 00:51:39,886 - INFO - 127.0.0.1 - - [09/Feb/2025 00:51:39] "GET / HTTP/1.1" 200 -
+2025-02-09 00:51:40,004 - INFO - 127.0.0.1 - - [09/Feb/2025 00:51:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 00:51:40,120 - INFO - 127.0.0.1 - - [09/Feb/2025 00:51:40] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 00:51:58,461 - INFO - Simulating interview...
+2025-02-09 00:51:58,518 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\logging\\__init__.py', reloading
+2025-02-09 00:51:59,877 - INFO - Received resume: <_io.BytesIO object at 0x0000016C5BCC0DB0>, <class '_io.BytesIO'>
+2025-02-09 00:52:08,434 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 00:52:29,040 - INFO - Starting Flask app...
+2025-02-09 00:52:29,185 - WARNING -  * Debugger is active!
+2025-02-09 00:52:29,236 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 00:52:29,784 - INFO - Simulating interview...
+2025-02-09 00:52:30,924 - INFO - Received resume: <_io.BytesIO object at 0x000001A6FBC50D10>, <class '_io.BytesIO'>
+2025-02-09 00:52:40,981 - INFO - [' What specific projects from your resume best showcase your Java or C++ skills, and how did you leverage these skills to achieve a positive outcome?', 'Can you describe a situation where you had to work with a large dataset and explain your approach to cleaning, processing, and analyzing the data?  ', ' Given your experience with predictive modeling (Random Forest, KM Curves, Regression), how would you approach a problem requiring classification or regression in a new, unfamiliar context? ', ' Describe a situation where you faced a challenge in a project and how you overcame it, highlighting your problem-solving skills. ', '  Based on your experience with data visualization, how would you communicate complex data insights from a data science project to a non-technical audience at Amazon Web Services?\n']
+2025-02-09 00:52:40,988 - INFO - Interview simulation successful.
+2025-02-09 00:52:40,997 - INFO - Interview simulation successful.
+2025-02-09 00:52:41,001 - INFO - 127.0.0.1 - - [09/Feb/2025 00:52:41] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 00:52:41,239 - INFO - Interview route accessed.
+2025-02-09 00:52:41,280 - INFO - 127.0.0.1 - - [09/Feb/2025 00:52:41] "GET /interview HTTP/1.1" 200 -
+2025-02-09 00:52:41,387 - INFO - 127.0.0.1 - - [09/Feb/2025 00:52:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 00:52:41,588 - INFO - 127.0.0.1 - - [09/Feb/2025 00:52:41] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 00:53:08,059 - INFO - Getting final feedback...
+2025-02-09 00:53:08,069 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 00:53:08,076 - INFO - undefined
+2025-02-09 00:53:08,079 - INFO - <FileStorage: 'answer-0.mp3' ('audio/mpeg')>
+2025-02-09 00:53:09,919 - ERROR - Invalid audio file: Decoding failed. ffmpeg returned error code: 3199971767
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with clang version 19.1.2
+  configuration: --prefix=/d/bld/ffmpeg_1729893022917/_h_env/Library --cc=clang.exe --cxx=clang++.exe --nm=llvm-nm --ar=llvm-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --ld=lld-link --target-os=win64 --enable-cross-compile --toolchain=msvc --host-cc=clang.exe --extra-libs=ucrt.lib --extra-libs=vcruntime.lib --extra-libs=oldnames.lib --strip=llvm-strip --disable-stripping --host-extralibs= --disable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libopus --enable-librsvg --pkg-config=/d/bld/ffmpeg_1729893022917/_build_env/Library/bin/pkg-config
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[cache @ 00000176F7175DC0] Inner protocol failed to seekback end : -40
+    Last message repeated 1 times
+[mp3 @ 00000176F71C1200] Failed to find two consecutive MPEG audio frames.
+[cache @ 00000176F7175DC0] Statistics, cache hits:0 cache misses:0
+[in#0 @ 00000176F71B9BC0] Error opening input: Invalid data found when processing input
+Error opening input file cache:pipe:0.
+Error opening input files: Invalid data found when processing input
+
+2025-02-09 00:53:09,960 - INFO - 127.0.0.1 - - [09/Feb/2025 00:53:09] "[31m[1mPOST /results HTTP/1.1[0m" 400 -

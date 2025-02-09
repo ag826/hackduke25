@@ -25,6 +25,7 @@ logging.basicConfig(
     ],
 )
 
+
 def is_valid_audio(file_storage):
     try:
         # Load audio from the uploaded file
@@ -127,12 +128,15 @@ def results():
                 app.logger.info(question)
                 audio_file = request.files.get(f"audio-{index}")
                 app.logger.info(audio_file)
-                
+
                 # Validate and play the uploaded audio file
                 if not is_valid_audio(audio_file):
                     return jsonify({"error": f"Invalid audio file: audio-{index}"}), 400
 
-        
+                # converting audio files to text
+                answer_text = transcribe_answer(audio_file)
+                matrix.append({"question": question, "answer": answer_text})
+
         return jsonify({"status": "success", "matrix": matrix}), 200
     except Exception as e:
         app.logger.error(f"Error processing results: {e}")
@@ -169,14 +173,16 @@ def simulate_interview():
         app.logger.info(processed_data)
         app.logger.info("Interview simulation successful.")
 
-        #app.logger.info(jsonify(processed_data))
-        #return jsonify(processed_data)
+        # app.logger.info(jsonify(processed_data))
+        # return jsonify(processed_data)
         # Store the processed interview data in session storage
-        session["simulationResults"] = processed_data  # Store in session for retrieval in the frontend
+        session["simulationResults"] = (
+            processed_data  # Store in session for retrieval in the frontend
+        )
         app.logger.info("Interview simulation successful.")
 
         # Redirect to the interview page
-        #return redirect(url_for("render_page", page="interview"))
+        # return redirect(url_for("render_page", page="interview"))
         return jsonify(processed_data)
     except Exception as e:
         app.logger.error(f"Error simulating interview: {e}")

@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
     loadingDiv.style.display = "block";
     resultsDiv.innerHTML = ""; // Clear previous results
 
-    fetch('/results_processed')
+    fetch('/results', {
+        method: 'POST'
+    })
         .then(response => {
             if (!response.ok) {
                 throw new Error("Network response was not ok");
