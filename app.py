@@ -7,7 +7,7 @@ from io import BytesIO
 from dotenv import load_dotenv
 from pydub import AudioSegment
 from pydub.playback import play  # To play the audio
-
+import json
 
 load_dotenv()
 flask_key = os.environ["API_KEY"]
@@ -84,6 +84,7 @@ def results():
         # Get the matrix of questions and answers
         matrix = []
         app.logger.info(request.form)
+        i = 0
         for key in request.form.keys():
             if key.startswith("question-"):
                 index = key.split("-")[1]
@@ -96,17 +97,22 @@ def results():
                 answer_text = transcribe_answer(audio_file)
                 answer_text = answer_text if answer_text else "No answer provided"
                 app.logger.info("Transcribed answers are: %s", answer_text)
-                #matrix.append({"question": question, "answer": answer_text})
-                #app.logger.info(matrix)
-                #Question and answer
-                #TODO retrieve:
-                position = 'Data Science Intern'#request.form.get("position")
-                company = 'Amazon Web Services'#request.form.get("company")
-                job_description = 'data science internship covering data engineering, SQL, python'#request.form.get("jobDescription")
-                resume = ""  # This is a FileStorage object
+                # Read from JSON file
+                try:
+                    with open("interview.json", "r") as jsonfile:
+                        simulation_results = json.load(jsonfile)
+                except Exception as e:
+                    app.logger.error(f"Error reading JSON file: {e}")
+                    return jsonify({"error": "Could not read simulation results"}), 500
+
+                position = simulation_results.get("position", "Unknown Position")
+                company = simulation_results.get("company", "Unknown Company")
+                job_description = simulation_results.get("job_description", "Unknown Job Description")
+                resume = simulation_results.get("resume", "")
+
+                # Append the reviewed answers to the matrix
+                matrix.append(review_answers(question, answer_text, position, company, job_description, resume))
                 
-                app.logger.info("Transcribed answers are: %s", answer_text)
-                matrix.append(review_answers(question, answer_text, position, company, job_description, resume)) 
         return jsonify(matrix)
     except Exception as e:
         app.logger.error(f"Error processing results: {e}")
@@ -130,7 +136,7 @@ def simulate_interview():
         # Convert the resume file to a format compatible with genai
         resume_bytes = BytesIO(resume.read())
         app.logger.info(f"Received resume: {resume_bytes}, {type(resume_bytes)}")
-
+        
         if not position or not company or not job_description or not resume:
             return jsonify({"error": "Missing required fields"}), 400
 
@@ -153,6 +159,18 @@ def simulate_interview():
         session["simulationResults"] = (
             processed_data  # Store in session for retrieval in the frontend
         )
+        # Prepare data for JSON
+        json_data = {
+            "position": position,
+            "company": company,
+            "job_description": job_description,
+            "profile": profile,
+            "questions": processed_data  # Directly use the array
+        }
+
+        # Write to JSON file
+        with open("interview.json", "w") as jsonfile:
+            json.dump(json_data, jsonfile, indent=4)
         return jsonify(processed_data)
     except Exception as e:
         app.logger.error(f"Error simulating interview: {e}")
