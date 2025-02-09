@@ -27,11 +27,23 @@ logging.basicConfig(
 
 def is_valid_audio(file_storage):
     try:
-        # Load audio from the uploaded file
-        audio = AudioSegment.from_file(BytesIO(file_storage.read()), format="mp3")
-        file_storage.seek(0)  # Reset file pointer for later saving
+        # Read file and reset pointer for future use
+        file_data = file_storage.read()
+        file_storage.seek(0)  # Reset for saving or reprocessing
 
-        # Play the audio
+        # Detect file format
+        mime_type = file_storage.content_type
+        app.logger.info(f"Received file MIME type: {mime_type}")
+
+        # Ensure correct format handling
+        if "webm" in mime_type:
+            audio = AudioSegment.from_file(BytesIO(file_data), format="webm")
+        elif "mp3" in mime_type:
+            audio = AudioSegment.from_file(BytesIO(file_data), format="mp3")
+        else:
+            raise ValueError(f"Unsupported audio format: {mime_type}")
+
+        # Play the audio (Optional: Remove in production)
         play(audio)
 
         return True
@@ -73,7 +85,7 @@ def transcribe_answer(path):
         return answer_text
     except Exception as e:
         app.logger.error(f"Error transcribing answer: {e}")
-        return jsonify({"error": str(e)}), 500
+        #return jsonify({"error": str(e)}), 500
 
 
 # To get final feedback from Gemini
@@ -131,7 +143,12 @@ def results():
                 # Validate and play the uploaded audio file
                 if not is_valid_audio(audio_file):
                     return jsonify({"error": f"Invalid audio file: audio-{index}"}), 400
-
+                
+                # Convert the audio file to text
+                answer = transcribe_answer(audio_file)
+                app.logger.info("Transcribed answers are: %s", answer)
+                #matrix.append([question, answer])
+                #app.logger.info(matrix)
         
         return jsonify({"status": "success", "matrix": matrix}), 200
     except Exception as e:
@@ -168,15 +185,7 @@ def simulate_interview():
         )
         app.logger.info(processed_data)
         app.logger.info("Interview simulation successful.")
-
-        #app.logger.info(jsonify(processed_data))
-        #return jsonify(processed_data)
-        # Store the processed interview data in session storage
         session["simulationResults"] = processed_data  # Store in session for retrieval in the frontend
-        app.logger.info("Interview simulation successful.")
-
-        # Redirect to the interview page
-        #return redirect(url_for("render_page", page="interview"))
         return jsonify(processed_data)
     except Exception as e:
         app.logger.error(f"Error simulating interview: {e}")

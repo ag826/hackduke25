@@ -22,17 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const startRecording = async () => {
         const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
         mediaRecorder = new MediaRecorder(stream);
+    
+        audioChunks = []; // Reset chunks before starting
         mediaRecorder.start();
-
+    
         mediaRecorder.addEventListener("dataavailable", event => {
             console.log("Data available", event.data);
             audioChunks.push(event.data);
-        });
-
-        mediaRecorder.addEventListener("stop", () => {
-            const audioBlob = new Blob(audioChunks, { type: 'audio/mpeg' });
-            audioChunks = [];
-            return audioBlob;
         });
     };
 
@@ -40,11 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const stopRecording = () => {
         return new Promise(resolve => {
             mediaRecorder.addEventListener("stop", () => {
-                const audioBlob = new Blob(audioChunks, { type: 'audio/mpeg' });
+                const audioBlob = new Blob(audioChunks, { type: mediaRecorder.mimeType }); // Use correct MIME type
                 audioChunks = [];
                 console.log("Stop function", audioBlob);
                 resolve(audioBlob);
             });
+
             mediaRecorder.stop();
         });
     };
@@ -94,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
     submitButton.addEventListener("click", async () => {
         const formData = new FormData();
         answers.forEach((answer, index) => {
-            formData.append(`audio-${index}`, answer.audioBlob, `answer-${index}.mp3`);
+            formData.append(`audio-${index}`, answer.audioBlob, `answer-${index}.webm`);
             formData.append(`question-${index}`, answer.question);
         });
         console.log("FormData:", formData);
