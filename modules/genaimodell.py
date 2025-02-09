@@ -80,7 +80,6 @@ def review_answers(
     position,
     company_name,
     job_description,
-    resume_pdf,
     model=genai.GenerativeModel("gemini-1.5-flash"),
 ):
     # resume = genai.upload_file(resume_pdf, mime_type="application/pdf")  # Corrected here
@@ -94,12 +93,13 @@ def review_answers(
             f"This was the question that was asked to the candidate as part of this interview: {question}"
             f"This was the response that the candidate gave: {answer}"
             f"Review this answer from the perspective of someone who already is a {position} at {company_name} and give constructive feedback by answering the following questions:"
-            "What went well in the candidates answer"
-            "What could have been improved in the candidates answer"
-            "Sample of how the answer can be changed to best answer this question (Do not allucinate, use only information availale from the resume)"
-            "Score on a scale of 1-10 (in increments of 0.5) based on the most important parameters you would use to answer this question."
-            " Elaborate briefly on the parameters you used to evaluate this"
-            "All your responses to the questions above should be in the second person only, output your answers in a pipe '|' delimited format.  Give only your answer and none of these grading parameters. Do not include any additional information before or after this. Be professional in all your responses",
+            "- What went well in the candidates answer"
+            "- What could have been improved in the candidates answer"
+            "- Sample of how the answer can be changed to best answer this question (Do not allucinate, use only information availale from the resume)"
+            "- Score on a scale of 1-10 (in increments of 0.5) based on the most important parameters you would use to answer this question."
+            "- Elaborate briefly on the parameters you used to evaluate this"
+            "All your responses to the questions above should be in the second person only, output your answers in a pipe '|' delimited format.  Give only your answer and none of these grading parameters. Do not include any additional information before or after this. Be professional in all your responses"
+            "Do not start your answer with the '|' operator",
             # resume,
         ]
     )
@@ -120,9 +120,7 @@ def review_answers(
         "question": question,
         "what_worked": feedback_list[0].strip(),
         "what_improve": feedback_list[1].strip(),
-        "alt_answer": feedback_list[
-            2
-        ].strip(),
+        "alt_answer": feedback_list[2].strip(),
         "overall_score": feedback_list[3].strip(),
         "criteria": feedback_list[4].strip(),
     }
@@ -141,7 +139,7 @@ if __name__ == "__main__":
 
     resume_path = "C:\\Users\\asus\\Desktop\\DUKE\\INTERNSHIPS\\PROJ UPD\\Resume - Adil Keku Gazder.pdf"
     questions = get_summary(
-        "Data Science Intern",
+        "Senior Data Scientist",
         "Amazon Web Services",
         "Behavioural",
         " ",

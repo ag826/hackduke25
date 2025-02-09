@@ -7,7 +7,7 @@ from io import BytesIO
 from dotenv import load_dotenv
 from pydub import AudioSegment
 from pydub.playback import play  # To play the audio
-
+import base64
 
 load_dotenv()
 flask_key = os.environ["API_KEY"]
@@ -24,6 +24,7 @@ logging.basicConfig(
         logging.StreamHandler(),  # Log to console
     ],
 )
+
 
 @app.route("/")
 def home():
@@ -52,16 +53,17 @@ def read_question(text):
 
 
 def webm_to_mp3(webm_file, output_path):
-    """ Converts WebM file to MP3 format """
+    """Converts WebM file to MP3 format"""
     audio = AudioSegment.from_file(webm_file, format="webm")
     audio.export(output_path, format="mp3")
     return output_path
+
 
 # To convert the answers from .mp3 to text
 def transcribe_answer(audio_file):
     try:
         temp_webm_path = "/tmp/uploaded_audio.webm"  # Temporary WebM file
-        temp_mp3_path = "/tmp/uploaded_audio.mp3"    # Temporary MP3 file
+        temp_mp3_path = "/tmp/uploaded_audio.mp3"  # Temporary MP3 file
 
         audio_file.save(temp_webm_path)  # Save the WebM file first
 
@@ -91,22 +93,35 @@ def results():
                 app.logger.info(question)
                 audio_file = request.files.get(f"audio-{index}")
                 app.logger.info(audio_file)
-                
+
                 # Convert the audio file to text
                 answer_text = transcribe_answer(audio_file)
                 answer_text = answer_text if answer_text else "No answer provided"
                 app.logger.info("Transcribed answers are: %s", answer_text)
-                #matrix.append({"question": question, "answer": answer_text})
-                #app.logger.info(matrix)
-                #Question and answer
-                #TODO retrieve:
-                position = 'Data Science Intern'#request.form.get("position")
-                company = 'Amazon Web Services'#request.form.get("company")
-                job_description = 'data science internship covering data engineering, SQL, python'#request.form.get("jobDescription")
-                resume = ""  # This is a FileStorage object
-                
+                # matrix.append({"question": question, "answer": answer_text})
+                # app.logger.info(matrix)
+                # Question and answer
+                # TODO retrieve:
+                position = "Data Science Intern"  # request.form.get("position")
+                company = "Amazon Web Services"  # request.form.get("company")
+                job_description = "data science internship covering data engineering, SQL, python"  # request.form.get("jobDescription")
+                # resume = ""  # This is a FileStorage object
+
+                # position = session.get("position")
+                # company = session.get("company")
+                # job_description = session.get("job_description")
+                # resume = base64.b64decode(session["resume"])
+
                 app.logger.info("Transcribed answers are: %s", answer_text)
-                matrix.append(review_answers(question, answer_text, position, company, job_description, resume)) 
+                matrix.append(
+                    review_answers(
+                        question,
+                        answer_text,
+                        position,
+                        company,
+                        job_description,
+                    )
+                )
         return jsonify(matrix)
     except Exception as e:
         app.logger.error(f"Error processing results: {e}")
@@ -130,6 +145,12 @@ def simulate_interview():
         # Convert the resume file to a format compatible with genai
         resume_bytes = BytesIO(resume.read())
         app.logger.info(f"Received resume: {resume_bytes}, {type(resume_bytes)}")
+
+        # session["position"] = position
+        # session["company"] = company
+        # session["job_description"] = job_description
+        # session["profile"] = profile
+        # session["resume"] = base64.b64encode(resume_bytes.getvalue()).decode("utf-8")
 
         if not position or not company or not job_description or not resume:
             return jsonify({"error": "Missing required fields"}), 400

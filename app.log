@@ -389,3 +389,666 @@
 2025-02-09 05:55:26,491 - INFO - 127.0.0.1 - - [09/Feb/2025 05:55:26] "GET / HTTP/1.1" 200 -
 2025-02-09 05:55:26,994 - INFO - 127.0.0.1 - - [09/Feb/2025 05:55:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
 2025-02-09 05:55:27,185 - INFO - 127.0.0.1 - - [09/Feb/2025 05:55:27] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 10:18:38,382 - INFO - Starting Flask app...
+2025-02-09 10:18:38,597 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-09 10:18:38,604 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 10:18:38,652 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 10:18:45,205 - INFO - Starting Flask app...
+2025-02-09 10:18:45,267 - WARNING -  * Debugger is active!
+2025-02-09 10:18:45,299 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 10:18:49,654 - INFO - Home route accessed.
+2025-02-09 10:18:49,687 - INFO - 127.0.0.1 - - [09/Feb/2025 10:18:49] "GET / HTTP/1.1" 200 -
+2025-02-09 10:18:49,846 - INFO - 127.0.0.1 - - [09/Feb/2025 10:18:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 10:18:49,895 - INFO - 127.0.0.1 - - [09/Feb/2025 10:18:49] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 10:19:17,950 - INFO - Simulating interview...
+2025-02-09 10:19:18,008 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\logging\\__init__.py', reloading
+2025-02-09 10:19:18,199 - INFO - Received resume: <_io.BytesIO object at 0x0000023987C50EF0>, <class '_io.BytesIO'>
+2025-02-09 10:19:18,201 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\flask\\app.py', reloading
+2025-02-09 10:19:18,229 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+2025-02-09 10:19:18,232 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+2025-02-09 10:19:18,248 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\http\\server.py', reloading
+2025-02-09 10:19:18,251 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\socketserver.py', reloading
+2025-02-09 10:19:18,260 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\threading.py', reloading
+2025-02-09 10:19:21,566 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 10:19:28,334 - INFO - Starting Flask app...
+2025-02-09 10:19:28,435 - WARNING -  * Debugger is active!
+2025-02-09 10:19:28,475 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 10:19:39,756 - INFO - 127.0.0.1 - - [09/Feb/2025 10:19:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 10:20:00,718 - INFO - Simulating interview...
+2025-02-09 10:20:00,909 - INFO - Received resume: <_io.BytesIO object at 0x00000287841D0F90>, <class '_io.BytesIO'>
+2025-02-09 10:20:09,445 - INFO - [' Tell me about a time you had to work with a large dataset. What challenges did you face, and how did you overcome them? ', ' Can you describe your experience with Java, and what projects have you used it for? What are your strengths and weaknesses in Java programming? ', ' Describe a situation where you had to communicate complex technical information to a non-technical audience. How did you approach the communication, and what was the outcome? ', '  Your resume mentions experience with several machine learning algorithms. Can you explain your understanding of Random Forest, K-means, and Regression techniques?  When would you choose to use one over the other? ', '  Given your experience at ZS Associates and Just Deliveries LLP, can you provide a specific example of a project where you used data analysis to influence business decisions?  What was your role in the process, and what was the impact?\n']
+2025-02-09 10:20:09,448 - INFO - Interview simulation successful.
+2025-02-09 10:20:09,451 - INFO - 127.0.0.1 - - [09/Feb/2025 10:20:09] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 10:20:09,590 - INFO - Interview route accessed.
+2025-02-09 10:20:09,624 - INFO - 127.0.0.1 - - [09/Feb/2025 10:20:09] "GET /interview HTTP/1.1" 200 -
+2025-02-09 10:20:09,774 - INFO - 127.0.0.1 - - [09/Feb/2025 10:20:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 10:20:09,905 - INFO - 127.0.0.1 - - [09/Feb/2025 10:20:09] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 10:20:10,048 - INFO - 127.0.0.1 - - [09/Feb/2025 10:20:10] "[36mGET /static/assets/profile.jpg HTTP/1.1[0m" 304 -
+2025-02-09 10:20:26,115 - INFO - Getting final feedback...
+2025-02-09 10:20:26,170 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 10:20:26,191 - INFO - undefined
+2025-02-09 10:20:26,193 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 10:20:26,200 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 10:20:26,202 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:20:26,204 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:20:27,754 - INFO - undefined
+2025-02-09 10:20:27,762 - INFO - <FileStorage: 'answer-1.webm' ('audio/webm;codecs=opus')>
+2025-02-09 10:20:27,763 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 10:20:27,764 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:20:27,765 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:20:29,217 - INFO - undefined
+2025-02-09 10:20:29,218 - INFO - <FileStorage: 'answer-2.webm' ('audio/webm;codecs=opus')>
+2025-02-09 10:20:29,219 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 10:20:29,220 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:20:29,221 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:20:31,566 - INFO - undefined
+2025-02-09 10:20:31,567 - INFO - <FileStorage: 'answer-3.webm' ('audio/webm;codecs=opus')>
+2025-02-09 10:20:31,569 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 10:20:31,570 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:20:31,570 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:20:33,340 - INFO - undefined
+2025-02-09 10:20:33,341 - INFO - <FileStorage: 'answer-4.webm' ('audio/webm;codecs=opus')>
+2025-02-09 10:20:33,342 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 10:20:33,343 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:20:33,344 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:20:35,709 - INFO - 127.0.0.1 - - [09/Feb/2025 10:20:35] "POST /results HTTP/1.1" 200 -
+2025-02-09 10:20:35,782 - INFO - Results_review route accessed.
+2025-02-09 10:20:35,799 - INFO - 127.0.0.1 - - [09/Feb/2025 10:20:35] "GET /results_review HTTP/1.1" 200 -
+2025-02-09 10:20:35,971 - INFO - 127.0.0.1 - - [09/Feb/2025 10:20:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 10:20:36,033 - INFO - 127.0.0.1 - - [09/Feb/2025 10:20:36] "[36mGET /static/js/results_review.js HTTP/1.1[0m" 304 -
+2025-02-09 10:28:01,320 - INFO - Starting Flask app...
+2025-02-09 10:28:01,522 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-09 10:28:01,524 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 10:28:01,575 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 10:28:11,958 - INFO - Starting Flask app...
+2025-02-09 10:28:12,059 - WARNING -  * Debugger is active!
+2025-02-09 10:28:12,092 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 10:28:12,215 - INFO - Home route accessed.
+2025-02-09 10:28:12,242 - INFO - 127.0.0.1 - - [09/Feb/2025 10:28:12] "GET / HTTP/1.1" 200 -
+2025-02-09 10:28:12,367 - INFO - 127.0.0.1 - - [09/Feb/2025 10:28:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 10:28:12,430 - INFO - 127.0.0.1 - - [09/Feb/2025 10:28:12] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 10:28:38,086 - INFO - Simulating interview...
+2025-02-09 10:28:38,355 - INFO - Received resume: <_io.BytesIO object at 0x00000191434E0E50>, <class '_io.BytesIO'>
+2025-02-09 10:28:45,658 - INFO - [' Explain your experience using Random Forest, KM Curves, and Regression techniques in predicting treatment patterns for oncologists.  ', ' Describe a time you had to translate complex data insights into actionable solutions for a business problem.  What was the outcome? ', '  How have you used AWS services (S3, Athena, Redshift, or EMR) in your previous roles? Provide specific examples. ', ' You mention experience with K-Means clustering.  Describe a situation where you used this technique and the challenges you encountered.  ', '  Explain your experience in designing and developing data pipelines and dashboards, and how you ensured the accuracy and scalability of these systems. ', '\n']
+2025-02-09 10:28:45,661 - INFO - Interview simulation successful.
+2025-02-09 10:28:45,666 - INFO - 127.0.0.1 - - [09/Feb/2025 10:28:45] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 10:28:45,757 - INFO - Interview route accessed.
+2025-02-09 10:28:45,774 - INFO - 127.0.0.1 - - [09/Feb/2025 10:28:45] "GET /interview HTTP/1.1" 200 -
+2025-02-09 10:28:45,823 - INFO - 127.0.0.1 - - [09/Feb/2025 10:28:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 10:28:45,875 - INFO - 127.0.0.1 - - [09/Feb/2025 10:28:45] "[36mGET /static/assets/profile.jpg HTTP/1.1[0m" 304 -
+2025-02-09 10:28:45,888 - INFO - 127.0.0.1 - - [09/Feb/2025 10:28:45] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 10:29:06,410 - INFO - Getting final feedback...
+2025-02-09 10:29:06,419 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined'), ('question-5', 'undefined')])
+2025-02-09 10:29:06,420 - INFO - undefined
+2025-02-09 10:29:06,421 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 10:29:06,423 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 10:29:06,424 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:06,424 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:07,558 - INFO - undefined
+2025-02-09 10:29:07,562 - INFO - <FileStorage: 'answer-1.webm' ('audio/webm;codecs=opus')>
+2025-02-09 10:29:07,564 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 10:29:07,565 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:07,566 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:08,714 - INFO - undefined
+2025-02-09 10:29:08,715 - INFO - <FileStorage: 'answer-2.webm' ('audio/webm;codecs=opus')>
+2025-02-09 10:29:08,716 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 10:29:08,717 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:08,718 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:09,618 - INFO - undefined
+2025-02-09 10:29:09,619 - INFO - <FileStorage: 'answer-3.webm' ('audio/webm;codecs=opus')>
+2025-02-09 10:29:09,620 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 10:29:09,621 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:09,622 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:10,631 - INFO - Getting final feedback...
+2025-02-09 10:29:10,641 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined'), ('question-5', 'undefined')])
+2025-02-09 10:29:10,642 - INFO - undefined
+2025-02-09 10:29:10,645 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 10:29:10,647 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 10:29:10,647 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:10,648 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:11,041 - INFO - undefined
+2025-02-09 10:29:11,042 - INFO - <FileStorage: 'answer-4.webm' ('audio/webm;codecs=opus')>
+2025-02-09 10:29:11,043 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 10:29:11,045 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:11,046 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:12,360 - INFO - undefined
+2025-02-09 10:29:12,364 - INFO - <FileStorage: 'answer-5.webm' ('audio/webm;codecs=opus')>
+2025-02-09 10:29:12,367 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 10:29:12,367 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:12,368 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:13,167 - INFO - undefined
+2025-02-09 10:29:13,168 - INFO - <FileStorage: 'answer-1.webm' ('audio/webm;codecs=opus')>
+2025-02-09 10:29:13,170 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 10:29:13,172 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:13,173 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:13,290 - INFO - 127.0.0.1 - - [09/Feb/2025 10:29:13] "POST /results HTTP/1.1" 200 -
+2025-02-09 10:29:13,325 - INFO - Results_review route accessed.
+2025-02-09 10:29:13,347 - INFO - 127.0.0.1 - - [09/Feb/2025 10:29:13] "GET /results_review HTTP/1.1" 200 -
+2025-02-09 10:29:14,200 - INFO - undefined
+2025-02-09 10:29:14,202 - INFO - <FileStorage: 'answer-2.webm' ('audio/webm;codecs=opus')>
+2025-02-09 10:29:14,203 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 10:29:14,204 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:14,205 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:15,239 - INFO - 127.0.0.1 - - [09/Feb/2025 10:29:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 10:29:15,242 - INFO - 127.0.0.1 - - [09/Feb/2025 10:29:15] "[36mGET /static/js/results_review.js HTTP/1.1[0m" 304 -
+2025-02-09 10:29:17,517 - INFO - undefined
+2025-02-09 10:29:17,518 - INFO - <FileStorage: 'answer-3.webm' ('audio/webm;codecs=opus')>
+2025-02-09 10:29:17,519 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 10:29:17,520 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:17,521 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:19,433 - INFO - undefined
+2025-02-09 10:29:19,434 - INFO - <FileStorage: 'answer-4.webm' ('audio/webm;codecs=opus')>
+2025-02-09 10:29:19,434 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 10:29:19,435 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:19,436 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:20,964 - INFO - undefined
+2025-02-09 10:29:20,965 - INFO - <FileStorage: 'answer-5.webm' ('audio/webm;codecs=opus')>
+2025-02-09 10:29:20,966 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 10:29:20,967 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:20,968 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:29:22,502 - INFO - 127.0.0.1 - - [09/Feb/2025 10:29:22] "POST /results HTTP/1.1" 200 -
+2025-02-09 10:30:38,273 - INFO - 127.0.0.1 - - [09/Feb/2025 10:30:38] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 10:34:01,915 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 10:34:01,922 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 10:34:05,501 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 10:34:13,528 - INFO - Starting Flask app...
+2025-02-09 10:34:13,582 - WARNING -  * Debugger is active!
+2025-02-09 10:34:13,629 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 10:34:44,165 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 10:34:44,176 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 10:34:45,497 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 10:34:52,241 - INFO - Starting Flask app...
+2025-02-09 10:34:52,293 - WARNING -  * Debugger is active!
+2025-02-09 10:34:52,342 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 10:36:38,324 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 10:36:40,205 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 10:36:47,654 - INFO - Starting Flask app...
+2025-02-09 10:36:47,717 - WARNING -  * Debugger is active!
+2025-02-09 10:36:47,755 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 10:36:58,226 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 10:36:58,242 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 10:36:59,696 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 10:37:08,765 - INFO - Starting Flask app...
+2025-02-09 10:37:08,814 - WARNING -  * Debugger is active!
+2025-02-09 10:37:08,858 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 10:40:14,644 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 10:40:14,648 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 10:40:15,877 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 10:40:34,245 - INFO - Starting Flask app...
+2025-02-09 10:40:34,420 - WARNING -  * Debugger is active!
+2025-02-09 10:40:34,514 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 10:40:37,032 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 10:40:38,448 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 10:40:52,209 - INFO - Starting Flask app...
+2025-02-09 10:40:52,301 - WARNING -  * Debugger is active!
+2025-02-09 10:40:52,335 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 10:42:01,322 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\flask\\globals.py', reloading
+2025-02-09 10:42:07,758 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 10:42:18,242 - INFO - Starting Flask app...
+2025-02-09 10:42:18,312 - WARNING -  * Debugger is active!
+2025-02-09 10:42:18,345 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 10:42:26,425 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\base64.py', reloading
+2025-02-09 10:42:32,608 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 10:42:39,543 - INFO - Starting Flask app...
+2025-02-09 10:42:39,600 - WARNING -  * Debugger is active!
+2025-02-09 10:42:39,631 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 10:42:43,352 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\_pytest\\cacheprovider.py', reloading
+2025-02-09 10:42:43,436 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\_pytest\\fixtures.py', reloading
+2025-02-09 10:42:43,663 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\_pytest\\config\\__init__.py', reloading
+2025-02-09 10:42:49,913 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 10:42:56,827 - INFO - Starting Flask app...
+2025-02-09 10:42:56,878 - WARNING -  * Debugger is active!
+2025-02-09 10:42:56,916 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 10:43:17,881 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 10:43:17,895 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 10:43:19,380 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 10:43:38,043 - INFO - Starting Flask app...
+2025-02-09 10:43:38,177 - WARNING -  * Debugger is active!
+2025-02-09 10:43:38,217 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 10:43:42,629 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 10:43:42,790 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 10:43:45,181 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 10:43:58,324 - INFO - Starting Flask app...
+2025-02-09 10:43:58,458 - WARNING -  * Debugger is active!
+2025-02-09 10:43:58,600 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 10:44:10,527 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 10:44:10,542 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 10:44:11,252 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 10:44:21,782 - INFO - Starting Flask app...
+2025-02-09 10:44:21,855 - WARNING -  * Debugger is active!
+2025-02-09 10:44:21,887 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 10:44:34,797 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 10:44:34,802 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 10:44:40,833 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 10:44:55,861 - INFO - Starting Flask app...
+2025-02-09 10:44:56,034 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-09 10:44:56,035 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 10:44:56,065 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 10:45:02,516 - INFO - Starting Flask app...
+2025-02-09 10:45:02,566 - WARNING -  * Debugger is active!
+2025-02-09 10:45:02,597 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 10:45:18,050 - INFO - Home route accessed.
+2025-02-09 10:45:18,094 - INFO - 127.0.0.1 - - [09/Feb/2025 10:45:18] "GET / HTTP/1.1" 200 -
+2025-02-09 10:45:18,568 - INFO - 127.0.0.1 - - [09/Feb/2025 10:45:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 10:45:18,649 - INFO - 127.0.0.1 - - [09/Feb/2025 10:45:18] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 10:45:33,858 - INFO - Simulating interview...
+2025-02-09 10:45:34,479 - INFO - Received resume: <_io.BytesIO object at 0x00000244CEFEF380>, <class '_io.BytesIO'>
+2025-02-09 10:45:34,480 - ERROR - Error simulating interview: a bytes-like object is required, not '_io.BytesIO'
+2025-02-09 10:45:34,487 - INFO - 127.0.0.1 - - [09/Feb/2025 10:45:34] "[35m[1mPOST /simulate HTTP/1.1[0m" 500 -
+2025-02-09 10:45:39,223 - INFO - Simulating interview...
+2025-02-09 10:45:39,392 - INFO - Received resume: <_io.BytesIO object at 0x00000244D05011C0>, <class '_io.BytesIO'>
+2025-02-09 10:45:39,393 - ERROR - Error simulating interview: a bytes-like object is required, not '_io.BytesIO'
+2025-02-09 10:45:39,397 - INFO - 127.0.0.1 - - [09/Feb/2025 10:45:39] "[35m[1mPOST /simulate HTTP/1.1[0m" 500 -
+2025-02-09 10:45:42,730 - INFO - Simulating interview...
+2025-02-09 10:45:43,165 - INFO - Received resume: <_io.BytesIO object at 0x00000244D0501D50>, <class '_io.BytesIO'>
+2025-02-09 10:45:43,177 - ERROR - Error simulating interview: a bytes-like object is required, not '_io.BytesIO'
+2025-02-09 10:45:43,182 - INFO - 127.0.0.1 - - [09/Feb/2025 10:45:43] "[35m[1mPOST /simulate HTTP/1.1[0m" 500 -
+2025-02-09 10:55:50,792 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 10:55:53,145 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 10:56:00,736 - INFO - Starting Flask app...
+2025-02-09 10:56:00,782 - WARNING -  * Debugger is active!
+2025-02-09 10:56:00,815 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 10:56:19,696 - INFO - Home route accessed.
+2025-02-09 10:56:19,731 - INFO - 127.0.0.1 - - [09/Feb/2025 10:56:19] "GET / HTTP/1.1" 200 -
+2025-02-09 10:56:19,821 - INFO - 127.0.0.1 - - [09/Feb/2025 10:56:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 10:56:20,562 - INFO - 127.0.0.1 - - [09/Feb/2025 10:56:20] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 10:56:35,629 - INFO - Simulating interview...
+2025-02-09 10:56:35,893 - INFO - Received resume: <_io.BytesIO object at 0x000001968BE2F470>, <class '_io.BytesIO'>
+2025-02-09 10:56:44,779 - INFO - [' Tell me about a time you had to translate complex data insights into actionable solutions for a business problem.  ', ' Describe your experience using predictive modeling techniques (Random Forest, KM Curves, Regression) and the outcomes you achieved. ', ' Can you share an example of a project where you utilized advanced clustering techniques to segment a customer base and tailor marketing strategies? ', " Explain your experience with data visualization tools and how you've used them to effectively communicate data insights to stakeholders. ", '  How familiar are you with AWS services (S3, Athena, Redshift, EMR) and how have you utilized them in your previous roles?\n']
+2025-02-09 10:56:44,783 - INFO - Interview simulation successful.
+2025-02-09 10:56:44,786 - INFO - 127.0.0.1 - - [09/Feb/2025 10:56:44] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 10:56:44,874 - INFO - Interview route accessed.
+2025-02-09 10:56:44,889 - INFO - 127.0.0.1 - - [09/Feb/2025 10:56:44] "GET /interview HTTP/1.1" 200 -
+2025-02-09 10:56:45,314 - INFO - 127.0.0.1 - - [09/Feb/2025 10:56:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 10:56:45,489 - INFO - 127.0.0.1 - - [09/Feb/2025 10:56:45] "[36mGET /static/assets/profile.jpg HTTP/1.1[0m" 304 -
+2025-02-09 10:56:45,514 - INFO - 127.0.0.1 - - [09/Feb/2025 10:56:45] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 10:56:59,757 - INFO - Getting final feedback...
+2025-02-09 10:56:59,769 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 10:56:59,770 - INFO - undefined
+2025-02-09 10:56:59,771 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 10:56:59,773 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 10:56:59,774 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:56:59,775 - ERROR - Error processing results: 'resume'
+2025-02-09 10:56:59,777 - INFO - 127.0.0.1 - - [09/Feb/2025 10:56:59] "[35m[1mPOST /results HTTP/1.1[0m" 500 -
+2025-02-09 10:57:40,162 - INFO - Getting final feedback...
+2025-02-09 10:57:40,169 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 10:57:40,170 - INFO - undefined
+2025-02-09 10:57:40,178 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 10:57:40,179 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 10:57:40,180 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:57:40,182 - ERROR - Error processing results: 'resume'
+2025-02-09 10:57:40,184 - INFO - 127.0.0.1 - - [09/Feb/2025 10:57:40] "[35m[1mPOST /results HTTP/1.1[0m" 500 -
+2025-02-09 10:58:03,383 - INFO - 127.0.0.1 - - [09/Feb/2025 10:58:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 10:58:11,807 - INFO - 127.0.0.1 - - [09/Feb/2025 10:58:11] "[33mGET /results HTTP/1.1[0m" 404 -
+2025-02-09 10:58:11,948 - INFO - 127.0.0.1 - - [09/Feb/2025 10:58:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 10:58:21,360 - INFO - Getting final feedback...
+2025-02-09 10:58:21,459 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 10:58:21,469 - INFO - undefined
+2025-02-09 10:58:21,472 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 10:58:21,474 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 10:58:21,475 - INFO - Transcribed answers are: No answer provided
+2025-02-09 10:58:21,476 - ERROR - Error processing results: 'resume'
+2025-02-09 10:58:21,479 - INFO - 127.0.0.1 - - [09/Feb/2025 10:58:21] "[35m[1mPOST /results HTTP/1.1[0m" 500 -
+2025-02-09 10:59:58,164 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 10:59:58,171 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 11:00:07,525 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 11:00:17,024 - INFO - Starting Flask app...
+2025-02-09 11:00:17,112 - WARNING -  * Debugger is active!
+2025-02-09 11:00:17,146 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 11:00:17,467 - INFO - Home route accessed.
+2025-02-09 11:00:17,495 - INFO - 127.0.0.1 - - [09/Feb/2025 11:00:17] "GET / HTTP/1.1" 200 -
+2025-02-09 11:00:17,658 - INFO - 127.0.0.1 - - [09/Feb/2025 11:00:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 11:00:17,882 - INFO - 127.0.0.1 - - [09/Feb/2025 11:00:17] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 11:00:36,762 - INFO - Simulating interview...
+2025-02-09 11:00:36,994 - INFO - Received resume: <_io.BytesIO object at 0x000002BA4D854FE0>, <class '_io.BytesIO'>
+2025-02-09 11:00:36,996 - ERROR - Error simulating interview: 'resume'
+2025-02-09 11:00:37,008 - INFO - 127.0.0.1 - - [09/Feb/2025 11:00:37] "[35m[1mPOST /simulate HTTP/1.1[0m" 500 -
+2025-02-09 11:00:38,094 - INFO - Simulating interview...
+2025-02-09 11:00:38,231 - INFO - Received resume: <_io.BytesIO object at 0x000002BA4EFB1620>, <class '_io.BytesIO'>
+2025-02-09 11:00:38,232 - ERROR - Error simulating interview: 'resume'
+2025-02-09 11:00:38,242 - INFO - 127.0.0.1 - - [09/Feb/2025 11:00:38] "[35m[1mPOST /simulate HTTP/1.1[0m" 500 -
+2025-02-09 11:02:52,064 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 11:02:52,067 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 11:02:59,683 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 11:03:07,198 - INFO - Starting Flask app...
+2025-02-09 11:03:07,259 - WARNING -  * Debugger is active!
+2025-02-09 11:03:07,319 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 11:03:34,606 - INFO - Home route accessed.
+2025-02-09 11:03:34,654 - INFO - 127.0.0.1 - - [09/Feb/2025 11:03:34] "GET / HTTP/1.1" 200 -
+2025-02-09 11:03:34,716 - INFO - 127.0.0.1 - - [09/Feb/2025 11:03:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 11:03:34,752 - INFO - 127.0.0.1 - - [09/Feb/2025 11:03:34] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 11:03:59,036 - INFO - Simulating interview...
+2025-02-09 11:03:59,388 - INFO - Received resume: <_io.BytesIO object at 0x000001750E374F90>, <class '_io.BytesIO'>
+2025-02-09 11:04:06,787 - INFO - [' Tell me about a time you had to translate complex data insights into actionable solutions.  ', ' Describe a situation where you had to manage multiple projects simultaneously and prioritize tasks effectively. ', ' Give me an example of a time you identified and solved a challenging problem using data analysis. ', '  Describe a time you had to work with a team to achieve a common goal, and what your role was in that success. ', ' Share an experience where you had to present complex findings to a non-technical audience. ', '\n']
+2025-02-09 11:04:06,788 - INFO - Interview simulation successful.
+2025-02-09 11:04:06,836 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
+2025-02-09 11:04:06,837 - INFO - 127.0.0.1 - - [09/Feb/2025 11:04:06] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 11:04:06,918 - INFO - Interview route accessed.
+2025-02-09 11:04:06,945 - INFO - 127.0.0.1 - - [09/Feb/2025 11:04:06] "GET /interview HTTP/1.1" 200 -
+2025-02-09 11:04:15,122 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 11:04:27,827 - INFO - Starting Flask app...
+2025-02-09 11:04:27,884 - WARNING -  * Debugger is active!
+2025-02-09 11:04:27,919 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 11:04:28,092 - INFO - 127.0.0.1 - - [09/Feb/2025 11:04:28] "[36mGET /static/assets/profile.jpg HTTP/1.1[0m" 304 -
+2025-02-09 11:04:28,092 - INFO - 127.0.0.1 - - [09/Feb/2025 11:04:28] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 11:04:28,107 - INFO - 127.0.0.1 - - [09/Feb/2025 11:04:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 11:04:52,261 - INFO - Getting final feedback...
+2025-02-09 11:04:52,277 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined'), ('question-5', 'undefined')])
+2025-02-09 11:04:52,279 - INFO - undefined
+2025-02-09 11:04:52,281 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:04:52,287 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:04:52,289 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:04:52,290 - ERROR - Error processing results: 'resume'
+2025-02-09 11:04:52,292 - INFO - 127.0.0.1 - - [09/Feb/2025 11:04:52] "[35m[1mPOST /results HTTP/1.1[0m" 500 -
+2025-02-09 11:05:13,979 - INFO - Getting final feedback...
+2025-02-09 11:05:13,992 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined'), ('question-5', 'undefined')])
+2025-02-09 11:05:13,993 - INFO - undefined
+2025-02-09 11:05:14,000 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:05:14,003 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:05:14,005 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:05:14,006 - ERROR - Error processing results: 'resume'
+2025-02-09 11:05:14,008 - INFO - 127.0.0.1 - - [09/Feb/2025 11:05:14] "[35m[1mPOST /results HTTP/1.1[0m" 500 -
+2025-02-09 11:08:31,414 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 11:08:31,423 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 11:08:37,821 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 11:08:45,902 - INFO - Starting Flask app...
+2025-02-09 11:08:45,963 - WARNING -  * Debugger is active!
+2025-02-09 11:08:45,992 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 11:08:56,176 - INFO - Home route accessed.
+2025-02-09 11:08:56,208 - INFO - 127.0.0.1 - - [09/Feb/2025 11:08:56] "GET / HTTP/1.1" 200 -
+2025-02-09 11:08:56,299 - INFO - 127.0.0.1 - - [09/Feb/2025 11:08:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 11:08:56,368 - INFO - 127.0.0.1 - - [09/Feb/2025 11:08:56] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 11:09:22,913 - INFO - Simulating interview...
+2025-02-09 11:09:23,087 - INFO - Received resume: <_io.BytesIO object at 0x000001EE4E1A0EA0>, <class '_io.BytesIO'>
+2025-02-09 11:09:30,507 - INFO - [' Tell me about a time you had to translate complex data insights into actionable solutions for a business problem.  ', ' Describe a situation where you had to work with a large dataset and explain how you managed the data cleaning and preprocessing steps. ', ' Give me an example of a time you had to work collaboratively with a team to achieve a shared goal and how you handled any conflicts that arose. ', ' Describe a challenging project you worked on and how you overcame obstacles to deliver successful results.  ', ' Tell me about a time you had to make a difficult decision with incomplete information and what the outcome was.\n']
+2025-02-09 11:09:30,509 - INFO - Interview simulation successful.
+2025-02-09 11:09:30,511 - INFO - 127.0.0.1 - - [09/Feb/2025 11:09:30] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 11:09:30,605 - INFO - Interview route accessed.
+2025-02-09 11:09:30,619 - INFO - 127.0.0.1 - - [09/Feb/2025 11:09:30] "GET /interview HTTP/1.1" 200 -
+2025-02-09 11:09:30,694 - INFO - 127.0.0.1 - - [09/Feb/2025 11:09:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 11:09:30,727 - INFO - 127.0.0.1 - - [09/Feb/2025 11:09:30] "[36mGET /static/assets/profile.jpg HTTP/1.1[0m" 304 -
+2025-02-09 11:09:30,761 - INFO - 127.0.0.1 - - [09/Feb/2025 11:09:30] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 11:09:50,509 - INFO - Getting final feedback...
+2025-02-09 11:09:50,521 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 11:09:50,522 - INFO - undefined
+2025-02-09 11:09:50,523 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:09:50,545 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:09:50,556 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:09:50,559 - ERROR - Error processing results: 'resume'
+2025-02-09 11:09:50,568 - INFO - 127.0.0.1 - - [09/Feb/2025 11:09:50] "[35m[1mPOST /results HTTP/1.1[0m" 500 -
+2025-02-09 11:10:25,431 - INFO - Getting final feedback...
+2025-02-09 11:10:25,439 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 11:10:25,440 - INFO - undefined
+2025-02-09 11:10:25,444 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:10:25,446 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:10:25,450 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:10:25,452 - ERROR - Error processing results: 'resume'
+2025-02-09 11:10:25,454 - INFO - 127.0.0.1 - - [09/Feb/2025 11:10:25] "[35m[1mPOST /results HTTP/1.1[0m" 500 -
+2025-02-09 11:15:30,998 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\modules\\genaimodell.py', reloading
+2025-02-09 11:15:31,007 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\modules\\genaimodell.py', reloading
+2025-02-09 11:15:39,963 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 11:15:47,347 - INFO - Starting Flask app...
+2025-02-09 11:15:47,427 - WARNING -  * Debugger is active!
+2025-02-09 11:15:47,457 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 11:16:56,846 - INFO - Starting Flask app...
+2025-02-09 11:16:57,026 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-09 11:16:57,028 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 11:16:57,060 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 11:17:05,429 - INFO - Starting Flask app...
+2025-02-09 11:17:05,514 - WARNING -  * Debugger is active!
+2025-02-09 11:17:05,554 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 11:17:05,662 - INFO - Home route accessed.
+2025-02-09 11:17:05,683 - INFO - 127.0.0.1 - - [09/Feb/2025 11:17:05] "GET / HTTP/1.1" 200 -
+2025-02-09 11:17:05,800 - INFO - 127.0.0.1 - - [09/Feb/2025 11:17:05] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 11:17:06,591 - INFO - 127.0.0.1 - - [09/Feb/2025 11:17:06] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 11:17:22,567 - INFO - Simulating interview...
+2025-02-09 11:17:22,912 - INFO - Received resume: <_io.BytesIO object at 0x000002E6D808F380>, <class '_io.BytesIO'>
+2025-02-09 11:17:30,106 - INFO - [' Tell me about a time you had to translate complex data insights into actionable solutions for a business problem.  ', " Describe your experience with predictive modeling techniques and how you've applied them to solve real-world problems.  ", '  Walk me through your experience with data visualization and how you have used it to effectively communicate insights from complex datasets. ', ' Explain your experience with AWS services (S3, Athena, Redshift, EMR) and how you have used them in your previous roles. ', ' Give an example of a time you had to work with a large dataset and how you managed its complexity to extract meaningful insights.\n']
+2025-02-09 11:17:30,108 - INFO - Interview simulation successful.
+2025-02-09 11:17:30,110 - INFO - 127.0.0.1 - - [09/Feb/2025 11:17:30] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 11:17:30,228 - INFO - Interview route accessed.
+2025-02-09 11:17:30,246 - INFO - 127.0.0.1 - - [09/Feb/2025 11:17:30] "GET /interview HTTP/1.1" 200 -
+2025-02-09 11:17:30,574 - INFO - 127.0.0.1 - - [09/Feb/2025 11:17:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 11:17:30,648 - INFO - 127.0.0.1 - - [09/Feb/2025 11:17:30] "[36mGET /static/assets/profile.jpg HTTP/1.1[0m" 304 -
+2025-02-09 11:17:30,718 - INFO - 127.0.0.1 - - [09/Feb/2025 11:17:30] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 11:17:44,029 - INFO - Getting final feedback...
+2025-02-09 11:17:44,040 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 11:17:44,041 - INFO - undefined
+2025-02-09 11:17:44,043 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:17:44,045 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:17:44,046 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:17:44,048 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:17:44,055 - ERROR - Error processing results: name 'resume' is not defined
+2025-02-09 11:17:44,058 - INFO - 127.0.0.1 - - [09/Feb/2025 11:17:44] "[35m[1mPOST /results HTTP/1.1[0m" 500 -
+2025-02-09 11:18:11,822 - INFO - Getting final feedback...
+2025-02-09 11:18:11,830 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 11:18:11,835 - INFO - undefined
+2025-02-09 11:18:11,837 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:18:11,839 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:18:11,840 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:18:11,842 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:18:11,844 - ERROR - Error processing results: name 'resume' is not defined
+2025-02-09 11:18:11,846 - INFO - 127.0.0.1 - - [09/Feb/2025 11:18:11] "[35m[1mPOST /results HTTP/1.1[0m" 500 -
+2025-02-09 11:23:49,920 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\app.py', reloading
+2025-02-09 11:23:52,884 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 11:23:59,838 - INFO - Starting Flask app...
+2025-02-09 11:23:59,885 - WARNING -  * Debugger is active!
+2025-02-09 11:23:59,931 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 11:24:06,070 - INFO - Home route accessed.
+2025-02-09 11:24:06,096 - INFO - 127.0.0.1 - - [09/Feb/2025 11:24:06] "GET / HTTP/1.1" 200 -
+2025-02-09 11:24:06,191 - INFO - 127.0.0.1 - - [09/Feb/2025 11:24:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 11:24:06,245 - INFO - 127.0.0.1 - - [09/Feb/2025 11:24:06] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 11:24:24,557 - INFO - Simulating interview...
+2025-02-09 11:24:24,604 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\logging\\__init__.py', reloading
+2025-02-09 11:24:24,814 - INFO - Received resume: <_io.BytesIO object at 0x000002CFD2460E00>, <class '_io.BytesIO'>
+2025-02-09 11:24:24,825 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\flask\\app.py', reloading
+2025-02-09 11:24:24,827 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+2025-02-09 11:24:24,830 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+2025-02-09 11:24:24,832 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\http\\server.py', reloading
+2025-02-09 11:24:24,842 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\socketserver.py', reloading
+2025-02-09 11:24:24,858 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\threading.py', reloading
+2025-02-09 11:24:28,078 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-09 11:24:34,759 - INFO - Starting Flask app...
+2025-02-09 11:24:34,829 - WARNING -  * Debugger is active!
+2025-02-09 11:24:34,893 - INFO -  * Debugger PIN: 862-086-320
+2025-02-09 11:24:35,887 - INFO - Simulating interview...
+2025-02-09 11:24:36,041 - INFO - Received resume: <_io.BytesIO object at 0x0000014C9D2A0EF0>, <class '_io.BytesIO'>
+2025-02-09 11:24:44,255 - INFO - [' Tell me about a time you had to translate complex data insights into actionable solutions for a business problem.  ', ' Describe your experience using predictive modeling techniques like Random Forest or Regression.  ', " Explain your experience with data visualization and dashboarding, and how you've used it to communicate insights to stakeholders. ", '  Walk me through your experience working with large datasets, specifically how you handled data cleaning, transformation, and feature engineering. ', ' Discuss your experience with AWS services (S3, Athena, Redshift, or EMR) and how you leveraged them in your previous roles. ', '\n']
+2025-02-09 11:24:44,257 - INFO - Interview simulation successful.
+2025-02-09 11:24:44,259 - INFO - 127.0.0.1 - - [09/Feb/2025 11:24:44] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 11:24:44,369 - INFO - Interview route accessed.
+2025-02-09 11:24:44,408 - INFO - 127.0.0.1 - - [09/Feb/2025 11:24:44] "GET /interview HTTP/1.1" 200 -
+2025-02-09 11:24:44,478 - INFO - 127.0.0.1 - - [09/Feb/2025 11:24:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 11:24:44,505 - INFO - 127.0.0.1 - - [09/Feb/2025 11:24:44] "[36mGET /static/assets/profile.jpg HTTP/1.1[0m" 304 -
+2025-02-09 11:24:44,571 - INFO - 127.0.0.1 - - [09/Feb/2025 11:24:44] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 11:25:00,876 - INFO - Getting final feedback...
+2025-02-09 11:25:00,885 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined'), ('question-5', 'undefined')])
+2025-02-09 11:25:00,886 - INFO - undefined
+2025-02-09 11:25:00,887 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:25:00,888 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:25:00,889 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:00,890 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:02,132 - INFO - undefined
+2025-02-09 11:25:02,133 - INFO - <FileStorage: 'answer-1.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:25:02,134 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:25:02,135 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:02,136 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:03,721 - INFO - undefined
+2025-02-09 11:25:03,722 - INFO - <FileStorage: 'answer-2.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:25:03,723 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:25:03,724 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:03,724 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:05,949 - INFO - undefined
+2025-02-09 11:25:05,950 - INFO - <FileStorage: 'answer-3.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:25:05,951 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:25:05,952 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:05,953 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:07,162 - INFO - undefined
+2025-02-09 11:25:07,163 - INFO - <FileStorage: 'answer-4.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:25:07,164 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:25:07,165 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:07,165 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:07,588 - INFO - Getting final feedback...
+2025-02-09 11:25:07,598 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined'), ('question-5', 'undefined')])
+2025-02-09 11:25:07,599 - INFO - undefined
+2025-02-09 11:25:07,600 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:25:07,602 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:25:07,603 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:07,604 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:08,525 - INFO - undefined
+2025-02-09 11:25:08,526 - INFO - <FileStorage: 'answer-5.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:25:08,529 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:25:08,530 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:08,531 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:09,215 - INFO - undefined
+2025-02-09 11:25:09,216 - INFO - <FileStorage: 'answer-1.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:25:09,217 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:25:09,218 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:09,218 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:09,920 - INFO - Getting final feedback...
+2025-02-09 11:25:09,933 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined'), ('question-5', 'undefined')])
+2025-02-09 11:25:09,970 - INFO - undefined
+2025-02-09 11:25:09,999 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:25:10,002 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:25:10,004 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:10,006 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:10,167 - INFO - 127.0.0.1 - - [09/Feb/2025 11:25:10] "POST /results HTTP/1.1" 200 -
+2025-02-09 11:25:10,226 - INFO - Results_review route accessed.
+2025-02-09 11:25:10,239 - INFO - 127.0.0.1 - - [09/Feb/2025 11:25:10] "GET /results_review HTTP/1.1" 200 -
+2025-02-09 11:25:11,066 - INFO - undefined
+2025-02-09 11:25:11,067 - INFO - <FileStorage: 'answer-2.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:25:11,068 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:25:11,069 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:11,070 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:12,182 - INFO - undefined
+2025-02-09 11:25:12,183 - INFO - <FileStorage: 'answer-1.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:25:12,184 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:25:12,185 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:12,186 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:12,326 - INFO - undefined
+2025-02-09 11:25:12,328 - INFO - <FileStorage: 'answer-3.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:25:12,330 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:25:12,331 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:12,332 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:13,248 - INFO - 127.0.0.1 - - [09/Feb/2025 11:25:13] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 11:25:13,266 - INFO - 127.0.0.1 - - [09/Feb/2025 11:25:13] "[36mGET /static/js/results_review.js HTTP/1.1[0m" 304 -
+2025-02-09 11:25:13,399 - INFO - undefined
+2025-02-09 11:25:13,400 - INFO - <FileStorage: 'answer-2.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:25:13,401 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:25:13,402 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:13,403 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:13,912 - INFO - undefined
+2025-02-09 11:25:13,913 - INFO - <FileStorage: 'answer-4.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:25:13,914 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:25:13,915 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:13,916 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:14,919 - INFO - undefined
+2025-02-09 11:25:14,920 - INFO - <FileStorage: 'answer-3.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:25:14,921 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:25:14,922 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:14,922 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:16,251 - INFO - undefined
+2025-02-09 11:25:16,251 - INFO - <FileStorage: 'answer-5.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:25:16,252 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:25:16,253 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:16,254 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:16,331 - ERROR - Error processing results: 429 Resource has been exhausted (e.g. check quota).
+2025-02-09 11:25:16,332 - INFO - 127.0.0.1 - - [09/Feb/2025 11:25:16] "[35m[1mPOST /results HTTP/1.1[0m" 500 -
+2025-02-09 11:25:16,560 - INFO - undefined
+2025-02-09 11:25:16,560 - INFO - <FileStorage: 'answer-4.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:25:16,561 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:25:16,562 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:16,563 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:18,501 - INFO - undefined
+2025-02-09 11:25:18,502 - INFO - <FileStorage: 'answer-5.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:25:18,503 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:25:18,504 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:18,504 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:25:18,563 - ERROR - Error processing results: 429 Resource has been exhausted (e.g. check quota).
+2025-02-09 11:25:18,565 - INFO - 127.0.0.1 - - [09/Feb/2025 11:25:18] "[35m[1mPOST /results HTTP/1.1[0m" 500 -
+2025-02-09 11:27:13,312 - INFO - Home route accessed.
+2025-02-09 11:27:13,322 - INFO - 127.0.0.1 - - [09/Feb/2025 11:27:13] "GET / HTTP/1.1" 200 -
+2025-02-09 11:27:13,399 - INFO - 127.0.0.1 - - [09/Feb/2025 11:27:13] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 11:27:13,455 - INFO - 127.0.0.1 - - [09/Feb/2025 11:27:13] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-09 11:27:28,624 - INFO - Simulating interview...
+2025-02-09 11:27:28,991 - INFO - Received resume: <_io.BytesIO object at 0x0000014CA2563E20>, <class '_io.BytesIO'>
+2025-02-09 11:27:33,468 - INFO - [' Tell me about a time you had to work with a large dataset.  What challenges did you face, and how did you overcome them? ', ' Describe your experience with Java and C programming languages.  Give an example of a project where you utilized these skills. ', '  Explain your understanding of predictive modeling.  What are some common techniques, and when would you choose one over another?  ', '  Your resume highlights your experience in data visualization and storytelling. Can you describe a situation where you used these skills to effectively communicate complex data insights to a non-technical audience? ', '  Amazon Web Services (AWS) is a key technology we use. What is your experience with AWS services, and which ones are you most familiar with?\n']
+2025-02-09 11:27:33,470 - INFO - Interview simulation successful.
+2025-02-09 11:27:33,472 - INFO - 127.0.0.1 - - [09/Feb/2025 11:27:33] "POST /simulate HTTP/1.1" 200 -
+2025-02-09 11:27:33,561 - INFO - Interview route accessed.
+2025-02-09 11:27:33,566 - INFO - 127.0.0.1 - - [09/Feb/2025 11:27:33] "GET /interview HTTP/1.1" 200 -
+2025-02-09 11:27:33,642 - INFO - 127.0.0.1 - - [09/Feb/2025 11:27:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 11:27:33,662 - INFO - 127.0.0.1 - - [09/Feb/2025 11:27:33] "[36mGET /static/assets/profile.jpg HTTP/1.1[0m" 304 -
+2025-02-09 11:27:33,678 - INFO - 127.0.0.1 - - [09/Feb/2025 11:27:33] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-09 11:27:52,777 - INFO - Getting final feedback...
+2025-02-09 11:27:52,785 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 11:27:52,785 - INFO - undefined
+2025-02-09 11:27:52,786 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:27:52,788 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:27:52,796 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:27:52,797 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:27:54,485 - INFO - undefined
+2025-02-09 11:27:54,485 - INFO - <FileStorage: 'answer-1.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:27:54,486 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:27:54,487 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:27:54,488 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:27:55,927 - INFO - undefined
+2025-02-09 11:27:55,927 - INFO - <FileStorage: 'answer-2.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:27:55,929 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:27:55,929 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:27:55,930 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:27:59,176 - INFO - undefined
+2025-02-09 11:27:59,177 - INFO - <FileStorage: 'answer-3.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:27:59,178 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:27:59,179 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:27:59,180 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:28:01,610 - INFO - undefined
+2025-02-09 11:28:01,611 - INFO - <FileStorage: 'answer-4.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:28:01,612 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:28:01,613 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:28:01,613 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:28:02,119 - INFO - Getting final feedback...
+2025-02-09 11:28:02,128 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-09 11:28:02,129 - INFO - undefined
+2025-02-09 11:28:02,130 - INFO - <FileStorage: 'answer-0.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:28:02,132 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:28:02,134 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:28:02,135 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:28:02,633 - INFO - 127.0.0.1 - - [09/Feb/2025 11:28:02] "POST /results HTTP/1.1" 200 -
+2025-02-09 11:28:02,699 - INFO - Results_review route accessed.
+2025-02-09 11:28:02,703 - INFO - 127.0.0.1 - - [09/Feb/2025 11:28:02] "GET /results_review HTTP/1.1" 200 -
+2025-02-09 11:28:03,695 - INFO - undefined
+2025-02-09 11:28:03,696 - INFO - <FileStorage: 'answer-1.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:28:03,697 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:28:03,698 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:28:03,699 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:28:04,315 - INFO - 127.0.0.1 - - [09/Feb/2025 11:28:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-09 11:28:04,395 - INFO - 127.0.0.1 - - [09/Feb/2025 11:28:04] "[36mGET /static/js/results_review.js HTTP/1.1[0m" 304 -
+2025-02-09 11:28:04,752 - INFO - undefined
+2025-02-09 11:28:04,753 - INFO - <FileStorage: 'answer-2.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:28:04,754 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:28:04,757 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:28:04,758 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:28:06,262 - INFO - undefined
+2025-02-09 11:28:06,263 - INFO - <FileStorage: 'answer-3.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:28:06,264 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:28:06,265 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:28:06,266 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:28:08,793 - INFO - undefined
+2025-02-09 11:28:08,794 - INFO - <FileStorage: 'answer-4.webm' ('audio/webm;codecs=opus')>
+2025-02-09 11:28:08,795 - ERROR - Error transcribing answer: [Errno 2] No such file or directory: '/tmp/uploaded_audio.webm'
+2025-02-09 11:28:08,796 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:28:08,797 - INFO - Transcribed answers are: No answer provided
+2025-02-09 11:28:11,205 - INFO - 127.0.0.1 - - [09/Feb/2025 11:28:11] "POST /results HTTP/1.1" 200 -
