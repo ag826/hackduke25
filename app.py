@@ -7,6 +7,7 @@ from io import BytesIO
 from dotenv import load_dotenv
 from pydub import AudioSegment
 from pydub.playback import play  # To play the audio
+import base64
 import json
 
 load_dotenv()
@@ -24,6 +25,7 @@ logging.basicConfig(
         logging.StreamHandler(),  # Log to console
     ],
 )
+
 
 @app.route("/")
 def home():
@@ -52,16 +54,17 @@ def read_question(text):
 
 
 def webm_to_mp3(webm_file, output_path):
-    """ Converts WebM file to MP3 format """
+    """Converts WebM file to MP3 format"""
     audio = AudioSegment.from_file(webm_file, format="webm")
     audio.export(output_path, format="mp3")
     return output_path
+
 
 # To convert the answers from .mp3 to text
 def transcribe_answer(audio_file):
     try:
         temp_webm_path = "/tmp/uploaded_audio.webm"  # Temporary WebM file
-        temp_mp3_path = "/tmp/uploaded_audio.mp3"    # Temporary MP3 file
+        temp_mp3_path = "/tmp/uploaded_audio.mp3"  # Temporary MP3 file
 
         audio_file.save(temp_webm_path)  # Save the WebM file first
 
@@ -92,7 +95,7 @@ def results():
                 app.logger.info(question)
                 audio_file = request.files.get(f"audio-{index}")
                 app.logger.info(audio_file)
-                
+
                 # Convert the audio file to text
                 answer_text = transcribe_answer(audio_file)
                 answer_text = answer_text if answer_text else "No answer provided"
