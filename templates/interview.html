@@ -1,37 +1,41 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-<h1>Interview Application</h1>
-<p>Answer the following questions:</p>
+<div class="container py-5">
+    <h1 class="text-center mb-4">Interview Application</h1>
+    <p class="text-center mb-4">Answer the following questions:</p>
 
-<!-- Profile image canvas -->
-<div class="mb-3">
-    <label for="profileCanvas" class="form-label">Profile:</label>
-    <canvas id="profileCanvas" width="200" height="200" style="border:1px solid #000000;"></canvas>
-</div>
-
-<!-- Question display -->
-<div class="mb-3">
-    <label for="question" class="form-label">Question:</label>
-    <p id="question"></p>
-</div>
-
-<!-- Answer recording button -->
-<button id="recordButton" class="btn btn-primary">Record Answer</button>
-
-<!-- Submit recording button -->
-<button id="submitButton" class="btn btn-success" style="display: none;">Submit Recording</button>
-
-<!-- Loading spinner (hidden by default) -->
-<div id="loading" style="display: none;">
-    <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
+    <!-- Profile image canvas -->
+    <div class="mb-4 text-center">
+        <label for="profileCanvas" class="form-label d-block mb-2 text-muted">Profile Image:</label>
+        <canvas id="profileCanvas" width="200" height="200" class="rounded-circle border border-3" style="background-color: #f8f9fa;"></canvas>
     </div>
-</div>
 
-<!-- Results container -->
-<div id="results" class="mt-4">
-    <!-- Answers will appear here -->
+    <!-- Question display -->
+    <div class="mb-4">
+        <label for="question" class="form-label fs-4 text-muted">Question:</label>
+        <p id="question" class="h5 text-dark"></p>
+    </div>
+
+    <!-- Answer recording button -->
+    <div class="d-flex justify-content-center gap-3">
+        <button id="recordButton" class="btn btn-lg btn-primary px-4">Record Answer</button>
+
+        <!-- Submit recording button -->
+        <button id="submitButton" class="btn btn-lg btn-success px-4" style="display: none;">Submit Recording</button>
+    </div>
+
+    <!-- Loading spinner (hidden by default) -->
+    <div id="loading" class="d-flex justify-content-center align-items-center" style="display: none; height: 100px;">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Results container -->
+    <div id="results" class="mt-4">
+        <!-- Answers will appear here -->
+    </div>
 </div>
 
 <!-- Reference to the JavaScript file -->

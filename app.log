@@ -159,3 +159,303 @@
 2025-02-09 01:02:47,893 - INFO - <FileStorage: 'answer-0.mp3' ('audio/mpeg')>
 2025-02-09 01:02:47,928 - ERROR - Invalid audio file: [Errno 2] No such file or directory: 'ffprobe'
 2025-02-09 01:02:47,931 - INFO - 172.20.0.1 - - [09/Feb/2025 01:02:47] "[31m[1mPOST /results HTTP/1.1[0m" 400 -
+2025-02-08 20:12:34,315 - INFO - Starting Flask app...
+2025-02-08 20:12:34,418 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-08 20:12:34,421 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-08 20:12:34,443 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 20:12:39,790 - INFO - Starting Flask app...
+2025-02-08 20:12:39,851 - WARNING -  * Debugger is active!
+2025-02-08 20:12:39,897 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 20:12:39,982 - INFO - Home route accessed.
+2025-02-08 20:12:39,999 - INFO - 127.0.0.1 - - [08/Feb/2025 20:12:39] "GET / HTTP/1.1" 200 -
+2025-02-08 20:12:40,056 - INFO - 127.0.0.1 - - [08/Feb/2025 20:12:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 20:12:40,085 - INFO - 127.0.0.1 - - [08/Feb/2025 20:12:40] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-08 20:12:46,849 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\google\\generativeai\\client.py', reloading
+2025-02-08 20:12:46,899 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\google\\auth\\__init__.py', reloading
+2025-02-08 20:12:46,905 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\google\\auth\\credentials.py', reloading
+2025-02-08 20:12:46,918 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\google\\auth\\_credentials_base.py', reloading
+2025-02-08 20:12:46,929 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\google\\api_core\\__init__.py', reloading
+2025-02-08 20:12:46,931 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\google\\api_core\\client_options.py', reloading
+2025-02-08 20:12:46,934 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\google\\api_core\\gapic_v1\\__init__.py', reloading
+2025-02-08 20:12:46,943 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\google\\api_core\\gapic_v1\\client_info.py', reloading
+2025-02-08 20:12:46,948 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\google\\api_core\\client_info.py', reloading
+2025-02-08 20:12:46,967 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\google\\generativeai\\generative_models.py', reloading
+2025-02-08 20:12:47,012 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\google\\generativeai\\types\\__init__.py', reloading
+2025-02-08 20:12:47,018 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\google\\generativeai\\types\\citation_types.py', reloading
+2025-02-08 20:12:47,024 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\google\\generativeai\\types\\content_types.py', reloading
+2025-02-08 20:12:47,081 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\google\\generativeai\\types\\file_types.py', reloading
+2025-02-08 20:12:47,090 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\google\\generativeai\\types\\generation_types.py', reloading
+2025-02-08 20:12:47,557 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 20:12:52,951 - INFO - Starting Flask app...
+2025-02-08 20:12:52,982 - WARNING -  * Debugger is active!
+2025-02-08 20:12:53,005 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 20:13:07,181 - INFO - Simulating interview...
+2025-02-08 20:13:07,352 - INFO - Received resume: <_io.BytesIO object at 0x000001F5B0010D10>, <class '_io.BytesIO'>
+2025-02-08 20:13:13,840 - INFO - [' Tell me about your experience using SQL and Python for data analysis, giving specific examples from your resume.', 'Describe your experience with predictive modeling techniques, such as Random Forest and Regression, and how you applied them in a real-world scenario at ZS Associates.', 'Explain your understanding of data engineering principles and how you would approach building a data pipeline for a specific problem.', 'How did you utilize clustering techniques (K-Means) to segment doctors and tailor marketing strategies at ZS Associates? What were the key results?', 'Walk me through a project from your resume where you had to analyze a large dataset and present your findings effectively.  What challenges did you encounter, and how did you overcome them?\n']
+2025-02-08 20:13:13,842 - INFO - Interview simulation successful.
+2025-02-08 20:13:13,842 - INFO - Interview simulation successful.
+2025-02-08 20:13:13,857 - INFO - 127.0.0.1 - - [08/Feb/2025 20:13:13] "POST /simulate HTTP/1.1" 200 -
+2025-02-08 20:13:13,976 - INFO - Interview route accessed.
+2025-02-08 20:13:13,995 - INFO - 127.0.0.1 - - [08/Feb/2025 20:13:13] "GET /interview HTTP/1.1" 200 -
+2025-02-08 20:13:14,054 - INFO - 127.0.0.1 - - [08/Feb/2025 20:13:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 20:13:14,101 - INFO - 127.0.0.1 - - [08/Feb/2025 20:13:14] "GET /static/js/interview.js HTTP/1.1" 200 -
+2025-02-08 20:14:08,654 - INFO - Getting final feedback...
+2025-02-08 20:14:08,672 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-08 20:14:08,689 - INFO - undefined
+2025-02-08 20:14:08,700 - INFO - <FileStorage: 'answer-0.mp3' ('audio/mpeg')>
+2025-02-08 20:14:09,549 - ERROR - Invalid audio file: Decoding failed. ffmpeg returned error code: 3199971767
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with clang version 19.1.2
+  configuration: --prefix=/d/bld/ffmpeg_1729893022917/_h_env/Library --cc=clang.exe --cxx=clang++.exe --nm=llvm-nm --ar=llvm-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --ld=lld-link --target-os=win64 --enable-cross-compile --toolchain=msvc --host-cc=clang.exe --extra-libs=ucrt.lib --extra-libs=vcruntime.lib --extra-libs=oldnames.lib --strip=llvm-strip --disable-stripping --host-extralibs= --disable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libopus --enable-librsvg --pkg-config=/d/bld/ffmpeg_1729893022917/_build_env/Library/bin/pkg-config
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[cache @ 000001E2272A4D40] Inner protocol failed to seekback end : -40
+    Last message repeated 1 times
+[mp3 @ 000001E2272FC540] Failed to find two consecutive MPEG audio frames.
+[cache @ 000001E2272A4D40] Statistics, cache hits:0 cache misses:0
+[in#0 @ 000001E2272EAB80] Error opening input: Invalid data found when processing input
+Error opening input file cache:pipe:0.
+Error opening input files: Invalid data found when processing input
+
+2025-02-08 20:14:09,560 - INFO - 127.0.0.1 - - [08/Feb/2025 20:14:09] "[31m[1mPOST /results HTTP/1.1[0m" 400 -
+2025-02-08 22:22:46,183 - INFO - Starting Flask app...
+2025-02-08 22:22:46,382 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-08 22:22:46,384 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-08 22:22:46,442 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 22:22:57,958 - INFO - Starting Flask app...
+2025-02-08 22:22:58,050 - WARNING -  * Debugger is active!
+2025-02-08 22:22:58,098 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 22:22:58,227 - INFO - Home route accessed.
+2025-02-08 22:22:58,252 - INFO - 127.0.0.1 - - [08/Feb/2025 22:22:58] "GET / HTTP/1.1" 200 -
+2025-02-08 22:22:58,358 - INFO - 127.0.0.1 - - [08/Feb/2025 22:22:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 22:22:58,392 - INFO - 127.0.0.1 - - [08/Feb/2025 22:22:58] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-08 22:23:18,319 - INFO - Simulating interview...
+2025-02-08 22:23:18,380 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\logging\\__init__.py', reloading
+2025-02-08 22:23:18,886 - INFO - Received resume: <_io.BytesIO object at 0x0000021797AC0D10>, <class '_io.BytesIO'>
+2025-02-08 22:23:19,557 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 22:23:32,721 - INFO - Starting Flask app...
+2025-02-08 22:23:32,802 - WARNING -  * Debugger is active!
+2025-02-08 22:23:32,840 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 22:23:32,960 - INFO - Simulating interview...
+2025-02-08 22:23:33,162 - INFO - Received resume: <_io.BytesIO object at 0x000002A3D3D10B30>, <class '_io.BytesIO'>
+2025-02-08 22:23:37,204 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\modules\\genaimodell.py', reloading
+2025-02-08 22:23:37,264 - INFO -  * Detected change in 'C:\\Users\\asus\\Desktop\\hackduke25\\modules\\genaimodell.py', reloading
+2025-02-08 22:23:47,452 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 22:23:59,162 - INFO - Starting Flask app...
+2025-02-08 22:23:59,251 - WARNING -  * Debugger is active!
+2025-02-08 22:23:59,336 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 22:23:59,466 - INFO - Home route accessed.
+2025-02-08 22:23:59,514 - INFO - 127.0.0.1 - - [08/Feb/2025 22:23:59] "GET / HTTP/1.1" 200 -
+2025-02-08 22:23:59,651 - INFO - 127.0.0.1 - - [08/Feb/2025 22:23:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 22:23:59,850 - INFO - 127.0.0.1 - - [08/Feb/2025 22:23:59] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-08 22:24:19,143 - INFO - Simulating interview...
+2025-02-08 22:24:19,407 - INFO - Received resume: <_io.BytesIO object at 0x000002C67BD90E00>, <class '_io.BytesIO'>
+2025-02-08 22:24:26,233 - INFO - ['Given your experience at ZS Associates analyzing treatment patterns for 19K+ oncologists and driving commercial strategy decisions, describe a situation where you had to make a critical decision based on incomplete or uncertain data. How did you approach the problem, and what was the outcome?', 'Describe your experience with predictive modeling techniques like Random Forest and KM Curves. Can you provide a specific example from your resume where you applied these techniques and what challenges you encountered?', 'Your resume highlights your proficiency in SQL and Python. Can you walk me through a scenario where you used both languages together to solve a complex data problem, focusing on the specific steps and your decision-making process?', 'Explain your understanding of data visualization and its role in communicating complex data insights to stakeholders.  Provide a concrete example from your work experience where you used visualization effectively to influence decision-making.', 'Based on your experience leading the DTC pilot project at Just Deliveries LLP, discuss your approach to project management, including how you prioritized tasks, managed timelines, and ensured successful outcomes within resource constraints.\n']
+2025-02-08 22:24:26,240 - INFO - Interview simulation successful.
+2025-02-08 22:24:26,240 - INFO - Interview simulation successful.
+2025-02-08 22:24:26,244 - INFO - 127.0.0.1 - - [08/Feb/2025 22:24:26] "POST /simulate HTTP/1.1" 200 -
+2025-02-08 22:24:26,348 - INFO - Interview route accessed.
+2025-02-08 22:24:26,361 - INFO - 127.0.0.1 - - [08/Feb/2025 22:24:26] "GET /interview HTTP/1.1" 200 -
+2025-02-08 22:24:26,443 - INFO - 127.0.0.1 - - [08/Feb/2025 22:24:26] "GET /static/js/interview.js HTTP/1.1" 200 -
+2025-02-08 22:24:26,563 - INFO - 127.0.0.1 - - [08/Feb/2025 22:24:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 22:24:54,313 - INFO - Getting final feedback...
+2025-02-08 22:24:54,323 - INFO - ImmutableMultiDict([('question-0', 'undefined'), ('question-1', 'undefined'), ('question-2', 'undefined'), ('question-3', 'undefined'), ('question-4', 'undefined')])
+2025-02-08 22:24:54,325 - INFO - undefined
+2025-02-08 22:24:54,327 - INFO - <FileStorage: 'answer-0.mp3' ('audio/mpeg')>
+2025-02-08 22:24:54,888 - ERROR - Invalid audio file: Decoding failed. ffmpeg returned error code: 3199971767
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with clang version 19.1.2
+  configuration: --prefix=/d/bld/ffmpeg_1729893022917/_h_env/Library --cc=clang.exe --cxx=clang++.exe --nm=llvm-nm --ar=llvm-ar --disable-doc --enable-openssl --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libharfbuzz --enable-libfontconfig --enable-libopenh264 --enable-libdav1d --ld=lld-link --target-os=win64 --enable-cross-compile --toolchain=msvc --host-cc=clang.exe --extra-libs=ucrt.lib --extra-libs=vcruntime.lib --extra-libs=oldnames.lib --strip=llvm-strip --disable-stripping --host-extralibs= --disable-libopenvino --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --enable-libopus --enable-librsvg --pkg-config=/d/bld/ffmpeg_1729893022917/_build_env/Library/bin/pkg-config
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[cache @ 000001BBA748B740] Inner protocol failed to seekback end : -40
+    Last message repeated 1 times
+[mp3 @ 000001BBA748D480] Failed to find two consecutive MPEG audio frames.
+[cache @ 000001BBA748B740] Statistics, cache hits:0 cache misses:0
+[in#0 @ 000001BBA7483C40] Error opening input: Invalid data found when processing input
+Error opening input file cache:pipe:0.
+Error opening input files: Invalid data found when processing input
+
+2025-02-08 22:24:54,896 - INFO - 127.0.0.1 - - [08/Feb/2025 22:24:54] "[31m[1mPOST /results HTTP/1.1[0m" 400 -
+2025-02-08 22:28:42,736 - INFO - Starting Flask app...
+2025-02-08 22:28:42,924 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-08 22:28:42,926 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-08 22:28:42,960 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 22:28:54,310 - INFO - Starting Flask app...
+2025-02-08 22:28:54,410 - WARNING -  * Debugger is active!
+2025-02-08 22:28:54,450 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 22:29:23,663 - INFO - Home route accessed.
+2025-02-08 22:29:23,717 - INFO - 127.0.0.1 - - [08/Feb/2025 22:29:23] "GET / HTTP/1.1" 200 -
+2025-02-08 22:29:23,903 - INFO - 127.0.0.1 - - [08/Feb/2025 22:29:23] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-02-08 22:29:23,962 - INFO - 127.0.0.1 - - [08/Feb/2025 22:29:23] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-08 22:29:52,369 - INFO - Simulating interview...
+2025-02-08 22:29:52,674 - INFO - Received resume: <_io.BytesIO object at 0x0000021ECD9C0CC0>, <class '_io.BytesIO'>
+2025-02-08 22:29:59,215 - INFO - [' Tell me about a time you had to work with a large dataset.  What challenges did you face, and how did you overcome them? ', ' Describe your experience with predictive modeling. Can you give an example of a project where you used predictive modeling to solve a problem? ', '  What is your experience with cloud computing platforms such as AWS? ', '  Explain your understanding of different machine learning algorithms.  Give an example of when you would choose one over another. ', ' Walk me through a project where you had to communicate complex data insights to a non-technical audience. What strategies did you use to make the information understandable and impactful?\n']
+2025-02-08 22:29:59,217 - INFO - Interview simulation successful.
+2025-02-08 22:29:59,218 - INFO - Interview simulation successful.
+2025-02-08 22:29:59,221 - INFO - 127.0.0.1 - - [08/Feb/2025 22:29:59] "POST /simulate HTTP/1.1" 200 -
+2025-02-08 22:29:59,340 - INFO - Interview route accessed.
+2025-02-08 22:29:59,362 - INFO - 127.0.0.1 - - [08/Feb/2025 22:29:59] "GET /interview HTTP/1.1" 200 -
+2025-02-08 22:29:59,450 - INFO - 127.0.0.1 - - [08/Feb/2025 22:29:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 22:29:59,519 - INFO - 127.0.0.1 - - [08/Feb/2025 22:29:59] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-08 22:30:31,758 - INFO -  * Detected change in 'C:\\Users\\asus\\miniconda3\\Lib\\site-packages\\flask\\templating.py', reloading
+2025-02-08 22:30:34,853 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 22:30:47,121 - INFO - Starting Flask app...
+2025-02-08 22:30:47,275 - WARNING -  * Debugger is active!
+2025-02-08 22:30:47,329 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 22:32:12,752 - INFO - Starting Flask app...
+2025-02-08 22:32:12,934 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-08 22:32:12,936 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-08 22:32:12,969 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 22:32:23,763 - INFO - Starting Flask app...
+2025-02-08 22:32:23,838 - WARNING -  * Debugger is active!
+2025-02-08 22:32:23,887 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 22:32:24,005 - INFO - Home route accessed.
+2025-02-08 22:32:24,032 - INFO - 127.0.0.1 - - [08/Feb/2025 22:32:24] "GET / HTTP/1.1" 200 -
+2025-02-08 22:32:24,122 - INFO - 127.0.0.1 - - [08/Feb/2025 22:32:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 22:32:24,253 - INFO - 127.0.0.1 - - [08/Feb/2025 22:32:24] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-08 22:34:31,163 - INFO - Starting Flask app...
+2025-02-08 22:34:31,373 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-08 22:34:31,374 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-08 22:34:31,439 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 22:34:41,852 - INFO - Starting Flask app...
+2025-02-08 22:34:41,972 - WARNING -  * Debugger is active!
+2025-02-08 22:34:42,032 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 22:34:42,169 - INFO - Home route accessed.
+2025-02-08 22:34:42,222 - INFO - 127.0.0.1 - - [08/Feb/2025 22:34:42] "GET / HTTP/1.1" 200 -
+2025-02-08 22:34:42,352 - INFO - 127.0.0.1 - - [08/Feb/2025 22:34:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 22:34:42,423 - INFO - 127.0.0.1 - - [08/Feb/2025 22:34:42] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-08 22:34:55,762 - INFO - Simulating interview...
+2025-02-08 22:34:55,985 - INFO - Received resume: <_io.BytesIO object at 0x00000153F2A90C70>, <class '_io.BytesIO'>
+2025-02-08 22:35:02,512 - INFO - [' What specific projects from your resume best demonstrate your ability to work with large datasets and draw actionable insights, and how did you approach those projects? ', ' Can you describe a situation where you had to overcome a technical challenge during a data science project, and what was your approach to solving it? ', '  How familiar are you with AWS services, and which ones have you used in your previous projects?  ', ' Given your experience in both finance and data science, how would you apply your skills to improve a business decision at Amazon Web Services? ', ' Describe a time you had to work effectively as part of a team, collaborating with individuals of diverse skill sets; what was your role, and what was the outcome?']
+2025-02-08 22:35:02,513 - INFO - Interview simulation successful.
+2025-02-08 22:35:02,515 - INFO - Interview simulation successful.
+2025-02-08 22:35:02,518 - INFO - 127.0.0.1 - - [08/Feb/2025 22:35:02] "POST /simulate HTTP/1.1" 200 -
+2025-02-08 22:35:02,596 - INFO - Interview route accessed.
+2025-02-08 22:35:02,610 - INFO - 127.0.0.1 - - [08/Feb/2025 22:35:02] "GET /interview HTTP/1.1" 200 -
+2025-02-08 22:35:02,688 - INFO - 127.0.0.1 - - [08/Feb/2025 22:35:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 22:35:02,715 - INFO - 127.0.0.1 - - [08/Feb/2025 22:35:02] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-08 22:37:33,164 - INFO - Home route accessed.
+2025-02-08 22:37:33,167 - INFO - 127.0.0.1 - - [08/Feb/2025 22:37:33] "GET / HTTP/1.1" 200 -
+2025-02-08 22:37:33,281 - INFO - 127.0.0.1 - - [08/Feb/2025 22:37:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 22:37:33,330 - INFO - 127.0.0.1 - - [08/Feb/2025 22:37:33] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-08 22:40:40,098 - INFO - Starting Flask app...
+2025-02-08 22:40:40,258 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-08 22:40:40,260 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-08 22:40:40,290 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 22:40:51,551 - INFO - Starting Flask app...
+2025-02-08 22:40:51,618 - WARNING -  * Debugger is active!
+2025-02-08 22:40:51,652 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 22:40:51,763 - INFO - Home route accessed.
+2025-02-08 22:40:51,786 - INFO - 127.0.0.1 - - [08/Feb/2025 22:40:51] "GET / HTTP/1.1" 200 -
+2025-02-08 22:40:51,855 - INFO - 127.0.0.1 - - [08/Feb/2025 22:40:51] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-02-08 22:40:51,902 - INFO - 127.0.0.1 - - [08/Feb/2025 22:40:51] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-08 22:42:03,370 - INFO - Simulating interview...
+2025-02-08 22:42:03,765 - INFO - Received resume: <_io.BytesIO object at 0x000002C80AF90CC0>, <class '_io.BytesIO'>
+2025-02-08 22:42:10,371 - INFO - [' Can you describe a time you had to deal with messy or incomplete data, and how you approached the problem?  ', " Describe your experience with a specific machine learning model you've used and explain your understanding of its strengths and limitations. ", '  Walk me through a project from your resume where you utilized SQL and Python together, focusing on your problem-solving approach and the results you achieved. ', ' Tell me about a time you had to communicate complex technical information to a non-technical audience. How did you ensure they understood? ', ' Give an example of a situation where you identified a problem or inefficiency in a process and proposed a solution.  What was the impact?\n']
+2025-02-08 22:42:10,373 - INFO - Interview simulation successful.
+2025-02-08 22:42:10,374 - INFO - Interview simulation successful.
+2025-02-08 22:42:10,376 - INFO - 127.0.0.1 - - [08/Feb/2025 22:42:10] "POST /simulate HTTP/1.1" 200 -
+2025-02-08 22:42:10,467 - INFO - Interview route accessed.
+2025-02-08 22:42:10,481 - INFO - 127.0.0.1 - - [08/Feb/2025 22:42:10] "GET /interview HTTP/1.1" 200 -
+2025-02-08 22:42:10,581 - INFO - 127.0.0.1 - - [08/Feb/2025 22:42:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 22:42:10,669 - INFO - 127.0.0.1 - - [08/Feb/2025 22:42:10] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-08 22:43:28,826 - INFO - Starting Flask app...
+2025-02-08 22:43:29,189 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-08 22:43:29,192 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-08 22:43:29,283 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 22:43:39,428 - INFO - Starting Flask app...
+2025-02-08 22:43:39,481 - WARNING -  * Debugger is active!
+2025-02-08 22:43:39,531 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 22:43:39,627 - INFO - Home route accessed.
+2025-02-08 22:43:39,650 - INFO - 127.0.0.1 - - [08/Feb/2025 22:43:39] "GET / HTTP/1.1" 200 -
+2025-02-08 22:43:39,760 - INFO - 127.0.0.1 - - [08/Feb/2025 22:43:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 22:43:39,815 - INFO - 127.0.0.1 - - [08/Feb/2025 22:43:39] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-08 22:43:49,895 - INFO - Simulating interview...
+2025-02-08 22:43:50,113 - INFO - Received resume: <_io.BytesIO object at 0x0000027465C09BC0>, <class '_io.BytesIO'>
+2025-02-08 22:43:57,081 - INFO - ['What specific data science techniques did you utilize in your role at ZS Associates, and can you describe a situation where you had to overcome a challenge using these techniques?', 'Can you walk me through your experience with predictive modeling, specifically mentioning a project where you used Random Forest, KM Curves, or Regression techniques?', 'Describe your experience in creating and managing dashboards, and how you ensured they effectively communicated complex data to stakeholders.', 'How did your experience at Just Deliveries LLP contribute to your data science skillset, and what challenges did you face in optimizing their delivery network?', 'Given your background in both finance and data science, how would you approach a business problem that requires both quantitative analysis and financial acumen?\n']
+2025-02-08 22:43:57,088 - INFO - Interview simulation successful.
+2025-02-08 22:43:57,089 - INFO - Interview simulation successful.
+2025-02-08 22:43:57,092 - INFO - 127.0.0.1 - - [08/Feb/2025 22:43:57] "POST /simulate HTTP/1.1" 200 -
+2025-02-08 22:43:57,256 - INFO - Interview route accessed.
+2025-02-08 22:43:57,299 - INFO - 127.0.0.1 - - [08/Feb/2025 22:43:57] "GET /interview HTTP/1.1" 200 -
+2025-02-08 22:43:57,409 - INFO - 127.0.0.1 - - [08/Feb/2025 22:43:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 22:43:57,916 - INFO - 127.0.0.1 - - [08/Feb/2025 22:43:57] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-08 22:47:04,726 - INFO - Starting Flask app...
+2025-02-08 22:47:04,914 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.197.93.0:8080
+2025-02-08 22:47:04,916 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-08 22:47:04,959 - INFO -  * Restarting with watchdog (windowsapi)
+2025-02-08 22:47:17,765 - INFO - Starting Flask app...
+2025-02-08 22:47:17,838 - WARNING -  * Debugger is active!
+2025-02-08 22:47:17,886 - INFO -  * Debugger PIN: 862-086-320
+2025-02-08 22:47:18,088 - INFO - Home route accessed.
+2025-02-08 22:47:18,112 - INFO - 127.0.0.1 - - [08/Feb/2025 22:47:18] "GET / HTTP/1.1" 200 -
+2025-02-08 22:47:18,272 - INFO - 127.0.0.1 - - [08/Feb/2025 22:47:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 22:47:18,420 - INFO - 127.0.0.1 - - [08/Feb/2025 22:47:18] "[36mGET /static/js/home.js HTTP/1.1[0m" 304 -
+2025-02-08 22:55:56,654 - INFO - Simulating interview...
+2025-02-08 22:55:56,923 - INFO - Received resume: <_io.BytesIO object at 0x000001BC7F620CC0>, <class '_io.BytesIO'>
+2025-02-08 22:56:03,664 - INFO - [' Tell me about a time you had to work with a large dataset.  How did you approach the problem, and what were some of the challenges you faced?', 'Describe your experience with predictive modeling.  Give a specific example from your resume and explain the methodology you used.', "Explain your experience with SQL and its application in data analysis. Can you provide examples of complex SQL queries you've written?", 'Walk me through your experience with a project where you had to communicate complex data insights to a non-technical audience. How did you make the information understandable and actionable?', 'Your resume mentions experience with various machine learning algorithms. Can you explain your understanding of one specific algorithm (e.g., Random Forest) and its application to a real-world problem?', '\n']
+2025-02-08 22:56:03,666 - INFO - Interview simulation successful.
+2025-02-08 22:56:03,667 - INFO - Interview simulation successful.
+2025-02-08 22:56:03,670 - INFO - 127.0.0.1 - - [08/Feb/2025 22:56:03] "POST /simulate HTTP/1.1" 200 -
+2025-02-08 22:56:03,756 - INFO - Interview route accessed.
+2025-02-08 22:56:03,800 - INFO - 127.0.0.1 - - [08/Feb/2025 22:56:03] "GET /interview HTTP/1.1" 200 -
+2025-02-08 22:56:03,887 - INFO - 127.0.0.1 - - [08/Feb/2025 22:56:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-02-08 22:56:04,051 - INFO - 127.0.0.1 - - [08/Feb/2025 22:56:04] "[36mGET /static/js/interview.js HTTP/1.1[0m" 304 -
+2025-02-08 22:56:55,874 - INFO - Getting final feedback...
+2025-02-08 22:56:55,906 - INFO - ImmutableMultiDict([])
+2025-02-08 22:56:55,914 - INFO - 127.0.0.1 - - [08/Feb/2025 22:56:55] "POST /results HTTP/1.1" 200 -
+2025-02-08 22:57:11,595 - INFO - Getting final feedback...
+2025-02-08 22:57:11,596 - INFO - ImmutableMultiDict([])
+2025-02-08 22:57:11,598 - INFO - 127.0.0.1 - - [08/Feb/2025 22:57:11] "POST /results HTTP/1.1" 200 -
+2025-02-08 22:58:30,317 - INFO - Getting final feedback...
+2025-02-08 22:58:30,561 - INFO - ImmutableMultiDict([])
+2025-02-08 22:58:30,588 - INFO - 127.0.0.1 - - [08/Feb/2025 22:58:30] "POST /results HTTP/1.1" 200 -
+2025-02-08 22:59:03,225 - INFO - Getting final feedback...
+2025-02-08 22:59:03,228 - INFO - ImmutableMultiDict([])
+2025-02-08 22:59:03,230 - INFO - 127.0.0.1 - - [08/Feb/2025 22:59:03] "POST /results HTTP/1.1" 200 -
+2025-02-08 23:00:43,046 - INFO - Getting final feedback...
+2025-02-08 23:00:43,049 - INFO - ImmutableMultiDict([])
+2025-02-08 23:00:43,052 - INFO - 127.0.0.1 - - [08/Feb/2025 23:00:43] "POST /results HTTP/1.1" 200 -
