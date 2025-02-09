@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitButton = document.getElementById("submitButton");
     const loadingDiv = document.getElementById("loading");
     const resultsDiv = document.getElementById("results");
-    loadingDiv.style.display = "block";
     let answers = [];
     let mediaRecorder;
     let audioChunks = [];
@@ -76,11 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
             recordButton.textContent = "Stop Recording";
         } else {
             const audioBlob = await stopRecording();
-            //const audioUrl = URL.createObjectURL(audioBlob);
-            //const audioElement = document.createElement("audio");
-            //audioElement.controls = true;
-            //audioElement.src = audioUrl;
-            //resultsDiv.appendChild(audioElement);
             answers.push({ question: simulationResults[currentQuestionIndex].text, audioBlob });
             currentQuestionIndex++;
             displayQuestion();
@@ -90,6 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Event listener for the submit button
     submitButton.addEventListener("click", async () => {
+        loadingDiv.style.display = "block"; // Show loading div when submit button is clicked
         const formData = new FormData();
         answers.forEach((answer, index) => {
             formData.append(`audio-${index}`, answer.audioBlob, `answer-${index}.webm`);

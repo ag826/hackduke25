@@ -73,6 +73,7 @@ def get_summary(
         if str != "":
             final_questions.append(str)
 
+    """
     with tempfile.NamedTemporaryFile(
         mode="w",
         delete=False,
@@ -83,7 +84,7 @@ def get_summary(
         # Write the questions to the temporary file
         for question in question_list:
             temp_file.write(question + "\n")
-
+    """
     return final_questions
 
 

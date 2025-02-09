@@ -44,8 +44,9 @@ def render_page(page):
 
 # To read the question out loud
 @app.route("/voice", methods=["POST"])
-def read_question(text):
+def read_question():
     try:
+        text = request.form.get("question")
         text_to_voice(text)
         return 200
     except Exception as e:
@@ -111,11 +112,20 @@ def results():
                 position = simulation_results.get("position", "Unknown Position")
                 company = simulation_results.get("company", "Unknown Company")
                 job_description = simulation_results.get("job_description", "Unknown Job Description")
-                resume = simulation_results.get("resume", "")
+                resume = ""#simulation_results.get("resume", "")
+
+                # Retrieve the question from the JSON file using the index
+                question = simulation_results["questions"][i]
+                i += 1
 
                 # Append the reviewed answers to the matrix
-                matrix.append(review_answers(question, answer_text, position, company, job_description, resume))
-                
+                matrix.append(review_answers(question, answer_text, position, company, job_description))
+                # Delete the temporary "interview.json" file
+                try:
+                    os.remove("interview.json")
+                    app.logger.info("Temporary interview.json file deleted.")
+                except Exception as e:
+                    app.logger.error(f"Error deleting temporary interview.json file: {e}")
         return jsonify(matrix)
     except Exception as e:
         app.logger.error(f"Error processing results: {e}")
