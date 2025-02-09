@@ -26,22 +26,75 @@ document.addEventListener("DOMContentLoaded", () => {
                 `;
                 resultContainer.appendChild(questionDiv);
 
-                // Display the abstract of the response
-                const abstractDiv = document.createElement("div");
-                abstractDiv.innerHTML = `
-                    <h2>Abstract of Response</h2>
-                    <p>${result.abstract_response}</p>
+                // Display what worked
+                const workedDiv = document.createElement("div");
+                workedDiv.innerHTML = `
+                    <ul>
+                        <li><strong><em>What worked?</em></strong>
+                            <ul>
+                            <li>${result.what_worked}</li>
+                            </ul>
+                        </li>
+                    </ul>
                 `;
-                resultContainer.appendChild(abstractDiv);
+                resultContainer.appendChild(workedDiv);
 
-                // Display the suggested improvements
-                const improvementsDiv = document.createElement("div");
-                const improvementsList = result.suggested_improvements.map(improvement => `<li>${improvement}</li>`).join('');
-                improvementsDiv.innerHTML = `
-                    <h2>Suggested Improvements</h2>
-                    <ul>${improvementsList}</ul>
+                // Display what could have been improved
+                const improveDiv = document.createElement("div");
+                improveDiv.innerHTML = `
+                    <ul>
+                        <li><strong><em>What could have been improved?</em></strong>
+                            <ul>
+                            <li>${result.what_improve}</li>
+                            </ul>
+                        </li>
+                    </ul>
                 `;
-                resultContainer.appendChild(improvementsDiv);
+                resultContainer.appendChild(improveDiv);
+
+                // Display sample answer
+                const sampleDiv = document.createElement("div");
+                sampleDiv.innerHTML = `
+                    <ul>
+                        <li><strong><em>Given your background, what would an alternate answer have looked like?</em></strong>
+                            <ul>
+                            <li>${result.alt_answer}</li>
+                            </ul>
+                        </li>
+                    </ul>                
+                `;
+
+                resultContainer.appendChild(sampleDiv);
+
+                // Display overall score
+                const scoreDiv = document.createElement("div");
+                scoreDiv.innerHTML = `
+                    <ul>
+                        <li><strong><em>Overall Score: ${result.alt_answer} </em></strong>
+                        </li>
+                    </ul> 
+                `;
+                resultContainer.appendChild(scoreDiv);
+
+                // Display what could have been improved
+                const criteriaDiv = document.createElement("div");
+                criteriaDiv.innerHTML = `
+                    <ul>
+                        <li><em>Grading Criteria: ${result.criteria} </em>
+                        </li>
+                    </ul>
+                `;
+                resultContainer.appendChild(criteriaDiv);
+
+
+                // // Display the suggested improvements
+                // const improvementsDiv = document.createElement("div");
+                // const improvementsList = result.suggested_improvements.map(improvement => `<li>${improvement}</li>`).join('');
+                // improvementsDiv.innerHTML = `
+                //     <h3>Feedback on your responses:</h3>
+                //     <ul>${improvementsList}</ul>
+                // `;
+                // resultContainer.appendChild(improvementsDiv);
 
                 // Append the result container to the results div
                 resultsDiv.appendChild(resultContainer);
