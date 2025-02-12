@@ -111,15 +111,21 @@ def results():
 
                 position = simulation_results.get("position", "Unknown Position")
                 company = simulation_results.get("company", "Unknown Company")
-                job_description = simulation_results.get("job_description", "Unknown Job Description")
-                resume = ""#simulation_results.get("resume", "")
+                job_description = simulation_results.get(
+                    "job_description", "Unknown Job Description"
+                )
+                resume = ""  # simulation_results.get("resume", "")
 
                 # Retrieve the question from the JSON file using the index
                 question = simulation_results["questions"][i]
                 i += 1
 
                 # Append the reviewed answers to the matrix
-                matrix.append(review_answers(question, answer_text, position, company, job_description))
+                matrix.append(
+                    review_answers(
+                        question, answer_text, position, company, job_description
+                    )
+                )
                 # Delete the temporary "interview.json" file
         try:
             os.remove("interview.json")
@@ -149,7 +155,7 @@ def simulate_interview():
         # Convert the resume file to a format compatible with genai
         resume_bytes = BytesIO(resume.read())
         app.logger.info(f"Received resume: {resume_bytes}, {type(resume_bytes)}")
-        
+
         if not position or not company or not job_description or not resume:
             return jsonify({"error": "Missing required fields"}), 400
 
@@ -178,7 +184,7 @@ def simulate_interview():
             "company": company,
             "job_description": job_description,
             "profile": profile,
-            "questions": processed_data  # Directly use the array
+            "questions": processed_data,  # Directly use the array
         }
 
         # Write to JSON file

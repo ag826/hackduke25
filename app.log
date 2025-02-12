@@ -1176,3 +1176,18 @@
 2025-02-09 17:05:33,941 - INFO - 172.20.0.1 - - [09/Feb/2025 17:05:33] "GET /results_review HTTP/1.1" 200 -
 2025-02-09 17:05:33,993 - INFO - 172.20.0.1 - - [09/Feb/2025 17:05:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
 2025-02-09 17:05:33,994 - INFO - 172.20.0.1 - - [09/Feb/2025 17:05:33] "GET /static/js/results_review.js HTTP/1.1" 200 -
+2025-02-12 02:38:52,566 - INFO - Starting Flask app...
+2025-02-12 02:38:52,585 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.0.10.254:8080
+2025-02-12 02:38:52,585 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-12 02:38:52,586 - INFO -  * Restarting with stat
+2025-02-12 02:38:53,593 - INFO - Starting Flask app...
+2025-02-12 02:38:53,600 - WARNING -  * Debugger is active!
+2025-02-12 02:38:53,601 - INFO -  * Debugger PIN: 810-657-852
+2025-02-12 02:39:02,881 - INFO - Home route accessed.
+2025-02-12 02:39:02,886 - INFO - 127.0.0.1 - - [12/Feb/2025 02:39:02] "GET / HTTP/1.1" 200 -
+2025-02-12 02:39:03,406 - INFO - 127.0.0.1 - - [12/Feb/2025 02:39:03] "GET /static/js/home.js HTTP/1.1" 200 -
+2025-02-12 02:39:03,433 - INFO - 127.0.0.1 - - [12/Feb/2025 02:39:03] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-02-12 02:39:12,023 - INFO - 127.0.0.1 - - [12/Feb/2025 02:39:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
