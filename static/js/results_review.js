@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const scoreDiv = document.createElement("div");
                 scoreDiv.innerHTML = `
                     <ul>
-                        <li><strong><em>Overall Score: ${result.alt_answer} </em></strong>
+                        <li><strong><em>Overall Score: ${result.overall_score} </em></strong>
                         </li>
                     </ul> 
                 `;

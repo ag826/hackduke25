@@ -52,6 +52,25 @@ document.addEventListener("DOMContentLoaded", () => {
     const displayQuestion = () => {
         if (currentQuestionIndex < simulationResults.length) {
             questionElement.textContent = simulationResults[currentQuestionIndex];
+
+            // Send the question to the backend
+            fetch('/voice', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    question: simulationResults[currentQuestionIndex]
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data.message); // Handle the response from the backend
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+
             recordButton.style.display = "block";
             submitButton.style.display = "none";
         } else {

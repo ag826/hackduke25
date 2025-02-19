@@ -166,7 +166,7 @@ if __name__ == "__main__":
         "Data Science Intern",
         "Amazon Web Services",
         "data science internship covering data engineering, SQL, python",
-        resume_path,
+        # resume_path,
     )
     # print(f"LIKELY QUESTIONS ARE:{questions}")
     # print("")

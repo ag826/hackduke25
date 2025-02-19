@@ -9,6 +9,7 @@ from pydub import AudioSegment
 from pydub.playback import play  # To play the audio
 import base64
 import json
+import pyttsx3
 
 load_dotenv()
 flask_key = os.environ["API_KEY"]
@@ -46,9 +47,14 @@ def render_page(page):
 @app.route("/voice", methods=["POST"])
 def read_question():
     try:
-        text = request.form.get("question")
-        text_to_voice(text)
-        return 200
+        data = request.get_json()
+        text = data.get("question")
+        # text = request.form.get("question")
+        # text_to_voice(text)
+        engine = pyttsx3.init()
+        engine.say(text)
+        engine.runAndWait()
+        return "", 200
     except Exception as e:
         app.logger.error(f"Error reading question: {e}")
         return jsonify({"error": str(e)}), 500
@@ -111,15 +117,21 @@ def results():
 
                 position = simulation_results.get("position", "Unknown Position")
                 company = simulation_results.get("company", "Unknown Company")
-                job_description = simulation_results.get("job_description", "Unknown Job Description")
-                resume = ""#simulation_results.get("resume", "")
+                job_description = simulation_results.get(
+                    "job_description", "Unknown Job Description"
+                )
+                resume = ""  # simulation_results.get("resume", "")
 
                 # Retrieve the question from the JSON file using the index
                 question = simulation_results["questions"][i]
                 i += 1
 
                 # Append the reviewed answers to the matrix
-                matrix.append(review_answers(question, answer_text, position, company, job_description))
+                matrix.append(
+                    review_answers(
+                        question, answer_text, position, company, job_description
+                    )
+                )
                 # Delete the temporary "interview.json" file
         try:
             os.remove("interview.json")
@@ -149,7 +161,7 @@ def simulate_interview():
         # Convert the resume file to a format compatible with genai
         resume_bytes = BytesIO(resume.read())
         app.logger.info(f"Received resume: {resume_bytes}, {type(resume_bytes)}")
-        
+
         if not position or not company or not job_description or not resume:
             return jsonify({"error": "Missing required fields"}), 400
 
@@ -178,7 +190,7 @@ def simulate_interview():
             "company": company,
             "job_description": job_description,
             "profile": profile,
-            "questions": processed_data  # Directly use the array
+            "questions": processed_data,  # Directly use the array
         }
 
         # Write to JSON file
